@@ -12,6 +12,17 @@ module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/
 
 /***/ }),
 
+/***/ "./node_modules/Bowser/es5.js":
+/*!************************************!*\
+  !*** ./node_modules/Bowser/es5.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+!function(e,t){ true?module.exports=t():undefined}(this,(function(){return function(e){var t={};function r(n){if(t[n])return t[n].exports;var i=t[n]={i:n,l:!1,exports:{}};return e[n].call(i.exports,i,i.exports,r),i.l=!0,i.exports}return r.m=e,r.c=t,r.d=function(e,t,n){r.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:n})},r.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.t=function(e,t){if(1&t&&(e=r(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var n=Object.create(null);if(r.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var i in e)r.d(n,i,function(t){return e[t]}.bind(null,i));return n},r.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return r.d(t,"a",t),t},r.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},r.p="",r(r.s=90)}({17:function(e,t,r){"use strict";t.__esModule=!0,t.default=void 0;var n=r(18),i=function(){function e(){}return e.getFirstMatch=function(e,t){var r=t.match(e);return r&&r.length>0&&r[1]||""},e.getSecondMatch=function(e,t){var r=t.match(e);return r&&r.length>1&&r[2]||""},e.matchAndReturnConst=function(e,t,r){if(e.test(t))return r},e.getWindowsVersionName=function(e){switch(e){case"NT":return"NT";case"XP":return"XP";case"NT 5.0":return"2000";case"NT 5.1":return"XP";case"NT 5.2":return"2003";case"NT 6.0":return"Vista";case"NT 6.1":return"7";case"NT 6.2":return"8";case"NT 6.3":return"8.1";case"NT 10.0":return"10";default:return}},e.getMacOSVersionName=function(e){var t=e.split(".").splice(0,2).map((function(e){return parseInt(e,10)||0}));if(t.push(0),10===t[0])switch(t[1]){case 5:return"Leopard";case 6:return"Snow Leopard";case 7:return"Lion";case 8:return"Mountain Lion";case 9:return"Mavericks";case 10:return"Yosemite";case 11:return"El Capitan";case 12:return"Sierra";case 13:return"High Sierra";case 14:return"Mojave";case 15:return"Catalina";default:return}},e.getAndroidVersionName=function(e){var t=e.split(".").splice(0,2).map((function(e){return parseInt(e,10)||0}));if(t.push(0),!(1===t[0]&&t[1]<5))return 1===t[0]&&t[1]<6?"Cupcake":1===t[0]&&t[1]>=6?"Donut":2===t[0]&&t[1]<2?"Eclair":2===t[0]&&2===t[1]?"Froyo":2===t[0]&&t[1]>2?"Gingerbread":3===t[0]?"Honeycomb":4===t[0]&&t[1]<1?"Ice Cream Sandwich":4===t[0]&&t[1]<4?"Jelly Bean":4===t[0]&&t[1]>=4?"KitKat":5===t[0]?"Lollipop":6===t[0]?"Marshmallow":7===t[0]?"Nougat":8===t[0]?"Oreo":9===t[0]?"Pie":void 0},e.getVersionPrecision=function(e){return e.split(".").length},e.compareVersions=function(t,r,n){void 0===n&&(n=!1);var i=e.getVersionPrecision(t),s=e.getVersionPrecision(r),a=Math.max(i,s),o=0,u=e.map([t,r],(function(t){var r=a-e.getVersionPrecision(t),n=t+new Array(r+1).join(".0");return e.map(n.split("."),(function(e){return new Array(20-e.length).join("0")+e})).reverse()}));for(n&&(o=a-Math.min(i,s)),a-=1;a>=o;){if(u[0][a]>u[1][a])return 1;if(u[0][a]===u[1][a]){if(a===o)return 0;a-=1}else if(u[0][a]<u[1][a])return-1}},e.map=function(e,t){var r,n=[];if(Array.prototype.map)return Array.prototype.map.call(e,t);for(r=0;r<e.length;r+=1)n.push(t(e[r]));return n},e.find=function(e,t){var r,n;if(Array.prototype.find)return Array.prototype.find.call(e,t);for(r=0,n=e.length;r<n;r+=1){var i=e[r];if(t(i,r))return i}},e.assign=function(e){for(var t,r,n=e,i=arguments.length,s=new Array(i>1?i-1:0),a=1;a<i;a++)s[a-1]=arguments[a];if(Object.assign)return Object.assign.apply(Object,[e].concat(s));var o=function(){var e=s[t];"object"==typeof e&&null!==e&&Object.keys(e).forEach((function(t){n[t]=e[t]}))};for(t=0,r=s.length;t<r;t+=1)o();return e},e.getBrowserAlias=function(e){return n.BROWSER_ALIASES_MAP[e]},e.getBrowserTypeByAlias=function(e){return n.BROWSER_MAP[e]||""},e}();t.default=i,e.exports=t.default},18:function(e,t,r){"use strict";t.__esModule=!0,t.ENGINE_MAP=t.OS_MAP=t.PLATFORMS_MAP=t.BROWSER_MAP=t.BROWSER_ALIASES_MAP=void 0;t.BROWSER_ALIASES_MAP={"Amazon Silk":"amazon_silk","Android Browser":"android",Bada:"bada",BlackBerry:"blackberry",Chrome:"chrome",Chromium:"chromium",Electron:"electron",Epiphany:"epiphany",Firefox:"firefox",Focus:"focus",Generic:"generic","Google Search":"google_search",Googlebot:"googlebot","Internet Explorer":"ie","K-Meleon":"k_meleon",Maxthon:"maxthon","Microsoft Edge":"edge","MZ Browser":"mz","NAVER Whale Browser":"naver",Opera:"opera","Opera Coast":"opera_coast",PhantomJS:"phantomjs",Puffin:"puffin",QupZilla:"qupzilla",QQ:"qq",QQLite:"qqlite",Safari:"safari",Sailfish:"sailfish","Samsung Internet for Android":"samsung_internet",SeaMonkey:"seamonkey",Sleipnir:"sleipnir",Swing:"swing",Tizen:"tizen","UC Browser":"uc",Vivaldi:"vivaldi","WebOS Browser":"webos",WeChat:"wechat","Yandex Browser":"yandex",Roku:"roku"};t.BROWSER_MAP={amazon_silk:"Amazon Silk",android:"Android Browser",bada:"Bada",blackberry:"BlackBerry",chrome:"Chrome",chromium:"Chromium",electron:"Electron",epiphany:"Epiphany",firefox:"Firefox",focus:"Focus",generic:"Generic",googlebot:"Googlebot",google_search:"Google Search",ie:"Internet Explorer",k_meleon:"K-Meleon",maxthon:"Maxthon",edge:"Microsoft Edge",mz:"MZ Browser",naver:"NAVER Whale Browser",opera:"Opera",opera_coast:"Opera Coast",phantomjs:"PhantomJS",puffin:"Puffin",qupzilla:"QupZilla",qq:"QQ Browser",qqlite:"QQ Browser Lite",safari:"Safari",sailfish:"Sailfish",samsung_internet:"Samsung Internet for Android",seamonkey:"SeaMonkey",sleipnir:"Sleipnir",swing:"Swing",tizen:"Tizen",uc:"UC Browser",vivaldi:"Vivaldi",webos:"WebOS Browser",wechat:"WeChat",yandex:"Yandex Browser"};t.PLATFORMS_MAP={tablet:"tablet",mobile:"mobile",desktop:"desktop",tv:"tv"};t.OS_MAP={WindowsPhone:"Windows Phone",Windows:"Windows",MacOS:"macOS",iOS:"iOS",Android:"Android",WebOS:"WebOS",BlackBerry:"BlackBerry",Bada:"Bada",Tizen:"Tizen",Linux:"Linux",ChromeOS:"Chrome OS",PlayStation4:"PlayStation 4",Roku:"Roku"};t.ENGINE_MAP={EdgeHTML:"EdgeHTML",Blink:"Blink",Trident:"Trident",Presto:"Presto",Gecko:"Gecko",WebKit:"WebKit"}},90:function(e,t,r){"use strict";t.__esModule=!0,t.default=void 0;var n,i=(n=r(91))&&n.__esModule?n:{default:n},s=r(18);function a(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}var o=function(){function e(){}var t,r,n;return e.getParser=function(e,t){if(void 0===t&&(t=!1),"string"!=typeof e)throw new Error("UserAgent should be a string");return new i.default(e,t)},e.parse=function(e){return new i.default(e).getResult()},t=e,n=[{key:"BROWSER_MAP",get:function(){return s.BROWSER_MAP}},{key:"ENGINE_MAP",get:function(){return s.ENGINE_MAP}},{key:"OS_MAP",get:function(){return s.OS_MAP}},{key:"PLATFORMS_MAP",get:function(){return s.PLATFORMS_MAP}}],(r=null)&&a(t.prototype,r),n&&a(t,n),e}();t.default=o,e.exports=t.default},91:function(e,t,r){"use strict";t.__esModule=!0,t.default=void 0;var n=u(r(92)),i=u(r(93)),s=u(r(94)),a=u(r(95)),o=u(r(17));function u(e){return e&&e.__esModule?e:{default:e}}var d=function(){function e(e,t){if(void 0===t&&(t=!1),null==e||""===e)throw new Error("UserAgent parameter can't be empty");this._ua=e,this.parsedResult={},!0!==t&&this.parse()}var t=e.prototype;return t.getUA=function(){return this._ua},t.test=function(e){return e.test(this._ua)},t.parseBrowser=function(){var e=this;this.parsedResult.browser={};var t=o.default.find(n.default,(function(t){if("function"==typeof t.test)return t.test(e);if(t.test instanceof Array)return t.test.some((function(t){return e.test(t)}));throw new Error("Browser's test function is not valid")}));return t&&(this.parsedResult.browser=t.describe(this.getUA())),this.parsedResult.browser},t.getBrowser=function(){return this.parsedResult.browser?this.parsedResult.browser:this.parseBrowser()},t.getBrowserName=function(e){return e?String(this.getBrowser().name).toLowerCase()||"":this.getBrowser().name||""},t.getBrowserVersion=function(){return this.getBrowser().version},t.getOS=function(){return this.parsedResult.os?this.parsedResult.os:this.parseOS()},t.parseOS=function(){var e=this;this.parsedResult.os={};var t=o.default.find(i.default,(function(t){if("function"==typeof t.test)return t.test(e);if(t.test instanceof Array)return t.test.some((function(t){return e.test(t)}));throw new Error("Browser's test function is not valid")}));return t&&(this.parsedResult.os=t.describe(this.getUA())),this.parsedResult.os},t.getOSName=function(e){var t=this.getOS().name;return e?String(t).toLowerCase()||"":t||""},t.getOSVersion=function(){return this.getOS().version},t.getPlatform=function(){return this.parsedResult.platform?this.parsedResult.platform:this.parsePlatform()},t.getPlatformType=function(e){void 0===e&&(e=!1);var t=this.getPlatform().type;return e?String(t).toLowerCase()||"":t||""},t.parsePlatform=function(){var e=this;this.parsedResult.platform={};var t=o.default.find(s.default,(function(t){if("function"==typeof t.test)return t.test(e);if(t.test instanceof Array)return t.test.some((function(t){return e.test(t)}));throw new Error("Browser's test function is not valid")}));return t&&(this.parsedResult.platform=t.describe(this.getUA())),this.parsedResult.platform},t.getEngine=function(){return this.parsedResult.engine?this.parsedResult.engine:this.parseEngine()},t.getEngineName=function(e){return e?String(this.getEngine().name).toLowerCase()||"":this.getEngine().name||""},t.parseEngine=function(){var e=this;this.parsedResult.engine={};var t=o.default.find(a.default,(function(t){if("function"==typeof t.test)return t.test(e);if(t.test instanceof Array)return t.test.some((function(t){return e.test(t)}));throw new Error("Browser's test function is not valid")}));return t&&(this.parsedResult.engine=t.describe(this.getUA())),this.parsedResult.engine},t.parse=function(){return this.parseBrowser(),this.parseOS(),this.parsePlatform(),this.parseEngine(),this},t.getResult=function(){return o.default.assign({},this.parsedResult)},t.satisfies=function(e){var t=this,r={},n=0,i={},s=0;if(Object.keys(e).forEach((function(t){var a=e[t];"string"==typeof a?(i[t]=a,s+=1):"object"==typeof a&&(r[t]=a,n+=1)})),n>0){var a=Object.keys(r),u=o.default.find(a,(function(e){return t.isOS(e)}));if(u){var d=this.satisfies(r[u]);if(void 0!==d)return d}var c=o.default.find(a,(function(e){return t.isPlatform(e)}));if(c){var f=this.satisfies(r[c]);if(void 0!==f)return f}}if(s>0){var l=Object.keys(i),h=o.default.find(l,(function(e){return t.isBrowser(e,!0)}));if(void 0!==h)return this.compareVersion(i[h])}},t.isBrowser=function(e,t){void 0===t&&(t=!1);var r=this.getBrowserName().toLowerCase(),n=e.toLowerCase(),i=o.default.getBrowserTypeByAlias(n);return t&&i&&(n=i.toLowerCase()),n===r},t.compareVersion=function(e){var t=[0],r=e,n=!1,i=this.getBrowserVersion();if("string"==typeof i)return">"===e[0]||"<"===e[0]?(r=e.substr(1),"="===e[1]?(n=!0,r=e.substr(2)):t=[],">"===e[0]?t.push(1):t.push(-1)):"="===e[0]?r=e.substr(1):"~"===e[0]&&(n=!0,r=e.substr(1)),t.indexOf(o.default.compareVersions(i,r,n))>-1},t.isOS=function(e){return this.getOSName(!0)===String(e).toLowerCase()},t.isPlatform=function(e){return this.getPlatformType(!0)===String(e).toLowerCase()},t.isEngine=function(e){return this.getEngineName(!0)===String(e).toLowerCase()},t.is=function(e,t){return void 0===t&&(t=!1),this.isBrowser(e,t)||this.isOS(e)||this.isPlatform(e)},t.some=function(e){var t=this;return void 0===e&&(e=[]),e.some((function(e){return t.is(e)}))},e}();t.default=d,e.exports=t.default},92:function(e,t,r){"use strict";t.__esModule=!0,t.default=void 0;var n,i=(n=r(17))&&n.__esModule?n:{default:n};var s=/version\/(\d+(\.?_?\d+)+)/i,a=[{test:[/googlebot/i],describe:function(e){var t={name:"Googlebot"},r=i.default.getFirstMatch(/googlebot\/(\d+(\.\d+))/i,e)||i.default.getFirstMatch(s,e);return r&&(t.version=r),t}},{test:[/opera/i],describe:function(e){var t={name:"Opera"},r=i.default.getFirstMatch(s,e)||i.default.getFirstMatch(/(?:opera)[\s/](\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/opr\/|opios/i],describe:function(e){var t={name:"Opera"},r=i.default.getFirstMatch(/(?:opr|opios)[\s/](\S+)/i,e)||i.default.getFirstMatch(s,e);return r&&(t.version=r),t}},{test:[/SamsungBrowser/i],describe:function(e){var t={name:"Samsung Internet for Android"},r=i.default.getFirstMatch(s,e)||i.default.getFirstMatch(/(?:SamsungBrowser)[\s/](\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/Whale/i],describe:function(e){var t={name:"NAVER Whale Browser"},r=i.default.getFirstMatch(s,e)||i.default.getFirstMatch(/(?:whale)[\s/](\d+(?:\.\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/MZBrowser/i],describe:function(e){var t={name:"MZ Browser"},r=i.default.getFirstMatch(/(?:MZBrowser)[\s/](\d+(?:\.\d+)+)/i,e)||i.default.getFirstMatch(s,e);return r&&(t.version=r),t}},{test:[/focus/i],describe:function(e){var t={name:"Focus"},r=i.default.getFirstMatch(/(?:focus)[\s/](\d+(?:\.\d+)+)/i,e)||i.default.getFirstMatch(s,e);return r&&(t.version=r),t}},{test:[/swing/i],describe:function(e){var t={name:"Swing"},r=i.default.getFirstMatch(/(?:swing)[\s/](\d+(?:\.\d+)+)/i,e)||i.default.getFirstMatch(s,e);return r&&(t.version=r),t}},{test:[/coast/i],describe:function(e){var t={name:"Opera Coast"},r=i.default.getFirstMatch(s,e)||i.default.getFirstMatch(/(?:coast)[\s/](\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/opt\/\d+(?:.?_?\d+)+/i],describe:function(e){var t={name:"Opera Touch"},r=i.default.getFirstMatch(/(?:opt)[\s/](\d+(\.?_?\d+)+)/i,e)||i.default.getFirstMatch(s,e);return r&&(t.version=r),t}},{test:[/yabrowser/i],describe:function(e){var t={name:"Yandex Browser"},r=i.default.getFirstMatch(/(?:yabrowser)[\s/](\d+(\.?_?\d+)+)/i,e)||i.default.getFirstMatch(s,e);return r&&(t.version=r),t}},{test:[/ucbrowser/i],describe:function(e){var t={name:"UC Browser"},r=i.default.getFirstMatch(s,e)||i.default.getFirstMatch(/(?:ucbrowser)[\s/](\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/Maxthon|mxios/i],describe:function(e){var t={name:"Maxthon"},r=i.default.getFirstMatch(s,e)||i.default.getFirstMatch(/(?:Maxthon|mxios)[\s/](\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/epiphany/i],describe:function(e){var t={name:"Epiphany"},r=i.default.getFirstMatch(s,e)||i.default.getFirstMatch(/(?:epiphany)[\s/](\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/puffin/i],describe:function(e){var t={name:"Puffin"},r=i.default.getFirstMatch(s,e)||i.default.getFirstMatch(/(?:puffin)[\s/](\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/sleipnir/i],describe:function(e){var t={name:"Sleipnir"},r=i.default.getFirstMatch(s,e)||i.default.getFirstMatch(/(?:sleipnir)[\s/](\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/k-meleon/i],describe:function(e){var t={name:"K-Meleon"},r=i.default.getFirstMatch(s,e)||i.default.getFirstMatch(/(?:k-meleon)[\s/](\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/micromessenger/i],describe:function(e){var t={name:"WeChat"},r=i.default.getFirstMatch(/(?:micromessenger)[\s/](\d+(\.?_?\d+)+)/i,e)||i.default.getFirstMatch(s,e);return r&&(t.version=r),t}},{test:[/qqbrowser/i],describe:function(e){var t={name:/qqbrowserlite/i.test(e)?"QQ Browser Lite":"QQ Browser"},r=i.default.getFirstMatch(/(?:qqbrowserlite|qqbrowser)[/](\d+(\.?_?\d+)+)/i,e)||i.default.getFirstMatch(s,e);return r&&(t.version=r),t}},{test:[/msie|trident/i],describe:function(e){var t={name:"Internet Explorer"},r=i.default.getFirstMatch(/(?:msie |rv:)(\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/\sedg\//i],describe:function(e){var t={name:"Microsoft Edge"},r=i.default.getFirstMatch(/\sedg\/(\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/edg([ea]|ios)/i],describe:function(e){var t={name:"Microsoft Edge"},r=i.default.getSecondMatch(/edg([ea]|ios)\/(\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/vivaldi/i],describe:function(e){var t={name:"Vivaldi"},r=i.default.getFirstMatch(/vivaldi\/(\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/seamonkey/i],describe:function(e){var t={name:"SeaMonkey"},r=i.default.getFirstMatch(/seamonkey\/(\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/sailfish/i],describe:function(e){var t={name:"Sailfish"},r=i.default.getFirstMatch(/sailfish\s?browser\/(\d+(\.\d+)?)/i,e);return r&&(t.version=r),t}},{test:[/silk/i],describe:function(e){var t={name:"Amazon Silk"},r=i.default.getFirstMatch(/silk\/(\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/phantom/i],describe:function(e){var t={name:"PhantomJS"},r=i.default.getFirstMatch(/phantomjs\/(\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/slimerjs/i],describe:function(e){var t={name:"SlimerJS"},r=i.default.getFirstMatch(/slimerjs\/(\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/blackberry|\bbb\d+/i,/rim\stablet/i],describe:function(e){var t={name:"BlackBerry"},r=i.default.getFirstMatch(s,e)||i.default.getFirstMatch(/blackberry[\d]+\/(\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/(web|hpw)[o0]s/i],describe:function(e){var t={name:"WebOS Browser"},r=i.default.getFirstMatch(s,e)||i.default.getFirstMatch(/w(?:eb)?[o0]sbrowser\/(\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/bada/i],describe:function(e){var t={name:"Bada"},r=i.default.getFirstMatch(/dolfin\/(\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/tizen/i],describe:function(e){var t={name:"Tizen"},r=i.default.getFirstMatch(/(?:tizen\s?)?browser\/(\d+(\.?_?\d+)+)/i,e)||i.default.getFirstMatch(s,e);return r&&(t.version=r),t}},{test:[/qupzilla/i],describe:function(e){var t={name:"QupZilla"},r=i.default.getFirstMatch(/(?:qupzilla)[\s/](\d+(\.?_?\d+)+)/i,e)||i.default.getFirstMatch(s,e);return r&&(t.version=r),t}},{test:[/firefox|iceweasel|fxios/i],describe:function(e){var t={name:"Firefox"},r=i.default.getFirstMatch(/(?:firefox|iceweasel|fxios)[\s/](\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/electron/i],describe:function(e){var t={name:"Electron"},r=i.default.getFirstMatch(/(?:electron)\/(\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/MiuiBrowser/i],describe:function(e){var t={name:"Miui"},r=i.default.getFirstMatch(/(?:MiuiBrowser)[\s/](\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/chromium/i],describe:function(e){var t={name:"Chromium"},r=i.default.getFirstMatch(/(?:chromium)[\s/](\d+(\.?_?\d+)+)/i,e)||i.default.getFirstMatch(s,e);return r&&(t.version=r),t}},{test:[/chrome|crios|crmo/i],describe:function(e){var t={name:"Chrome"},r=i.default.getFirstMatch(/(?:chrome|crios|crmo)\/(\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/GSA/i],describe:function(e){var t={name:"Google Search"},r=i.default.getFirstMatch(/(?:GSA)\/(\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:function(e){var t=!e.test(/like android/i),r=e.test(/android/i);return t&&r},describe:function(e){var t={name:"Android Browser"},r=i.default.getFirstMatch(s,e);return r&&(t.version=r),t}},{test:[/playstation 4/i],describe:function(e){var t={name:"PlayStation 4"},r=i.default.getFirstMatch(s,e);return r&&(t.version=r),t}},{test:[/safari|applewebkit/i],describe:function(e){var t={name:"Safari"},r=i.default.getFirstMatch(s,e);return r&&(t.version=r),t}},{test:[/.*/i],describe:function(e){var t=-1!==e.search("\\(")?/^(.*)\/(.*)[ \t]\((.*)/:/^(.*)\/(.*) /;return{name:i.default.getFirstMatch(t,e),version:i.default.getSecondMatch(t,e)}}}];t.default=a,e.exports=t.default},93:function(e,t,r){"use strict";t.__esModule=!0,t.default=void 0;var n,i=(n=r(17))&&n.__esModule?n:{default:n},s=r(18);var a=[{test:[/Roku\/DVP/],describe:function(e){var t=i.default.getFirstMatch(/Roku\/DVP-(\d+\.\d+)/i,e);return{name:s.OS_MAP.Roku,version:t}}},{test:[/windows phone/i],describe:function(e){var t=i.default.getFirstMatch(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i,e);return{name:s.OS_MAP.WindowsPhone,version:t}}},{test:[/windows /i],describe:function(e){var t=i.default.getFirstMatch(/Windows ((NT|XP)( \d\d?.\d)?)/i,e),r=i.default.getWindowsVersionName(t);return{name:s.OS_MAP.Windows,version:t,versionName:r}}},{test:[/Macintosh(.*?) FxiOS(.*?)\//],describe:function(e){var t={name:s.OS_MAP.iOS},r=i.default.getSecondMatch(/(Version\/)(\d[\d.]+)/,e);return r&&(t.version=r),t}},{test:[/macintosh/i],describe:function(e){var t=i.default.getFirstMatch(/mac os x (\d+(\.?_?\d+)+)/i,e).replace(/[_\s]/g,"."),r=i.default.getMacOSVersionName(t),n={name:s.OS_MAP.MacOS,version:t};return r&&(n.versionName=r),n}},{test:[/(ipod|iphone|ipad)/i],describe:function(e){var t=i.default.getFirstMatch(/os (\d+([_\s]\d+)*) like mac os x/i,e).replace(/[_\s]/g,".");return{name:s.OS_MAP.iOS,version:t}}},{test:function(e){var t=!e.test(/like android/i),r=e.test(/android/i);return t&&r},describe:function(e){var t=i.default.getFirstMatch(/android[\s/-](\d+(\.\d+)*)/i,e),r=i.default.getAndroidVersionName(t),n={name:s.OS_MAP.Android,version:t};return r&&(n.versionName=r),n}},{test:[/(web|hpw)[o0]s/i],describe:function(e){var t=i.default.getFirstMatch(/(?:web|hpw)[o0]s\/(\d+(\.\d+)*)/i,e),r={name:s.OS_MAP.WebOS};return t&&t.length&&(r.version=t),r}},{test:[/blackberry|\bbb\d+/i,/rim\stablet/i],describe:function(e){var t=i.default.getFirstMatch(/rim\stablet\sos\s(\d+(\.\d+)*)/i,e)||i.default.getFirstMatch(/blackberry\d+\/(\d+([_\s]\d+)*)/i,e)||i.default.getFirstMatch(/\bbb(\d+)/i,e);return{name:s.OS_MAP.BlackBerry,version:t}}},{test:[/bada/i],describe:function(e){var t=i.default.getFirstMatch(/bada\/(\d+(\.\d+)*)/i,e);return{name:s.OS_MAP.Bada,version:t}}},{test:[/tizen/i],describe:function(e){var t=i.default.getFirstMatch(/tizen[/\s](\d+(\.\d+)*)/i,e);return{name:s.OS_MAP.Tizen,version:t}}},{test:[/linux/i],describe:function(){return{name:s.OS_MAP.Linux}}},{test:[/CrOS/],describe:function(){return{name:s.OS_MAP.ChromeOS}}},{test:[/PlayStation 4/],describe:function(e){var t=i.default.getFirstMatch(/PlayStation 4[/\s](\d+(\.\d+)*)/i,e);return{name:s.OS_MAP.PlayStation4,version:t}}}];t.default=a,e.exports=t.default},94:function(e,t,r){"use strict";t.__esModule=!0,t.default=void 0;var n,i=(n=r(17))&&n.__esModule?n:{default:n},s=r(18);var a=[{test:[/googlebot/i],describe:function(){return{type:"bot",vendor:"Google"}}},{test:[/huawei/i],describe:function(e){var t=i.default.getFirstMatch(/(can-l01)/i,e)&&"Nova",r={type:s.PLATFORMS_MAP.mobile,vendor:"Huawei"};return t&&(r.model=t),r}},{test:[/nexus\s*(?:7|8|9|10).*/i],describe:function(){return{type:s.PLATFORMS_MAP.tablet,vendor:"Nexus"}}},{test:[/ipad/i],describe:function(){return{type:s.PLATFORMS_MAP.tablet,vendor:"Apple",model:"iPad"}}},{test:[/Macintosh(.*?) FxiOS(.*?)\//],describe:function(){return{type:s.PLATFORMS_MAP.tablet,vendor:"Apple",model:"iPad"}}},{test:[/kftt build/i],describe:function(){return{type:s.PLATFORMS_MAP.tablet,vendor:"Amazon",model:"Kindle Fire HD 7"}}},{test:[/silk/i],describe:function(){return{type:s.PLATFORMS_MAP.tablet,vendor:"Amazon"}}},{test:[/tablet(?! pc)/i],describe:function(){return{type:s.PLATFORMS_MAP.tablet}}},{test:function(e){var t=e.test(/ipod|iphone/i),r=e.test(/like (ipod|iphone)/i);return t&&!r},describe:function(e){var t=i.default.getFirstMatch(/(ipod|iphone)/i,e);return{type:s.PLATFORMS_MAP.mobile,vendor:"Apple",model:t}}},{test:[/nexus\s*[0-6].*/i,/galaxy nexus/i],describe:function(){return{type:s.PLATFORMS_MAP.mobile,vendor:"Nexus"}}},{test:[/[^-]mobi/i],describe:function(){return{type:s.PLATFORMS_MAP.mobile}}},{test:function(e){return"blackberry"===e.getBrowserName(!0)},describe:function(){return{type:s.PLATFORMS_MAP.mobile,vendor:"BlackBerry"}}},{test:function(e){return"bada"===e.getBrowserName(!0)},describe:function(){return{type:s.PLATFORMS_MAP.mobile}}},{test:function(e){return"windows phone"===e.getBrowserName()},describe:function(){return{type:s.PLATFORMS_MAP.mobile,vendor:"Microsoft"}}},{test:function(e){var t=Number(String(e.getOSVersion()).split(".")[0]);return"android"===e.getOSName(!0)&&t>=3},describe:function(){return{type:s.PLATFORMS_MAP.tablet}}},{test:function(e){return"android"===e.getOSName(!0)},describe:function(){return{type:s.PLATFORMS_MAP.mobile}}},{test:function(e){return"macos"===e.getOSName(!0)},describe:function(){return{type:s.PLATFORMS_MAP.desktop,vendor:"Apple"}}},{test:function(e){return"windows"===e.getOSName(!0)},describe:function(){return{type:s.PLATFORMS_MAP.desktop}}},{test:function(e){return"linux"===e.getOSName(!0)},describe:function(){return{type:s.PLATFORMS_MAP.desktop}}},{test:function(e){return"playstation 4"===e.getOSName(!0)},describe:function(){return{type:s.PLATFORMS_MAP.tv}}},{test:function(e){return"roku"===e.getOSName(!0)},describe:function(){return{type:s.PLATFORMS_MAP.tv}}}];t.default=a,e.exports=t.default},95:function(e,t,r){"use strict";t.__esModule=!0,t.default=void 0;var n,i=(n=r(17))&&n.__esModule?n:{default:n},s=r(18);var a=[{test:function(e){return"microsoft edge"===e.getBrowserName(!0)},describe:function(e){if(/\sedg\//i.test(e))return{name:s.ENGINE_MAP.Blink};var t=i.default.getFirstMatch(/edge\/(\d+(\.?_?\d+)+)/i,e);return{name:s.ENGINE_MAP.EdgeHTML,version:t}}},{test:[/trident/i],describe:function(e){var t={name:s.ENGINE_MAP.Trident},r=i.default.getFirstMatch(/trident\/(\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:function(e){return e.test(/presto/i)},describe:function(e){var t={name:s.ENGINE_MAP.Presto},r=i.default.getFirstMatch(/presto\/(\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:function(e){var t=e.test(/gecko/i),r=e.test(/like gecko/i);return t&&!r},describe:function(e){var t={name:s.ENGINE_MAP.Gecko},r=i.default.getFirstMatch(/gecko\/(\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}},{test:[/(apple)?webkit\/537\.36/i],describe:function(){return{name:s.ENGINE_MAP.Blink}}},{test:[/(apple)?webkit/i],describe:function(e){var t={name:s.ENGINE_MAP.WebKit},r=i.default.getFirstMatch(/webkit\/(\d+(\.?_?\d+)+)/i,e);return r&&(t.version=r),t}}];t.default=a,e.exports=t.default}})}));
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/components/Epoque.vue?vue&type=script&lang=js&":
 /*!********************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Epoque.vue?vue&type=script&lang=js& ***!
@@ -98,14 +109,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({name:"Epoque",components:{},data:function data(){return{isPopupOpened:false,mobileBreakpoint:1024,windowWidth:window.innerWidth,isMobile:false,videoId:'rK_TFhRCPPM',width:'100%',height:770,heightMobile:400,allowfullscreen:0,title:"Соберите частички эпохи",title_mob:"Ближе к легенде",search_text:"Искать на Авито",preview:{src:"img/video_pic.png",alt:"Смотреть видео"},icon_play:{width:27,height:29},picture:{src:"img/roof.jpg",alt:"Крыша",width:"1692",height:"970"},texts:[{text:"Большая крыша — ещё одна отличительная черта дома Нирнзее. На ней в разные периоды располагались ресторан, каток, футбольное поле, кинотеатр и павильон для съёмок. А сейчас здесь редакция журнала «Вопросы литературы»."},{text:"Здесь с простыми людьми соседствовали Владимир Маяковский и Михаил Булгаков, московская богема и партийная элита. Это место с неповторимой атмосферой, где можно найти легендарную рукопись, встретить живого барана или сняться в кино."}],epoque_text:"Аутентичные предметы той эпохи — мебель, картины, лампы, статуэтки — можно найти на Авито. Если повезёт, продавцами окажутся как раз жильцы дома Нирнзее.",epoque_text_mob:"Аутентичные предметы — мебель, картины, лампы, статуэтки той эпохи — можно найти на Авито.   "};},computed:{},mounted:function mounted(){},methods:{openVideo:function openVideo(){this.isPopupOpened=true;},closeAllPopups:function closeAllPopups(){this.isPopupOpened=false;}},beforeDestroy:function beforeDestroy(){}});
+/* harmony default export */ __webpack_exports__["default"] = ({name:"Epoque",components:{},data:function data(){return{isPopupOpened:false,mobileBreakpoint:1024,windowWidth:window.innerWidth,isMobile:false,videoId:"rK_TFhRCPPM",width:"100%",height:770,heightMobile:400,allowfullscreen:0,title:"Соберите частички эпохи",title_mob:"Ближе к легенде",search_text:"Искать на Авито",preview:{src:"img/video_pic.png",alt:"Смотреть видео"},icon_play:{width:27,height:29},picture:{src:"img/roof.jpg",alt:"Крыша",width:"1692",height:"970"},texts:[{text:"Большая крыша — ещё одна отличительная черта дома Нирнзее. На ней в разные периоды располагались ресторан, каток, футбольное поле, кинотеатр и павильон для съёмок. А сейчас здесь редакция журнала «Вопросы литературы»."},{text:"Здесь с простыми людьми соседствовали Владимир Маяковский и Михаил Булгаков, московская богема и партийная элита. Это место с неповторимой атмосферой, где можно найти легендарную рукопись, встретить живого барана или сняться в кино."}],epoque_text:"Аутентичные предметы той эпохи — мебель, картины, лампы, статуэтки — можно найти на Авито. Если повезёт, продавцами окажутся как раз жильцы дома Нирнзее.",epoque_text_mob:"Аутентичные предметы — мебель, картины, лампы, статуэтки той эпохи — можно найти на Авито.   "};},computed:{},mounted:function mounted(){},methods:{openVideo:function openVideo(){this.isPopupOpened=true;},closeAllPopups:function closeAllPopups(){this.isPopupOpened=false;}},beforeDestroy:function beforeDestroy(){}});
 
 /***/ }),
 
@@ -118,9 +122,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-function asyncGeneratorStep(gen,resolve,reject,_next,_throw,key,arg){try{var info=gen[key](arg);var value=info.value;}catch(error){reject(error);return;}if(info.done){resolve(value);}else{Promise.resolve(value).then(_next,_throw);}}function _asyncToGenerator(fn){return function(){var self=this,args=arguments;return new Promise(function(resolve,reject){var gen=fn.apply(self,args);function _next(value){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"next",value);}function _throw(err){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"throw",err);}_next(undefined);});};}//
 //
 //
 //
@@ -128,7 +129,10 @@ function asyncGeneratorStep(gen,resolve,reject,_next,_throw,key,arg){try{var inf
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({data:function data(){return{};},computed:{},components:{},methods:{goTo:function goTo(link){var _this=this;return _asyncToGenerator(/*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(){return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:if(!_this.$scrollTo(link)){setTimeout(function(){_this.$scrollTo(link);},500);}case 1:case"end":return _context.stop();}}},_callee);}))();}}});
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({data:function data(){return{};},computed:{},components:{},methods:{}});
 
 /***/ }),
 
@@ -203,12 +207,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({data:function data(){return{menuShown:false,label:{href:"#",city:"Москва",icon_width:"11",icon_height:"9"},logo:{logo_src:"img/Logo_Avito.png",logo_width:141,logo_height:40// logo_width_mob: 64,
 // logo_height_mob: 35,
 },menu:[{name:"Музеи",link:"#museums"},{name:"Подкасты",link:"#podcasts"},{name:"Статьи",link:"#articles"},{name:"О проекте",link:"#about"}]};},computed:{},mounted:function mounted(){window.addEventListener("resize",this.handleResize);this.toggleMobile();},beforeDestroy:function beforeDestroy(){window.removeEventListener("resize",this.handleResize);this.toggleMobile();},methods:{menuToggle:function menuToggle(){this.menuShown=!this.menuShown;document.body.classList.toggle("scroll-off");},menuClose:function menuClose(){if(this.menuShown){this.menuShown=false;document.body.classList.remove("scroll-off");}},toggleMobile:function toggleMobile(){if(window.innerWidth<=this.mobileBreakpoint){this.isMobile=true;}else{this.isMobile=false;}},// handleScroll() {
 //   this.menuClose()
 // },
-handleResize:function handleResize(){this.toggleMobile(),this.menuClose();}},created:function created(){var that=this;document.addEventListener("keyup",function(evt){if(evt.keyCode===27){that.menuClose(true);}});},components:{}});
+handleResize:function handleResize(){this.toggleMobile(),this.menuClose();}},created:function created(){var _this=this;document.addEventListener("keyup",function(evt){if(evt.keyCode===27){_this.menuClose(true);}});},components:{}});
 
 /***/ }),
 
@@ -310,7 +320,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({name:"history",components:{},data:function data(){return{isPopupOpened:false,mobileBreakpoint:1024,windowWidth:window.innerWidth,isMobile:false,videoId:"rK_TFhRCPPM",width:"100%",height:770,heightMobile:400,allowfullscreen:0,title:"История",note_title:"Эпицентр культурной жизни",note_title_mob:"Ближе к легенде",icon_play:{width:54,height:61},star:{src_star:"img/star.png",alt_star:"звезда",width:"180",height:"180"},plan:{src_plan:"img/plan.png",alt_plan:"План",width:"450",height:"318"},house:{src_house:"img/house.png",alt_house:"Дом",width:"864",height:"485"},house_text:"Дом Нирнзее примечателен не только своей высотой и талантливыми жильцами. Во все времена он умудрялся привлекать москвичей необычными активностями. Больше века назад можно было послушать «прожарку» театральных деятелей в подвале дома, а сейчас — познакомиться с живым бараном Толиком, талисманом колоритного грузинского кафе, на первом этаже. Чем ещё компенсировалась скромная площадь квартир? Узнаете из видео. ",house_texts_desktop:[{text:"Дом Нирнзее называли «домом холостяков» — всё из-за небольшой площади квартир. Они особенно привлекали творческих личностей, студентов и одиночек."},{text:"Здесь с простыми людьми соседствовали Владимир Маяковский и Михаил Булгаков, московская богема и партийная элита. Это место с неповторимой атмосферой, где можно найти легендарную рукопись, встретить живого барана или сняться в кино."}],house_text_mob:"Расположенный в двух шагах от Пушкинской площадки дом Нирнзее называли «домом холостяков» — всё из-за небольшой площади квартир. Малогабаритное жильё особенно привлекало творческих личностей и одиночек. ",house_texts_mob:[{text:"Дом Нирнзее свое время он стал настоящим шедевром урбанистики. Как высотка совместила в себе всё, что нужно москвичу? Узнаете из видео! "},{text:"Крыша дома Нирнзее — одна из самых примечательных в Москве. Она использовалась   как ресторан, каток, футбольное поле, кинотеатр    и кинопавильон, а также компенсировала нехватку места во дворе. Сейчас на крыше располагается редакция «Вопросы литературы».  "}]};},computed:{},mounted:function mounted(){},methods:{openVideo:function openVideo(){this.isPopupOpened=true;},closeAllPopups:function closeAllPopups(){this.isPopupOpened=false;}},beforeDestroy:function beforeDestroy(){},created:function created(){var that=this;document.addEventListener("keyup",function(evt){if(evt.keyCode===27){that.closeAllPopups();}});}});
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({name:"history",components:{},data:function data(){return{isPopupOpened:false,mobileBreakpoint:1024,windowWidth:window.innerWidth,isMobile:false,videoId:"rK_TFhRCPPM",width:"100%",height:770,heightMobile:400,allowfullscreen:0,title:"История",note_title:"Эпицентр культурной жизни",note_title_mob:"Ближе к легенде",icon_play:{width:54,height:61},icon_play_big:{width:79,height:90},star:{src_star:"img/star.png",alt_star:"звезда",width:"180",height:"180"},plan:{src_plan:"img/plan.png",alt_plan:"План",width:"450",height:"318"},house:{// src_house: "img/video.jpg",
+src_house:"img/house.png",alt_house:"Дом",width:"864",height:"485"},house_text:"Дом Нирнзее примечателен не только своей высотой и талантливыми жильцами. Во все времена он умудрялся привлекать москвичей необычными активностями. Больше века назад можно было послушать «прожарку» театральных деятелей в подвале дома, а сейчас — познакомиться с живым бараном Толиком, талисманом колоритного грузинского кафе, на первом этаже. Чем ещё компенсировалась скромная площадь квартир? Узнаете из видео. ",house_texts_desktop:[{text:"Дом Нирнзее называли «домом холостяков» — всё из-за небольшой площади квартир. Они особенно привлекали творческих личностей, студентов и одиночек."},{text:"Здесь с простыми людьми соседствовали Владимир Маяковский и Михаил Булгаков, московская богема и партийная элита. Это место с неповторимой атмосферой, где можно найти легендарную рукопись, встретить живого барана или сняться в кино."}],house_text_mob:"Расположенный в двух шагах от Пушкинской площадки дом Нирнзее называли «домом холостяков» — всё из-за небольшой площади квартир. Малогабаритное жильё особенно привлекало творческих личностей и одиночек. ",house_texts_mob:[{text:"Дом Нирнзее свое время он стал настоящим шедевром урбанистики. Как высотка совместила в себе всё, что нужно москвичу? Узнаете из видео! "},{text:"Крыша дома Нирнзее — одна из самых примечательных в Москве. Она использовалась   как ресторан, каток, футбольное поле, кинотеатр    и кинопавильон, а также компенсировала нехватку места во дворе. Сейчас на крыше располагается редакция «Вопросы литературы».  "}]};},computed:{},mounted:function mounted(){},methods:{openVideo:function openVideo(){this.isPopupOpened=true;},closeAllPopups:function closeAllPopups(){this.isPopupOpened=false;}},beforeDestroy:function beforeDestroy(){},created:function created(){var that=this;document.addEventListener("keyup",function(evt){if(evt.keyCode===27){that.closeAllPopups();}});}});
 
 /***/ }),
 
@@ -380,28 +398,7 @@ var _name$components$data;function _defineProperty(obj,key,value){if(key in obj)
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = (_name$components$data={name:"Introduction",components:{},data:function data(){return{title:"«Дом холостяков»",note_text:"Построен Эрнстом-Рихардом Нирнзее в 1913 году.",SliderOptions:{slidesPerView:1,spaceBetween:20,mousewheel:true,pagination:{el:".swiper-pagination",clickable:true}},star:{src:"img/star.png",alt:"звезда",width:"180",height:"180"},star_rhomb:{src:"img/star_rhomb.png",alt:"звезда",width:"140",height:"140"},scheme:{src:"img/scheme.png",alt:"чертёж",width:"486",height:"304"},painting:{src:"img/painting.png",alt:"картина",width:"864",height:"488"}};},computed:{},mounted:function mounted(){},methods:{}},_defineProperty(_name$components$data,"mounted",function mounted(){}),_defineProperty(_name$components$data,"beforeDestroy",function beforeDestroy(){}),_name$components$data);
+/* harmony default export */ __webpack_exports__["default"] = (_name$components$data={name:"Introduction",components:{},data:function data(){return{title:"«Дом холостяков»",note_text:"Построен Эрнстом-Рихардом Нирнзее в 1913 году.",SliderOptions:{slidesPerView:1,spaceBetween:20,mousewheel:true,pagination:{el:".swiper-pagination",clickable:true}},star:{src:"img/star.png",alt:"звезда"},star_rhomb:{src:"img/star_rhomb.png",alt:"звезда"},painting:{src:"img/painting_1.png",alt:"картина"},scheme:{src:"img/scheme.png",alt:"чертёж"},painting_mob:{src:"img/painting.png",alt:"картина"}};},computed:{},mounted:function mounted(){},methods:{}},_defineProperty(_name$components$data,"mounted",function mounted(){}),_defineProperty(_name$components$data,"beforeDestroy",function beforeDestroy(){}),_name$components$data);
 
 /***/ }),
 
@@ -421,11 +418,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Theater_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Theater.vue */ "./src/components/Theater.vue");
 /* harmony import */ var _Neighbours_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Neighbours.vue */ "./src/components/Neighbours.vue");
 /* harmony import */ var _Skyscraper_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Skyscraper.vue */ "./src/components/Skyscraper.vue");
-/* harmony import */ var _Next_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Next.vue */ "./src/components/Next.vue");
-/* harmony import */ var vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vue-awesome-swiper */ "./node_modules/vue-awesome-swiper/dist/vue-awesome-swiper.js");
-/* harmony import */ var vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var swiper_css_swiper_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! swiper/css/swiper.css */ "./node_modules/swiper/css/swiper.css");
-/* harmony import */ var swiper_css_swiper_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(swiper_css_swiper_css__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _Persons_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Persons.vue */ "./src/components/Persons.vue");
+/* harmony import */ var _Next_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Next.vue */ "./src/components/Next.vue");
+/* harmony import */ var _Statue_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Statue.vue */ "./src/components/Statue.vue");
+/* harmony import */ var vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vue-awesome-swiper */ "./node_modules/vue-awesome-swiper/dist/vue-awesome-swiper.js");
+/* harmony import */ var vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var swiper_css_swiper_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! swiper/css/swiper.css */ "./node_modules/swiper/css/swiper.css");
+/* harmony import */ var swiper_css_swiper_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(swiper_css_swiper_css__WEBPACK_IMPORTED_MODULE_11__);
 var _name$components$data;function _defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}//
 //
 //
@@ -473,7 +472,14 @@ var _name$components$data;function _defineProperty(obj,key,value){if(key in obj)
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = (_name$components$data={name:"main-page",components:{Swiper:vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_8__["Swiper"],SwiperSlide:vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_8__["SwiperSlide"],History:_History_vue__WEBPACK_IMPORTED_MODULE_0__["default"],Epoque:_Epoque_vue__WEBPACK_IMPORTED_MODULE_1__["default"],Introduction:_Introduction__WEBPACK_IMPORTED_MODULE_2__["default"],Theater:_Theater_vue__WEBPACK_IMPORTED_MODULE_4__["default"],Neighbours:_Neighbours_vue__WEBPACK_IMPORTED_MODULE_5__["default"],Popularity:_Popularity__WEBPACK_IMPORTED_MODULE_3__["default"],Skyscraper:_Skyscraper_vue__WEBPACK_IMPORTED_MODULE_6__["default"],Next:_Next_vue__WEBPACK_IMPORTED_MODULE_7__["default"]},data:function data(){return{title:"«Дом холостяков»",note_text:"Построен Эрнстом-Рихардом Нирнзее в 1913 году.",SliderOptions:{slidesPerView:1,spaceBetween:20,mousewheel:true,pagination:{el:".swiper-pagination",clickable:true}},star:{src:"img/star.png",alt:"звезда",width:"180",height:"180"},scheme:{src:"img/scheme.png",alt:"чертёж",width:"486",height:"304"},painting:{src:"img/painting.png",alt:"картина",width:"864",height:"488"}};},computed:{},mounted:function mounted(){},methods:{}},_defineProperty(_name$components$data,"mounted",function mounted(){}),_defineProperty(_name$components$data,"beforeDestroy",function beforeDestroy(){}),_name$components$data);
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = (_name$components$data={name:"main-page",components:{Swiper:vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_10__["Swiper"],SwiperSlide:vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_10__["SwiperSlide"],History:_History_vue__WEBPACK_IMPORTED_MODULE_0__["default"],Epoque:_Epoque_vue__WEBPACK_IMPORTED_MODULE_1__["default"],Introduction:_Introduction__WEBPACK_IMPORTED_MODULE_2__["default"],Theater:_Theater_vue__WEBPACK_IMPORTED_MODULE_4__["default"],Neighbours:_Neighbours_vue__WEBPACK_IMPORTED_MODULE_5__["default"],Popularity:_Popularity__WEBPACK_IMPORTED_MODULE_3__["default"],Skyscraper:_Skyscraper_vue__WEBPACK_IMPORTED_MODULE_6__["default"],Next:_Next_vue__WEBPACK_IMPORTED_MODULE_8__["default"],Persons:_Persons_vue__WEBPACK_IMPORTED_MODULE_7__["default"],Statue:_Statue_vue__WEBPACK_IMPORTED_MODULE_9__["default"]},data:function data(){return{SliderOptions:{slidesPerView:1,spaceBetween:0,mousewheel:true,pagination:{el:".swiper-pagination",clickable:true}}};},computed:{},mounted:function mounted(){},methods:{}},_defineProperty(_name$components$data,"mounted",function mounted(){}),_defineProperty(_name$components$data,"beforeDestroy",function beforeDestroy(){}),_name$components$data);
 
 /***/ }),
 
@@ -563,6 +569,88 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({name:"Next",components:{},data:function data(){return{title:"Дом на Котельнической",subtitle:"Изучить поближе",house:{src:"img/kotelnicheskaya.png",alt:"Дом на котельнической",width:320,height:244}};},computed:{},mounted:function mounted(){},methods:{},beforeDestroy:function beforeDestroy(){}});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/components/Persons.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Persons.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({name:"Persons",components:{},data:function data(){return{title:"Звездное место",title_desktop:"Важнейшее из искусств",search_text:"Искать на Авито",search_text_desktop:"Попасть в зазеркалье",main_text:"На крыше дома Нирнзее снимались эпизоды фильмов «Служебный роман», «Курьер» и «Сказки... Сказки… Сказки старого Арбата».",persons:[{name:"М. Булгаков",src:"img/bulgakov.jpg",alt:"Булгаков",width:"200",height:"280","class":"person--even",title:"Мастер и Маргарита",text:"В этом доме Михаил Булгаков встретился с будущей женой Еленой Шиловской, которая стала прототипом Маргариты."},{name:"В. Маяковский",src:"img/mayakovski.jpg",alt:"Маяковский",width:"200",height:"280","class":"person--odd person--last",title:"Послания к великим",title_desktop:"Осколки чувств",text:"В 90-х рабочие случайно разбили зеркало в парадной и нашли за ним записку от Софьи Шамардиной к Владимиру Маяковскому.",quote:"«Люблю зеркало. Хочу сегодня быть красивой. Я очень люблю тебя, Владимир Маяковский. Стихи твои  и тебя. Сонка»",text_additional:"В поисках особенных зеркал досоветского и раннесоветского периодов загляните на Авито.",type:"last"}]};},computed:{},mounted:function mounted(){},methods:{},beforeDestroy:function beforeDestroy(){}});
 
 /***/ }),
 
@@ -676,7 +764,63 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({name:"Popularity",components:{},data:function data(){return{title:"Звездное место",search_text:"Искать на Авито",main_text:"На крыше дома Нирнзее снимались эпизоды фильмов «Служебный роман», «Курьер» и «Сказки... Сказки… Сказки старого Арбата».",persons:[{name:"К. Есенин",src:"img/esenin.jpg",alt:"Есенин",width:"200",height:"280","class":"person--odd",title:"Футбол",text:"Константин Есенин, сын С. Есенина, жил недалеко — в Брюсовом переулке. Будущий спортивный журналист ещё ребёнком прибегал на крышу дома Нирнзее, чтобы погонять мяч с друзьями.",quote:"«...Особенно любил играть на крыше десятиэтажного дома в Большом Гнездниковском переулке... В начале же 30-х на этой самой крыше царствовал футбол. Это был великий, великий, великий, как теперь иногда говорят, футбол»."},{name:"М. Булгаков",src:"img/bulgakov.jpg",alt:"Булгаков",width:"200",height:"280","class":"person--even",title:"Мастер и Маргарита",text:"В этом доме Михаил Булгаков встретился с будущей женой Еленой Шиловской, которая стала прототипом Маргариты."},{name:"В. Маяковский",src:"img/mayakovski.jpg",alt:"Маяковский",width:"200",height:"280","class":"person--odd",title:"Послания к великим",text:"В 90-х рабочие случайно разбили зеркало в парадной и нашли за ним записку от Софьи Шамардиной к Владимиру Маяковскому.",quote:"«Люблю зеркало. Хочу сегодня быть красивой. Я очень люблю тебя, Владимир Маяковский. Стихи твои  и тебя. Сонка»",text_additional:"В поисках особенных зеркал досоветского и раннесоветского периодов загляните на Авито.",type:"last"}],poster_1:{src:"img/poster_1.jpg",alt:"сказки старого арбата",width:125,height:190},poster_2:{src:"img/poster_2.jpg",alt:"курьер",width:125,height:179},poster_3:{src:"img/poster_3.jpg",alt:"служебный роман",width:125,height:179}};},computed:{},mounted:function mounted(){},methods:{},beforeDestroy:function beforeDestroy(){}});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({name:"Popularity",components:{},data:function data(){return{title:"Звездное место",title_desktop:"Важнейшее из искусств",search_text:"Искать на Авито",main_text:"На крыше дома Нирнзее снимались эпизоды фильмов «Служебный роман», «Курьер» и «Сказки... Сказки… Сказки старого Арбата».",persons:[{name:"К. Есенин",src:"img/esenin.jpg",alt:"Есенин",width:"200",height:"280","class":"person--odd",title:"Футбол",text_desktop:"Константин Есенин, сын поэта Сергея Есенина, жил недалеко — в Брюсовом переулке. Будущий спортивный журналист и эксперт по футболу ещё ребёнком прибегал на крышу дома Нирнзее, чтобы погонять мяч с друзьями.",quote_desktop:"«...Особенно любил играть на крыше десятиэтажного дома в Большом Гнездниковском переулке. Это был самый высокий дом в Москве. Когда-то во времена НЭПа там была „крыша-сад“: что-то вроде ресторана с варьете. В начале же 30-х на этой самой крыше царствовал футбол. Это был великий, великий, великий, как теперь иногда говорят, футбол. Разыгрывались никем не регулируемые и регламентируемые чемпионаты школ, переулков, дворов».",text:"Константин Есенин, сын С. Есенина, жил недалеко — в Брюсовом переулке. Будущий спортивный журналист ещё ребёнком прибегал на крышу дома Нирнзее, чтобы погонять мяч с друзьями.",quote:"«...Особенно любил играть на крыше десятиэтажного дома в Большом Гнездниковском переулке... В начале же 30-х на этой самой крыше царствовал футбол. Это был великий, великий, великий, как теперь иногда говорят, футбол»."},{name:"М. Булгаков",src:"img/bulgakov.jpg",alt:"Булгаков",width:"200",height:"280","class":"person--even",title:"Мастер и Маргарита",text:"В этом доме Михаил Булгаков встретился с будущей женой Еленой Шиловской, которая стала прототипом Маргариты."},{name:"В. Маяковский",src:"img/mayakovski.jpg",alt:"Маяковский",width:"200",height:"280","class":"person--odd",title:"Послания к великим",text:"В 90-х рабочие случайно разбили зеркало в парадной и нашли за ним записку от Софьи Шамардиной к Владимиру Маяковскому.",quote:"«Люблю зеркало. Хочу сегодня быть красивой. Я очень люблю тебя, Владимир Маяковский. Стихи твои  и тебя. Сонка»",text_additional:"В поисках особенных зеркал досоветского и раннесоветского периодов загляните на Авито.",type:"last"}],poster_1:{src:"img/poster_1.jpg",alt:"сказки старого арбата",width:125,height:190},poster_2:{src:"img/poster_2.jpg",alt:"курьер",width:125,height:179},poster_3:{src:"img/poster_3.jpg",alt:"служебный роман",width:125,height:179}};},computed:{},mounted:function mounted(){},methods:{},beforeDestroy:function beforeDestroy(){}});
 
 /***/ }),
 
@@ -809,6 +953,35 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/components/Statue.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Statue.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({name:"Epoque",components:{},data:function data(){return{text:"Если присмотреться, можно прочитать на этой фотографии 1921–1924 годов вывеску на парапете 10 этажа: «Ресторан. Кабаре»..",picture:{src:"img/statue-round.png",alt:"Крыша"},statue:{src:"img/statue_1920.jpg",alt:"Статуя"}};},computed:{},methods:{},mounted:function mounted(){},beforeDestroy:function beforeDestroy(){}});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/components/Theater.vue?vue&type=script&lang=js&":
 /*!*********************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Theater.vue?vue&type=script&lang=js& ***!
@@ -882,24 +1055,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({name:"Epoque",components:{},data:function data(){return{title:"Театр в подвале",texts:[{text:"Даже на цокольном этаже дома всегда кипела жизнь. Когда-то здесь располагалась «Летучая мышь» — театр миниатюр Серебряного века под руководством Никиты Балиева."},{text:"Эта камерная площадка в основном была рассчитана на актёров МХТ и их друзей. Здесь устраивали капустники, шутили и разыгрывали пародийные представления в свободное от основного репертуара время. "},{text:"Сегодня подвал дома по-прежнему занимает театр: здесь находится учебная сцена ГИТИСа."}],performance:{src:"img/bat.jpg",alt:"Спектакль летучая мышь",width:280,height:360},director:{src:"img/baliev.jpg",alt:"Никита Балиев",width:280,height:390},scene:{title:"Учебная сцена ГИТИСа",text:"«Пародийные представления, начинавшиеся после полуночи, с лихим озорством опрокидывали то, что днём было окружено благоговейностью и почтением, — здесь кувырком летели авторитеты, отданные на кощунственно-весёлое поругание», – Ирина Биккулова, «Феномен русской культуры Серебряного века».",src:"img/concert.jpg",alt:"Учебная сцена ГИТИСа",width:310,height:129}};},computed:{},mounted:function mounted(){},methods:{},beforeDestroy:function beforeDestroy(){}});
+/* harmony default export */ __webpack_exports__["default"] = ({name:"Epoque",components:{},data:function data(){return{title:"Театр в подвале",texts:[{text:"Даже на цокольном этаже дома всегда кипела жизнь. Когда-то здесь располагалась «Летучая мышь» — театр миниатюр Серебряного века под руководством Никиты Балиева."},{text:"Эта камерная площадка в основном была рассчитана на актёров МХТ и их друзей. Здесь устраивали капустники, шутили и разыгрывали пародийные представления в свободное от основного репертуара время. "},{text:"Сегодня подвал дома по-прежнему занимает театр: здесь находится учебная сцена ГИТИСа."}],performance:{src:"img/bat.jpg",alt:"Спектакль летучая мышь"},director:{src:"img/baliev.jpg",alt:"Никита Балиев",text:"Н. Балиев"},scene:{title:"Учебная сцена ГИТИСа",text:"«Пародийные представления, начинавшиеся после полуночи, с лихим озорством опрокидывали то, что днём было окружено благоговейностью и почтением, — здесь кувырком летели авторитеты, отданные на кощунственно-весёлое поругание», – Ирина Биккулова, «Феномен русской культуры Серебряного века».",src:"img/concert.jpg",alt:"Учебная сцена ГИТИСа"}};},computed:{},methods:{},mounted:function mounted(){},beforeDestroy:function beforeDestroy(){}});
 
 /***/ }),
 
@@ -12654,7 +12810,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("section", { staticClass: "epoque" }, [
     !_vm.$root.isMobile
-      ? _c("div", { staticClass: "epoque__wrapper" }, [
+      ? _c("div", { staticClass: "epoque__wrapper container" }, [
           _c("div", { staticClass: "epoque__inner" }, [
             _c(
               "div",
@@ -12666,19 +12822,16 @@ var render = function() {
                 _vm._v(" "),
                 _c("h3", [_vm._v(_vm._s(_vm.title))]),
                 _vm._v(" "),
-                _c("p", [_vm._v(_vm._s(_vm.epoque_text))])
+                _c("p", [_vm._v(_vm._s(_vm.epoque_text))]),
+                _vm._v(" "),
+                _c("div", { staticClass: "epoque__things" })
               ],
               2
             ),
             _vm._v(" "),
             _c("div", { staticClass: "epoque__picture" }, [
               _c("img", {
-                attrs: {
-                  src: _vm.picture.src,
-                  alt: _vm.picture.alt,
-                  width: _vm.picture.width,
-                  height: _vm.picture.height
-                }
+                attrs: { src: _vm.picture.src, alt: _vm.picture.alt }
               })
             ])
           ])
@@ -12841,14 +12994,21 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return !_vm.$root.isMobile
-    ? _c("footer", { staticClass: "footer" }, [
-        _c("div", { staticClass: "container" }, [
-          _vm._v("\n    Дальше только скролл\n  ")
-        ])
-      ])
+    ? _c("footer", { staticClass: "footer" }, [_vm._m(0)])
     : _vm._e()
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "footer__inner" }, [
+        _c("span", [_vm._v("дальше только скролл")])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -12875,24 +13035,32 @@ var render = function() {
     { staticClass: "header", style: { top: _vm.$root.header_top + "px" } },
     [
       _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "header__label" }, [
-          _c("a", { attrs: { href: _vm.label.href } }, [
-            _c(
-              "svg",
-              {
-                staticClass: "icon",
-                attrs: {
-                  width: _vm.label.icon_width,
-                  height: _vm.label.icon_height,
-                  "aria-hidden": "true"
-                }
-              },
-              [_c("use", { attrs: { "xlink:href": "#arrow_up" } })]
-            ),
-            _vm._v(" "),
-            _c("span", [_vm._v(_vm._s(_vm.label.city))])
-          ])
-        ]),
+        _vm.$root.width >= 1024
+          ? _c("div", { staticClass: "header__label" }, [
+              _c("a", { attrs: { href: _vm.label.href } })
+            ])
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.$root.width <= 1023
+          ? _c("div", { staticClass: "header__label" }, [
+              _c("a", { attrs: { href: _vm.label.href } }, [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "icon",
+                    attrs: {
+                      width: _vm.label.icon_width,
+                      height: _vm.label.icon_height,
+                      "aria-hidden": "true"
+                    }
+                  },
+                  [_c("use", { attrs: { "xlink:href": "#arrow_up" } })]
+                ),
+                _vm._v(" "),
+                _c("span", [_vm._v(_vm._s(_vm.label.city))])
+              ])
+            ])
+          : _vm._e(),
         _vm._v(" "),
         _c("div", { staticClass: "header__top" }, [
           _c("div", { staticClass: "header__logo" }, [
@@ -12916,7 +13084,7 @@ var render = function() {
             )
           ]),
           _vm._v(" "),
-          !_vm.$root.isMobile
+          !_vm.$root.isTablet
             ? _c(
                 "ul",
                 { staticClass: "header__menu" },
@@ -12936,23 +13104,25 @@ var render = function() {
             : _vm._e()
         ]),
         _vm._v(" "),
-        _c(
-          "button",
-          {
-            staticClass: "button button--toggle",
-            class: { close: !_vm.menuShown },
-            on: {
-              click: function($event) {
-                return _vm.menuToggle()
-              }
-            }
-          },
-          [_c("span")]
-        )
+        _vm.$root.isTablet
+          ? _c(
+              "button",
+              {
+                staticClass: "button button--toggle",
+                class: { close: !_vm.menuShown },
+                on: {
+                  click: function($event) {
+                    return _vm.menuToggle()
+                  }
+                }
+              },
+              [_c("span")]
+            )
+          : _vm._e()
       ]),
       _vm._v(" "),
       _c("transition", { attrs: { name: "fade" } }, [
-        _vm.$root.isMobile
+        _vm.$root.isTablet
           ? _c(
               "div",
               {
@@ -12977,31 +13147,33 @@ var render = function() {
                 }),
                 _vm._v(" "),
                 _c("div", { staticClass: "header__mobile" }, [
-                  _c(
-                    "ul",
-                    { staticClass: "header__menu" },
-                    _vm._l(_vm.menu, function(menu, i) {
-                      return _c(
-                        "li",
-                        { key: i, staticClass: "header__menu-item" },
-                        [
-                          _c(
-                            "a",
-                            {
-                              attrs: { href: menu.link },
-                              on: {
-                                click: function($event) {
-                                  return _vm.menuClose()
+                  _c("div", { staticClass: "container" }, [
+                    _c(
+                      "ul",
+                      { staticClass: "header__menu" },
+                      _vm._l(_vm.menu, function(menu, i) {
+                        return _c(
+                          "li",
+                          { key: i, staticClass: "header__menu-item" },
+                          [
+                            _c(
+                              "a",
+                              {
+                                attrs: { href: menu.link },
+                                on: {
+                                  click: function($event) {
+                                    return _vm.menuClose()
+                                  }
                                 }
-                              }
-                            },
-                            [_vm._v(" " + _vm._s(menu.name))]
-                          )
-                        ]
-                      )
-                    }),
-                    0
-                  )
+                              },
+                              [_vm._v(" " + _vm._s(menu.name))]
+                            )
+                          ]
+                        )
+                      }),
+                      0
+                    )
+                  ])
                 ])
               ]
             )
@@ -13033,71 +13205,88 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", { staticClass: "history" }, [
-    !_vm.$root.isMobile
-      ? _c("div", { staticClass: "history__wrapper" }, [
-          _c("h2", { staticClass: "history__title" }, [
-            _vm._v(_vm._s(_vm.title))
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "history__inner" }, [
-            _c("div", { staticClass: "history__info" }, [
-              _c(
-                "div",
-                { staticClass: "history__texts" },
-                _vm._l(_vm.house_texts_desktop, function(text, i) {
-                  return _c("p", { key: i }, [
-                    _vm._v(
-                      "\n            " + _vm._s(text.text) + "\n          "
-                    )
-                  ])
-                }),
-                0
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "history__plan" }, [
-                _c("img", {
-                  attrs: { src: _vm.plan.src_plan, alt: _vm.plan.alt_plan }
-                })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "history__details" }, [
-              _c("div", { staticClass: "history__video" }, [
-                _c("img", {
-                  attrs: { src: _vm.house.src_house, alt: _vm.house.alt_house }
-                })
+  return _c(
+    "section",
+    { staticClass: "history" },
+    [
+      !_vm.$root.isMobile
+        ? _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "history__wrapper" }, [
+              _c("h2", { staticClass: "history__title" }, [
+                _vm._v(_vm._s(_vm.title))
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "history__house-text" }, [
-                _c("h3", [_vm._v(_vm._s(_vm.note_title))]),
+              _c("div", { staticClass: "history__inner" }, [
+                _c("div", { staticClass: "history__info" }, [
+                  _c(
+                    "div",
+                    { staticClass: "history__texts" },
+                    _vm._l(_vm.house_texts_desktop, function(text, i) {
+                      return _c("p", { key: i }, [
+                        _vm._v(
+                          "\n              " +
+                            _vm._s(text.text) +
+                            "\n            "
+                        )
+                      ])
+                    }),
+                    0
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "history__plan" }, [
+                    _c("img", {
+                      attrs: { src: _vm.plan.src_plan, alt: _vm.plan.alt_plan }
+                    })
+                  ])
+                ]),
                 _vm._v(" "),
-                _c("p", [_vm._v(_vm._s(_vm.house_text))])
-              ])
-            ])
-          ])
-        ])
-      : _c("div", { staticClass: "history__wrapper" }, [
-          _c("div", { staticClass: "history__inner" }, [
-            _c("div", { staticClass: "container" }, [
-              _c("div", { staticClass: "history__info" }, [
-                _c("div", { staticClass: "history__texts" }, [
-                  _c("p", [
-                    _vm._v(
-                      "\n              " +
-                        _vm._s(_vm.house_text_mob) +
-                        "\n            "
-                    )
+                _c("div", { staticClass: "history__details" }, [
+                  _c("div", { staticClass: "history__video" }, [
+                    _c("img", {
+                      attrs: {
+                        src: _vm.house.src_house,
+                        alt: _vm.house.alt_house
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("button", {
+                      staticClass: "button button--play button--play-big",
+                      attrs: { type: "button" },
+                      on: {
+                        click: function($event) {
+                          return _vm.openVideo()
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "history__house-text" }, [
+                    _c("h3", [_vm._v(_vm._s(_vm.note_title))]),
+                    _vm._v(" "),
+                    _c("p", [_vm._v(_vm._s(_vm.house_text))])
                   ])
                 ])
               ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "history__details" }, [
-              _c(
-                "div",
-                { staticClass: "history__video" },
-                [
+            ])
+          ])
+        : _c("div", { staticClass: "history__wrapper" }, [
+            _c("div", { staticClass: "history__inner" }, [
+              _c("div", { staticClass: "container" }, [
+                _c("div", { staticClass: "history__info" }, [
+                  _c("div", { staticClass: "history__texts" }, [
+                    _c("p", [
+                      _vm._v(
+                        "\n              " +
+                          _vm._s(_vm.house_text_mob) +
+                          "\n            "
+                      )
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "history__details" }, [
+                _c("div", { staticClass: "history__video" }, [
                   _c("img", {
                     attrs: {
                       src: _vm.house.src_house,
@@ -13130,80 +13319,80 @@ var render = function() {
                         [_c("use", { attrs: { "xlink:href": "#play-big" } })]
                       )
                     ]
-                  ),
-                  _vm._v(" "),
-                  _vm.isPopupOpened
-                    ? [
-                        _c("div", { staticClass: "modal" }, [
-                          _c(
-                            "div",
-                            {
-                              directives: [
-                                {
-                                  name: "show",
-                                  rawName: "v-show",
-                                  value: _vm.isPopupOpened,
-                                  expression: "isPopupOpened"
-                                }
-                              ],
-                              staticClass: "modal__overlay",
-                              on: {
-                                click: function($event) {
-                                  return _vm.closeAllPopups()
-                                }
-                              }
-                            },
-                            [
-                              _c(
-                                "div",
-                                { staticClass: "modal__body" },
-                                [
-                                  _c("youtube", {
-                                    attrs: {
-                                      "video-id": _vm.videoId,
-                                      "player-width": _vm.width,
-                                      "player-height": !_vm.$root.isMobile
-                                        ? _vm.height
-                                        : _vm.heightMobile,
-                                      allowfullscreen: _vm.allowfullscreen
-                                    }
-                                  })
-                                ],
-                                1
-                              )
-                            ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "container" }, [
+                  _c(
+                    "div",
+                    { staticClass: "history__house-text" },
+                    [
+                      _c("h3", [_vm._v(_vm._s(_vm.note_title_mob))]),
+                      _vm._v(" "),
+                      _vm._l(_vm.house_texts_mob, function(text, index) {
+                        return _c("p", { key: index }, [
+                          _vm._v(
+                            "\n              " +
+                              _vm._s(text.text) +
+                              "\n            "
                           )
                         ])
-                      ]
-                    : _vm._e()
-                ],
-                2
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "container" }, [
-                _c(
-                  "div",
-                  { staticClass: "history__house-text" },
-                  [
-                    _c("h3", [_vm._v(_vm._s(_vm.note_title_mob))]),
-                    _vm._v(" "),
-                    _vm._l(_vm.house_texts_mob, function(text, index) {
-                      return _c("p", { key: index }, [
-                        _vm._v(
-                          "\n              " +
-                            _vm._s(text.text) +
-                            "\n            "
-                        )
-                      ])
-                    })
-                  ],
-                  2
-                )
+                      })
+                    ],
+                    2
+                  )
+                ])
               ])
             ])
-          ])
-        ])
-  ])
+          ]),
+      _vm._v(" "),
+      _vm.isPopupOpened
+        ? [
+            _c("div", { staticClass: "modal" }, [
+              _c(
+                "div",
+                {
+                  directives: [
+                    {
+                      name: "show",
+                      rawName: "v-show",
+                      value: _vm.isPopupOpened,
+                      expression: "isPopupOpened"
+                    }
+                  ],
+                  staticClass: "modal__overlay",
+                  on: {
+                    click: function($event) {
+                      return _vm.closeAllPopups()
+                    }
+                  }
+                },
+                [
+                  _c(
+                    "div",
+                    { staticClass: "modal__body" },
+                    [
+                      _c("youtube", {
+                        attrs: {
+                          "video-id": _vm.videoId,
+                          "player-width": _vm.width,
+                          "player-height": !_vm.$root.isMobile
+                            ? _vm.height
+                            : _vm.heightMobile,
+                          allowfullscreen: _vm.allowfullscreen
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ]
+              )
+            ])
+          ]
+        : _vm._e()
+    ],
+    2
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -13229,7 +13418,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("section", { staticClass: "introduction" }, [
     !_vm.$root.isMobile
-      ? _c("div", { staticClass: "introduction__wrapper" }, [
+      ? _c("div", { staticClass: "introduction__wrapper container" }, [
           _c("div", { staticClass: "introduction__inner" }, [
             _c("div", { staticClass: "introduction__info" }, [
               _c("h1", { staticClass: "introduction__title" }, [
@@ -13237,24 +13426,12 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "introduction__star" }, [
-                _c("img", {
-                  attrs: {
-                    src: _vm.star.src,
-                    alt: _vm.star.alt,
-                    width: _vm.star.width,
-                    height: _vm.star.height
-                  }
-                })
+                _c("img", { attrs: { src: _vm.star.src, alt: _vm.star.alt } })
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "introduction__star-rhomb" }, [
                 _c("img", {
-                  attrs: {
-                    src: _vm.star_rhomb.src,
-                    alt: _vm.star_rhomb.alt,
-                    width: _vm.star_rhomb.width,
-                    height: _vm.star_rhomb.height
-                  }
+                  attrs: { src: _vm.star_rhomb.src, alt: _vm.star_rhomb.alt }
                 })
               ]),
               _vm._v(" "),
@@ -13264,25 +13441,9 @@ var render = function() {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "introduction__pictures" }, [
-              _c("div", { staticClass: "introduction__scheme" }, [
-                _c("img", {
-                  attrs: {
-                    src: _vm.scheme.src,
-                    alt: _vm.scheme.alt,
-                    width: _vm.scheme.width,
-                    height: _vm.scheme.height
-                  }
-                })
-              ]),
-              _vm._v(" "),
               _c("div", { staticClass: "introduction__painting" }, [
                 _c("img", {
-                  attrs: {
-                    src: _vm.painting.src,
-                    alt: _vm.painting.alt,
-                    width: _vm.painting.width,
-                    height: _vm.painting.height
-                  }
+                  attrs: { src: _vm.painting.src, alt: _vm.painting.alt }
                 })
               ])
             ])
@@ -13297,27 +13458,20 @@ var render = function() {
             _c("div", { staticClass: "introduction__pictures" }, [
               _c("div", { staticClass: "introduction__scheme" }, [
                 _c("img", {
-                  attrs: {
-                    src: _vm.scheme.src,
-                    alt: _vm.scheme.alt,
-                    width: _vm.scheme.width,
-                    height: _vm.scheme.height
-                  }
+                  attrs: { src: _vm.scheme.src, alt: _vm.scheme.alt }
                 })
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "introduction__painting" }, [
                 _c("img", {
                   attrs: {
-                    src: _vm.painting.src,
-                    alt: _vm.painting.alt,
-                    width: _vm.painting.width,
-                    height: _vm.painting.height
+                    src: _vm.painting_mob.src,
+                    alt: _vm.painting_mob.alt
                   }
                 })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "introduction__note " }, [
+              _c("div", { staticClass: "introduction__note" }, [
                 _c("p", [_vm._v(_vm._s(_vm.note_text))])
               ])
             ])
@@ -13351,7 +13505,6 @@ var render = function() {
     !_vm.$root.isMobile
       ? _c(
           "div",
-          { staticClass: "container" },
           [
             _c(
               "swiper",
@@ -13365,17 +13518,27 @@ var render = function() {
                 _vm._v(" "),
                 _c("swiper-slide", [_c("History")], 1),
                 _vm._v(" "),
-                _c("swiper-slide", [_c("Epoque")], 1),
+                _c(
+                  "swiper-slide",
+                  { staticClass: "epoque-slide" },
+                  [_c("Epoque")],
+                  1
+                ),
                 _vm._v(" "),
-                _c("swiper-slide", [_c("Theater")], 1),
+                _c("swiper-slide", { staticClass: "roof-slide" }),
+                _vm._v(" "),
+                _c(
+                  "swiper-slide",
+                  { staticClass: "theater-slide" },
+                  [_c("Theater")],
+                  1
+                ),
                 _vm._v(" "),
                 _c("swiper-slide", [_c("Popularity")], 1),
                 _vm._v(" "),
-                _c("swiper-slide", [_c("Neighbours")], 1),
+                _c("swiper-slide", [_c("Persons")], 1),
                 _vm._v(" "),
-                _c("swiper-slide", [_c("Skyscraper")], 1),
-                _vm._v(" "),
-                _c("swiper-slide", [_c("Next")], 1)
+                _c("swiper-slide", [_c("Statue")], 1)
               ],
               1
             )
@@ -13429,7 +13592,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("section", { staticClass: "neighbour" }, [
     !_vm.$root.isMobile
-      ? _c("div", { staticClass: "neighbour__inner" }, [
+      ? _c("div", { staticClass: "neighbour__inner container" }, [
           _c("div", { staticClass: "neighbour__main-info" })
         ])
       : _c("div", { staticClass: "neighbour__inner" }, [
@@ -13519,7 +13682,9 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("section", { staticClass: "next" }, [
     !_vm.$root.isMobile
-      ? _c("div", { staticClass: "next__inner" }, [_vm._v("\n    sdg\n  ")])
+      ? _c("div", { staticClass: "next__inner container" }, [
+          _vm._v("\n    sdg\n  ")
+        ])
       : _c("div", { staticClass: "next__inner" }, [
           _c("div", { staticClass: "container" }, [
             _c("div", { staticClass: "next__content" }, [
@@ -13549,6 +13714,148 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/Persons.vue?vue&type=template&id=7d8af2be&":
+/*!*************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Persons.vue?vue&type=template&id=7d8af2be& ***!
+  \*************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "popularity__inner" }, [
+    _c("div", { staticClass: "container" }, [
+      _c(
+        "div",
+        { staticClass: "popularity__persons" },
+        _vm._l(_vm.persons, function(person, i) {
+          return _c(
+            "div",
+            { key: i, staticClass: "person", class: person.class },
+            [
+              person.type !== "last"
+                ? [
+                    _c("span", { staticClass: "person__name" }, [
+                      _vm._v(_vm._s(person.name))
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "person__content" }, [
+                      _c("div", { staticClass: "person__pic-wrapper" }, [
+                        _c("div", { staticClass: "person__pic" }, [
+                          _c("img", {
+                            attrs: {
+                              src: person.src,
+                              alt: person.alt,
+                              width: person.width,
+                              height: person.height
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "person__texts" }, [
+                        _c("h3", [_vm._v(_vm._s(person.title))]),
+                        _vm._v(" "),
+                        _c("p", { staticClass: "person__text" }, [
+                          _vm._v(_vm._s(person.text))
+                        ]),
+                        _vm._v(" "),
+                        _c("p", { staticClass: "person__quote" }, [
+                          _vm._v(_vm._s(person.quote))
+                        ])
+                      ])
+                    ])
+                  ]
+                : [
+                    _c("div", { staticClass: "person__texts" }, [
+                      _c("h3", [_vm._v(_vm._s(person.title_desktop))]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "person__text" }, [
+                        _vm._v(_vm._s(person.text))
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "person__quote" }, [
+                        _vm._v(_vm._s(person.quote))
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "person__pic-wrapper" }, [
+                      _c("div", { staticClass: "person__pic" }, [
+                        _c("img", {
+                          attrs: {
+                            src: person.src,
+                            alt: person.alt,
+                            width: person.width,
+                            height: person.height
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "person__name" }, [
+                        _vm._v(_vm._s(person.name))
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "person__text-additional" }, [
+                      _vm._v(
+                        "\n            " +
+                          _vm._s(person.text_additional) +
+                          "\n            "
+                      ),
+                      _c(
+                        "a",
+                        {
+                          staticClass:
+                            "button button--round button--epoque button--person",
+                          attrs: { href: "#" }
+                        },
+                        [
+                          _c(
+                            "svg",
+                            {
+                              staticClass: "icon",
+                              attrs: {
+                                width: "18",
+                                height: "18",
+                                "aria-hidden": "true"
+                              }
+                            },
+                            [_c("use", { attrs: { "xlink:href": "#arrow" } })]
+                          ),
+                          _vm._v(" "),
+                          _c("span", [
+                            _vm._v(
+                              "\n                " +
+                                _vm._s(_vm.search_text_desktop) +
+                                "\n              "
+                            )
+                          ])
+                        ]
+                      )
+                    ])
+                  ]
+            ],
+            2
+          )
+        }),
+        0
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/Popularity.vue?vue&type=template&id=59a282e5&":
 /*!****************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Popularity.vue?vue&type=template&id=59a282e5& ***!
@@ -13566,7 +13873,113 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("section", { staticClass: "popularity" }, [
     !_vm.$root.isMobile
-      ? _c("div", { staticClass: "popularity__inner" })
+      ? _c("div", { staticClass: "popularity__inner" }, [
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "popularity__content" }, [
+              _c("div", { staticClass: "popularity__texts" }, [
+                _c("h3", [_vm._v(_vm._s(_vm.title_desktop))]),
+                _vm._v(" "),
+                _c("p", { staticClass: "popularity__text" }, [
+                  _vm._v(
+                    "\n            " + _vm._s(_vm.main_text) + "\n          "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "popularity__posters" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "popularity__poster popularity__poster--one"
+                    },
+                    [
+                      _c("img", {
+                        attrs: {
+                          src: _vm.poster_1.src,
+                          alt: _vm.poster_1.alt,
+                          width: _vm.poster_1.width,
+                          height: _vm.poster_1.height
+                        }
+                      })
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "popularity__poster popularity__poster--two"
+                    },
+                    [
+                      _c("img", {
+                        attrs: {
+                          src: _vm.poster_2.src,
+                          alt: _vm.poster_2.alt,
+                          width: _vm.poster_2.width,
+                          height: _vm.poster_2.height
+                        }
+                      })
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "popularity__poster popularity__poster--three"
+                    },
+                    [
+                      _c("img", {
+                        attrs: {
+                          src: _vm.poster_3.src,
+                          alt: _vm.poster_3.alt,
+                          width: _vm.poster_3.width,
+                          height: _vm.poster_3.height
+                        }
+                      })
+                    ]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "person" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "person__pic-wrapper person__pic-wrapper--esenin"
+                  },
+                  [
+                    _c("div", { staticClass: "person__pic" }, [
+                      _c("img", {
+                        attrs: {
+                          src: _vm.persons[0].src,
+                          alt: _vm.persons[0].alt,
+                          width: _vm.persons[0].width,
+                          height: _vm.persons[0].height
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "person__name" }, [
+                      _vm._v(_vm._s(_vm.persons[0].name))
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "person__texts" }, [
+                  _c("h3", [_vm._v(_vm._s(_vm.persons[0].title))]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "person__text" }, [
+                    _vm._v(_vm._s(_vm.persons[0].text_desktop))
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "person__quote" }, [
+                    _vm._v(_vm._s(_vm.persons[0].quote_desktop))
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
       : _c("div", { staticClass: "popularity__inner" }, [
           _c("div", { staticClass: "container" }, [
             _c("div", { staticClass: "popularity__content" }, [
@@ -13775,7 +14188,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("section", { staticClass: "skyscraper" }, [
     !_vm.$root.isMobile
-      ? _c("div", { staticClass: "skyscraper__inner" }, [
+      ? _c("div", { staticClass: "skyscraper__inner container" }, [
           _vm._v("\n    sdf\n  ")
         ])
       : _c("div", { staticClass: "skyscraper__inner" }, [
@@ -13970,6 +14383,42 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/Statue.vue?vue&type=template&id=0bfc37d8&":
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Statue.vue?vue&type=template&id=0bfc37d8& ***!
+  \************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("section", { staticClass: "statue" }, [
+    _c("div", { staticClass: "statue__big" }),
+    _vm._v(" "),
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "statue__content" }, [
+        _c("div", { staticClass: "statue__pic" }, [
+          _c("img", { attrs: { src: _vm.picture.src, alt: _vm.picture.alt } })
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "statue__text" }, [_vm._v(_vm._s(_vm.text))])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/Theater.vue?vue&type=template&id=5c7e8cde&":
 /*!*************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Theater.vue?vue&type=template&id=5c7e8cde& ***!
@@ -13985,83 +14434,47 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", { staticClass: "theater" }, [
-    !_vm.$root.isMobile
-      ? _c("div", { staticClass: "theater__inner" }, [
-          _c("div", { staticClass: "theater__main-info" }, [
-            _c("div", { staticClass: "theater__text-info" }, [
-              _c("h3", [_vm._v(_vm._s(_vm.title))]),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "theater__texts" },
-                _vm._l(_vm.texts, function(text, i) {
-                  return _c("p", { key: i }, [_vm._v(_vm._s(text.text))])
-                }),
-                0
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "theater__pictures" }, [
-              _c("div", { staticClass: "theater__performance" }, [
-                _c("img", {
-                  attrs: {
-                    src: _vm.performance.src,
-                    alt: _vm.performance.alt,
-                    width: _vm.performance.width,
-                    height: _vm.performance.height
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "theater__director" }, [
-                _c("img", {
-                  attrs: {
-                    src: _vm.director.src,
-                    alt: _vm.director.alt,
-                    width: _vm.director.width,
-                    height: _vm.director.height
-                  }
-                })
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "theater__photo-wrapper" }, [
-            _c("div", { staticClass: "theater__photo-info" }, [
-              _c("p", [_vm._v(_vm._s(_vm.scene.title))]),
-              _vm._v(" "),
-              _c("div", { staticClass: "theater__scene-photo" }, [
-                _c("img", {
-                  attrs: {
-                    src: _vm.scene.src,
-                    alt: _vm.scene.alt,
-                    width: _vm.scene.width,
-                    height: _vm.scene.height
-                  }
-                })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "theater__photo-text" }, [
-              _vm._v(_vm._s(_vm.scene.text))
-            ])
-          ])
-        ])
-      : _c("div", { staticClass: "theater__inner" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "theater__main-info" }, [
-              _c("div", { staticClass: "theater__text-info" }, [
-                _c("h3", [_vm._v(_vm._s(_vm.title))]),
+  return _c(
+    "section",
+    { staticClass: "theater" },
+    [
+      !_vm.$root.isMobile
+        ? [
+            _c("div", { staticClass: "theater__inner container" }, [
+              _c("div", { staticClass: "theater__main-info" }, [
+                _c("div", { staticClass: "theater__text-info" }, [
+                  _c("h3", [_vm._v(_vm._s(_vm.title))]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "theater__texts" },
+                    _vm._l(_vm.texts, function(text, i) {
+                      return _c("p", { key: i }, [_vm._v(_vm._s(text.text))])
+                    }),
+                    0
+                  )
+                ]),
                 _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "theater__texts" },
-                  _vm._l(_vm.texts, function(text, i) {
-                    return _c("p", { key: i }, [_vm._v(_vm._s(text.text))])
-                  }),
-                  0
-                )
+                _c("div", { staticClass: "theater__pictures" }, [
+                  _c("div", { staticClass: "theater__performance" }, [
+                    _c("img", {
+                      attrs: {
+                        src: _vm.performance.src,
+                        alt: _vm.performance.alt
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "theater__director" }, [
+                    _c("img", {
+                      attrs: { src: _vm.director.src, alt: _vm.director.alt }
+                    }),
+                    _vm._v(" "),
+                    _c("span", {
+                      domProps: { innerHTML: _vm._s(_vm.director.text) }
+                    })
+                  ])
+                ])
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "theater__photo-wrapper" }, [
@@ -14070,33 +14483,74 @@ var render = function() {
                   _vm._v(" "),
                   _c("div", { staticClass: "theater__scene-photo" }, [
                     _c("img", {
-                      attrs: {
-                        src: _vm.scene.src,
-                        alt: _vm.scene.alt,
-                        width: _vm.scene.width,
-                        height: _vm.scene.height
-                      }
+                      attrs: { src: _vm.scene.src, alt: _vm.scene.alt }
                     })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "theater__photo-text" }, [
+                  _vm._v(_vm._s(_vm.scene.text))
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _vm._m(0)
+          ]
+        : [
+            _c("div", { staticClass: "theater__inner" }, [
+              _c("div", { staticClass: "container" }, [
+                _c("div", { staticClass: "theater__main-info" }, [
+                  _c("div", { staticClass: "theater__text-info" }, [
+                    _c("h3", [_vm._v(_vm._s(_vm.title))]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "theater__texts" },
+                      _vm._l(_vm.texts, function(text, i) {
+                        return _c("p", { key: i }, [_vm._v(_vm._s(text.text))])
+                      }),
+                      0
+                    )
                   ]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "theater__performance" }, [
-                    _c("img", {
-                      attrs: {
-                        src: _vm.performance.src,
-                        alt: _vm.performance.alt,
-                        width: _vm.performance.width,
-                        height: _vm.performance.height
-                      }
-                    })
+                  _c("div", { staticClass: "theater__photo-wrapper" }, [
+                    _c("div", { staticClass: "theater__photo-info" }, [
+                      _c("p", [_vm._v(_vm._s(_vm.scene.title))]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "theater__scene-photo" }, [
+                        _c("img", {
+                          attrs: { src: _vm.scene.src, alt: _vm.scene.alt }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "theater__performance" }, [
+                        _c("img", {
+                          attrs: {
+                            src: _vm.performance.src,
+                            alt: _vm.performance.alt
+                          }
+                        })
+                      ])
+                    ])
                   ])
                 ])
               ])
             ])
-          ])
-        ])
-  ])
+          ]
+    ],
+    2
+  )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "theater__bottom" })
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -15091,6 +15545,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/components/Persons.vue":
+/*!************************************!*\
+  !*** ./src/components/Persons.vue ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Persons_vue_vue_type_template_id_7d8af2be___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Persons.vue?vue&type=template&id=7d8af2be& */ "./src/components/Persons.vue?vue&type=template&id=7d8af2be&");
+/* harmony import */ var _Persons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Persons.vue?vue&type=script&lang=js& */ "./src/components/Persons.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Persons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Persons_vue_vue_type_template_id_7d8af2be___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Persons_vue_vue_type_template_id_7d8af2be___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/components/Persons.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/components/Persons.vue?vue&type=script&lang=js&":
+/*!*************************************************************!*\
+  !*** ./src/components/Persons.vue?vue&type=script&lang=js& ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Persons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--4-0!../../node_modules/vue-loader/lib??vue-loader-options!./Persons.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/components/Persons.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Persons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/components/Persons.vue?vue&type=template&id=7d8af2be&":
+/*!*******************************************************************!*\
+  !*** ./src/components/Persons.vue?vue&type=template&id=7d8af2be& ***!
+  \*******************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Persons_vue_vue_type_template_id_7d8af2be___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./Persons.vue?vue&type=template&id=7d8af2be& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/Persons.vue?vue&type=template&id=7d8af2be&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Persons_vue_vue_type_template_id_7d8af2be___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Persons_vue_vue_type_template_id_7d8af2be___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/components/Popularity.vue":
 /*!***************************************!*\
   !*** ./src/components/Popularity.vue ***!
@@ -15367,6 +15890,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/components/Statue.vue":
+/*!***********************************!*\
+  !*** ./src/components/Statue.vue ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Statue_vue_vue_type_template_id_0bfc37d8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Statue.vue?vue&type=template&id=0bfc37d8& */ "./src/components/Statue.vue?vue&type=template&id=0bfc37d8&");
+/* harmony import */ var _Statue_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Statue.vue?vue&type=script&lang=js& */ "./src/components/Statue.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Statue_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Statue_vue_vue_type_template_id_0bfc37d8___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Statue_vue_vue_type_template_id_0bfc37d8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/components/Statue.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/components/Statue.vue?vue&type=script&lang=js&":
+/*!************************************************************!*\
+  !*** ./src/components/Statue.vue?vue&type=script&lang=js& ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Statue_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--4-0!../../node_modules/vue-loader/lib??vue-loader-options!./Statue.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/components/Statue.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Statue_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/components/Statue.vue?vue&type=template&id=0bfc37d8&":
+/*!******************************************************************!*\
+  !*** ./src/components/Statue.vue?vue&type=template&id=0bfc37d8& ***!
+  \******************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Statue_vue_vue_type_template_id_0bfc37d8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./Statue.vue?vue&type=template&id=0bfc37d8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/Statue.vue?vue&type=template&id=0bfc37d8&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Statue_vue_vue_type_template_id_0bfc37d8___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Statue_vue_vue_type_template_id_0bfc37d8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/components/Theater.vue":
 /*!************************************!*\
   !*** ./src/components/Theater.vue ***!
@@ -15451,25 +16043,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var vue_the_mask__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-the-mask */ "./node_modules/vue-the-mask/dist/vue-the-mask.js");
 /* harmony import */ var vue_the_mask__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue_the_mask__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var vue_slide_up_down__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-slide-up-down */ "./node_modules/vue-slide-up-down/dist/vue-slide-up-down.m.js");
-/* harmony import */ var _components_Sprite_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Sprite.vue */ "./src/components/Sprite.vue");
-/* harmony import */ var _components_HeaderMain_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/HeaderMain.vue */ "./src/components/HeaderMain.vue");
-/* harmony import */ var _components_MainPage_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/MainPage.vue */ "./src/components/MainPage.vue");
-/* harmony import */ var _components_History_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/History.vue */ "./src/components/History.vue");
-/* harmony import */ var _components_Epoque_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Epoque.vue */ "./src/components/Epoque.vue");
-/* harmony import */ var _components_Popularity_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Popularity.vue */ "./src/components/Popularity.vue");
-/* harmony import */ var _components_Skyscraper_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Skyscraper.vue */ "./src/components/Skyscraper.vue");
-/* harmony import */ var _components_Neighbours_vue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Neighbours.vue */ "./src/components/Neighbours.vue");
-/* harmony import */ var _components_Theater_vue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Theater.vue */ "./src/components/Theater.vue");
-/* harmony import */ var _components_FooterMain_vue__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/FooterMain.vue */ "./src/components/FooterMain.vue");
-/* harmony import */ var _components_Introduction_vue__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/Introduction.vue */ "./src/components/Introduction.vue");
-/* harmony import */ var _components_Socials_vue__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/Socials.vue */ "./src/components/Socials.vue");
-/* harmony import */ var _components_Next_vue__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/Next.vue */ "./src/components/Next.vue");
-/* harmony import */ var vue_youtube_embed__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! vue-youtube-embed */ "./node_modules/vue-youtube-embed/lib/vue-youtube-embed.js");
-/* harmony import */ var _lib_Helpers_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../lib/Helpers.js */ "./src/lib/Helpers.js");
-function asyncGeneratorStep(gen,resolve,reject,_next,_throw,key,arg){try{var info=gen[key](arg);var value=info.value;}catch(error){reject(error);return;}if(info.done){resolve(value);}else{Promise.resolve(value).then(_next,_throw);}}function _asyncToGenerator(fn){return function(){var self=this,args=arguments;return new Promise(function(resolve,reject){var gen=fn.apply(self,args);function _next(value){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"next",value);}function _throw(err){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"throw",err);}_next(undefined);});};}vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(vue_youtube_embed__WEBPACK_IMPORTED_MODULE_17__["default"]);vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(vue_the_mask__WEBPACK_IMPORTED_MODULE_2___default.a);vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(_lib_Helpers_js__WEBPACK_IMPORTED_MODULE_18__["default"]);vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('slide-up-down',vue_slide_up_down__WEBPACK_IMPORTED_MODULE_3__["default"]);vue__WEBPACK_IMPORTED_MODULE_1___default.a.config.comments=true;vue__WEBPACK_IMPORTED_MODULE_1___default.a.config.ignoredElements=['noindex',/^ion-/];var app=new vue__WEBPACK_IMPORTED_MODULE_1___default.a({el:'#app',data:function data(){return{window_top:0,header_top:0,header_height:183,tabletBreakpoint:1025,// mobileBreakpoint: 767,
+/* harmony import */ var Bowser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Bowser */ "./node_modules/Bowser/es5.js");
+/* harmony import */ var Bowser__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(Bowser__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var vue_slide_up_down__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-slide-up-down */ "./node_modules/vue-slide-up-down/dist/vue-slide-up-down.m.js");
+/* harmony import */ var _components_Sprite_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Sprite.vue */ "./src/components/Sprite.vue");
+/* harmony import */ var _components_HeaderMain_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/HeaderMain.vue */ "./src/components/HeaderMain.vue");
+/* harmony import */ var _components_MainPage_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/MainPage.vue */ "./src/components/MainPage.vue");
+/* harmony import */ var _components_History_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/History.vue */ "./src/components/History.vue");
+/* harmony import */ var _components_Epoque_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Epoque.vue */ "./src/components/Epoque.vue");
+/* harmony import */ var _components_Popularity_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Popularity.vue */ "./src/components/Popularity.vue");
+/* harmony import */ var _components_Skyscraper_vue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Skyscraper.vue */ "./src/components/Skyscraper.vue");
+/* harmony import */ var _components_Neighbours_vue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Neighbours.vue */ "./src/components/Neighbours.vue");
+/* harmony import */ var _components_Theater_vue__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/Theater.vue */ "./src/components/Theater.vue");
+/* harmony import */ var _components_FooterMain_vue__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/FooterMain.vue */ "./src/components/FooterMain.vue");
+/* harmony import */ var _components_Introduction_vue__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/Introduction.vue */ "./src/components/Introduction.vue");
+/* harmony import */ var _components_Socials_vue__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/Socials.vue */ "./src/components/Socials.vue");
+/* harmony import */ var _components_Next_vue__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/Next.vue */ "./src/components/Next.vue");
+/* harmony import */ var _components_Statue_vue__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/Statue.vue */ "./src/components/Statue.vue");
+/* harmony import */ var vue_youtube_embed__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! vue-youtube-embed */ "./node_modules/vue-youtube-embed/lib/vue-youtube-embed.js");
+/* harmony import */ var _lib_Helpers_js__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../lib/Helpers.js */ "./src/lib/Helpers.js");
+function asyncGeneratorStep(gen,resolve,reject,_next,_throw,key,arg){try{var info=gen[key](arg);var value=info.value;}catch(error){reject(error);return;}if(info.done){resolve(value);}else{Promise.resolve(value).then(_next,_throw);}}function _asyncToGenerator(fn){return function(){var self=this,args=arguments;return new Promise(function(resolve,reject){var gen=fn.apply(self,args);function _next(value){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"next",value);}function _throw(err){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"throw",err);}_next(undefined);});};}vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(vue_the_mask__WEBPACK_IMPORTED_MODULE_2___default.a);vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(_lib_Helpers_js__WEBPACK_IMPORTED_MODULE_20__["default"]);vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('slide-up-down',vue_slide_up_down__WEBPACK_IMPORTED_MODULE_4__["default"]);vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(vue_youtube_embed__WEBPACK_IMPORTED_MODULE_19__["default"]);vue__WEBPACK_IMPORTED_MODULE_1___default.a.config.comments=true;vue__WEBPACK_IMPORTED_MODULE_1___default.a.config.ignoredElements=['noindex',/^ion-/];var app=new vue__WEBPACK_IMPORTED_MODULE_1___default.a({el:'#app',data:function data(){return{window_top:0,header_top:0,header_height:183,tabletBreakpoint:1025,// mobileBreakpoint: 767,
 mobileBreakpoint:600,menuShown:false,width:null,height:null,bowser:null,ym_counter:null,recaptcha_key:null};},watch:{},created:function created(){var _this=this;return _asyncToGenerator(/*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(){return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:_this.width=window.innerWidth;_this.height=window.innerHeight;// this.bowser = Bowser.parse(window.navigator.userAgent);
-case 2:case"end":return _context.stop();}}},_callee);}))();},computed:{isTablet:function isTablet(){return this.width<=this.tabletBreakpoint;},isMobile:function isMobile(){return this.width<=this.mobileBreakpoint;}},mounted:function mounted(){this.addListeners();},methods:{addListeners:function addListeners(){window.addEventListener('scroll',this.onScroll);window.addEventListener('resize',this.onResize);window.onload=function(){};},onScroll:function onScroll(e){this.window_top=window.pageYOffset;},onResize:function onResize(){this.width=window.innerWidth;this.height=window.innerHeight;this.menuShown=false;},reachGoal:function reachGoal(goal){if(typeof ym!=='undefined'){ym(this.ym_counter,'reachGoal',goal);console.log(goal);}},getRecaptchaToken:function getRecaptchaToken(action){var _this2=this;return new Promise(function(resolve,reject){if(typeof grecaptcha==='undefined'){return resolve(false);}grecaptcha.ready(function(){grecaptcha.execute(_this2.recaptcha_key,{action:action}).then(function(token){return resolve(token);},function(error){console.log(error);return resolve(false);});});});}},components:{Sprite:_components_Sprite_vue__WEBPACK_IMPORTED_MODULE_4__["default"],HeaderMain:_components_HeaderMain_vue__WEBPACK_IMPORTED_MODULE_5__["default"],MainPage:_components_MainPage_vue__WEBPACK_IMPORTED_MODULE_6__["default"],History:_components_History_vue__WEBPACK_IMPORTED_MODULE_7__["default"],Epoque:_components_Epoque_vue__WEBPACK_IMPORTED_MODULE_8__["default"],Introduction:_components_Introduction_vue__WEBPACK_IMPORTED_MODULE_14__["default"],Theater:_components_Theater_vue__WEBPACK_IMPORTED_MODULE_12__["default"],Popularity:_components_Popularity_vue__WEBPACK_IMPORTED_MODULE_9__["default"],Neighbours:_components_Neighbours_vue__WEBPACK_IMPORTED_MODULE_11__["default"],FooterMain:_components_FooterMain_vue__WEBPACK_IMPORTED_MODULE_13__["default"],Skyscraper:_components_Skyscraper_vue__WEBPACK_IMPORTED_MODULE_10__["default"],Socials:_components_Socials_vue__WEBPACK_IMPORTED_MODULE_15__["default"],Next:_components_Next_vue__WEBPACK_IMPORTED_MODULE_16__["default"]}});
+case 2:case"end":return _context.stop();}}},_callee);}))();},computed:{isTablet:function isTablet(){return this.width<=this.tabletBreakpoint;},isMobile:function isMobile(){return this.width<=this.mobileBreakpoint;}},mounted:function mounted(){this.addListeners();},methods:{addListeners:function addListeners(){window.addEventListener('scroll',this.onScroll);window.addEventListener('resize',this.onResize);window.onload=function(){};},onScroll:function onScroll(e){this.window_top=window.pageYOffset;},onResize:function onResize(){this.width=window.innerWidth;this.height=window.innerHeight;this.menuShown=false;},reachGoal:function reachGoal(goal){if(typeof ym!=='undefined'){ym(this.ym_counter,'reachGoal',goal);console.log(goal);}},getRecaptchaToken:function getRecaptchaToken(action){var _this2=this;return new Promise(function(resolve,reject){if(typeof grecaptcha==='undefined'){return resolve(false);}grecaptcha.ready(function(){grecaptcha.execute(_this2.recaptcha_key,{action:action}).then(function(token){return resolve(token);},function(error){console.log(error);return resolve(false);});});});}},components:{Sprite:_components_Sprite_vue__WEBPACK_IMPORTED_MODULE_5__["default"],HeaderMain:_components_HeaderMain_vue__WEBPACK_IMPORTED_MODULE_6__["default"],MainPage:_components_MainPage_vue__WEBPACK_IMPORTED_MODULE_7__["default"],History:_components_History_vue__WEBPACK_IMPORTED_MODULE_8__["default"],Epoque:_components_Epoque_vue__WEBPACK_IMPORTED_MODULE_9__["default"],Introduction:_components_Introduction_vue__WEBPACK_IMPORTED_MODULE_15__["default"],Theater:_components_Theater_vue__WEBPACK_IMPORTED_MODULE_13__["default"],Popularity:_components_Popularity_vue__WEBPACK_IMPORTED_MODULE_10__["default"],Neighbours:_components_Neighbours_vue__WEBPACK_IMPORTED_MODULE_12__["default"],FooterMain:_components_FooterMain_vue__WEBPACK_IMPORTED_MODULE_14__["default"],Skyscraper:_components_Skyscraper_vue__WEBPACK_IMPORTED_MODULE_11__["default"],Socials:_components_Socials_vue__WEBPACK_IMPORTED_MODULE_16__["default"],Next:_components_Next_vue__WEBPACK_IMPORTED_MODULE_17__["default"],Statue:_components_Statue_vue__WEBPACK_IMPORTED_MODULE_18__["default"]}});
 
 /***/ }),
 
@@ -15504,8 +16099,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\OpenServer\domains\nirnzee\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! D:\OpenServer\domains\nirnzee\src\sass\app.scss */"./src/sass/app.scss");
+__webpack_require__(/*! D:\OpenServer\domains\nirnzeee\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! D:\OpenServer\domains\nirnzeee\src\sass\app.scss */"./src/sass/app.scss");
 
 
 /***/ })
