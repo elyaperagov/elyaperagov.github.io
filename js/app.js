@@ -109,7 +109,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({name:"Epoque",components:{},data:function data(){return{isPopupOpened:false,mobileBreakpoint:1024,windowWidth:window.innerWidth,isMobile:false,videoId:"rK_TFhRCPPM",width:"100%",height:770,heightMobile:400,allowfullscreen:0,title:"Соберите частички эпохи",title_mob:"Ближе к легенде",search_text:"Искать на Авито",preview:{src:"img/video_pic.png",alt:"Смотреть видео"},icon_play:{width:27,height:29},picture:{src:"img/roof.jpg",alt:"Крыша",width:"1692",height:"970"},texts:[{text:"Большая крыша — ещё одна отличительная черта дома Нирнзее. На ней в разные периоды располагались ресторан, каток, футбольное поле, кинотеатр и павильон для съёмок. А сейчас здесь редакция журнала «Вопросы литературы»."},{text:"Здесь с простыми людьми соседствовали Владимир Маяковский и Михаил Булгаков, московская богема и партийная элита. Это место с неповторимой атмосферой, где можно найти легендарную рукопись, встретить живого барана или сняться в кино."}],epoque_text:"Аутентичные предметы той эпохи — мебель, картины, лампы, статуэтки — можно найти на Авито. Если повезёт, продавцами окажутся как раз жильцы дома Нирнзее.",epoque_text_mob:"Аутентичные предметы — мебель, картины, лампы, статуэтки той эпохи — можно найти на Авито.   "};},computed:{},mounted:function mounted(){},methods:{openVideo:function openVideo(){this.isPopupOpened=true;},closeAllPopups:function closeAllPopups(){this.isPopupOpened=false;}},beforeDestroy:function beforeDestroy(){}});
+/* harmony default export */ __webpack_exports__["default"] = ({name:"Epoque",components:{},data:function data(){return{isPopupOpened:false,mobileBreakpoint:1024,windowWidth:window.innerWidth,isMobile:false,videoId:"rK_TFhRCPPM",width:"100%",height:770,heightMobile:400,allowfullscreen:0,title:"Соберите частички эпохи",title_mob:"Ближе к легенде",search_text:"Искать на Авито",preview:{src:"img/video_pic.png",alt:"Смотреть видео"},icon_play:{width:27,height:29},picture:{src:"img/roof.jpg",alt:"Крыша",width:"1692",height:"970"},texts:[{text:"Большая крыша — ещё одна отличительная черта дома Нирнзее. На ней в разные периоды располагались ресторан, каток, футбольное поле, кинотеатр и павильон для съёмок. А сейчас здесь редакция журнала «Вопросы литературы»."},{text:"Здесь с простыми людьми соседствовали Владимир Маяковский и Михаил Булгаков, московская богема и партийная элита. Это место с неповторимой атмосферой, где можно найти легендарную рукопись, встретить живого барана или сняться в кино."}],epoque_text:"Аутентичные предметы той эпохи — мебель, картины, лампы, статуэтки — можно найти на Авито. Если повезёт, продавцами окажутся как раз жильцы дома Нирнзее.",epoque_text_mob:"Аутентичные предметы — мебель, картины, лампы, статуэтки той эпохи — можно найти на Авито.   "};},computed:{},mounted:function mounted(){},methods:{openVideo:function openVideo(){// this.isPopupOpened = true;
+},closeAllPopups:function closeAllPopups(){// this.isPopupOpened = false;
+}},beforeDestroy:function beforeDestroy(){}});
 
 /***/ }),
 
@@ -328,7 +330,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({name:"history",components:{},data:function data(){return{isPopupOpened:false,mobileBreakpoint:1024,windowWidth:window.innerWidth,isMobile:false,videoId:"rK_TFhRCPPM",width:"100%",height:770,heightMobile:400,allowfullscreen:0,title:"История",note_title:"Эпицентр культурной жизни",note_title_mob:"Ближе к легенде",icon_play:{width:54,height:61},icon_play_big:{width:79,height:90},star:{src_star:"img/star.png",alt_star:"звезда",width:"180",height:"180"},plan:{src_plan:"img/plan.png",alt_plan:"План",width:"450",height:"318"},house:{// src_house: "img/video.jpg",
-src_house:"img/house.png",alt_house:"Дом",width:"864",height:"485"},house_text:"Дом Нирнзее примечателен не только своей высотой и талантливыми жильцами. Во все времена он умудрялся привлекать москвичей необычными активностями. Больше века назад можно было послушать «прожарку» театральных деятелей в подвале дома, а сейчас — познакомиться с живым бараном Толиком, талисманом колоритного грузинского кафе, на первом этаже. Чем ещё компенсировалась скромная площадь квартир? Узнаете из видео. ",house_texts_desktop:[{text:"Дом Нирнзее называли «домом холостяков» — всё из-за небольшой площади квартир. Они особенно привлекали творческих личностей, студентов и одиночек."},{text:"Здесь с простыми людьми соседствовали Владимир Маяковский и Михаил Булгаков, московская богема и партийная элита. Это место с неповторимой атмосферой, где можно найти легендарную рукопись, встретить живого барана или сняться в кино."}],house_text_mob:"Расположенный в двух шагах от Пушкинской площадки дом Нирнзее называли «домом холостяков» — всё из-за небольшой площади квартир. Малогабаритное жильё особенно привлекало творческих личностей и одиночек. ",house_texts_mob:[{text:"Дом Нирнзее свое время он стал настоящим шедевром урбанистики. Как высотка совместила в себе всё, что нужно москвичу? Узнаете из видео! "},{text:"Крыша дома Нирнзее — одна из самых примечательных в Москве. Она использовалась   как ресторан, каток, футбольное поле, кинотеатр    и кинопавильон, а также компенсировала нехватку места во дворе. Сейчас на крыше располагается редакция «Вопросы литературы».  "}]};},computed:{},mounted:function mounted(){},methods:{openVideo:function openVideo(){this.isPopupOpened=true;},closeAllPopups:function closeAllPopups(){this.isPopupOpened=false;}},beforeDestroy:function beforeDestroy(){},created:function created(){var that=this;document.addEventListener("keyup",function(evt){if(evt.keyCode===27){that.closeAllPopups();}});}});
+src_house:"img/house.png",alt_house:"Дом",width:"864",height:"485"},house_text:"Дом Нирнзее примечателен не только своей высотой и талантливыми жильцами. Во все времена он умудрялся привлекать москвичей необычными активностями. Больше века назад можно было послушать «прожарку» театральных деятелей в подвале дома, а сейчас — познакомиться с живым бараном Толиком, талисманом колоритного грузинского кафе, на первом этаже. Чем ещё компенсировалась скромная площадь квартир? Узнаете из видео. ",house_texts_desktop:[{text:"Дом Нирнзее называли «домом холостяков» — всё из-за небольшой площади квартир. Они особенно привлекали творческих личностей, студентов и одиночек."},{text:"Здесь с простыми людьми соседствовали Владимир Маяковский и Михаил Булгаков, московская богема и партийная элита. Это место с неповторимой атмосферой, где можно найти легендарную рукопись, встретить живого барана или сняться в кино."}],house_text_mob:"Расположенный в двух шагах от Пушкинской площадки дом Нирнзее называли «домом холостяков» — всё из-за небольшой площади квартир. Малогабаритное жильё особенно привлекало творческих личностей и одиночек. ",house_texts_mob:[{text:"Дом Нирнзее свое время он стал настоящим шедевром урбанистики. Как высотка совместила в себе всё, что нужно москвичу? Узнаете из видео! "},{text:"Крыша дома Нирнзее — одна из самых примечательных в Москве. Она использовалась   как ресторан, каток, футбольное поле, кинотеатр    и кинопавильон, а также компенсировала нехватку места во дворе. Сейчас на крыше располагается редакция «Вопросы литературы».  "}]};},computed:{},mounted:function mounted(){},methods:{openVideo:function openVideo(){this.isPopupOpened=true;},closeAllPopups:function closeAllPopups(){this.isPopupOpened=false;},onClickOutside:function onClickOutside(){this.closeAllPopups();}},beforeDestroy:function beforeDestroy(){},created:function created(){var that=this;document.addEventListener("keyup",function(evt){if(evt.keyCode===27){that.closeAllPopups();}});}});
 
 /***/ }),
 
@@ -976,8 +978,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({name:"Epoque",components:{},data:function data(){return{text:"Если присмотреться, можно прочитать на этой фотографии 1921–1924 годов вывеску на парапете 10 этажа: «Ресторан. Кабаре»..",picture:{src:"img/statue-round.png",alt:"Крыша"},statue:{src:"img/statue_1920.jpg",alt:"Статуя"}};},computed:{},methods:{},mounted:function mounted(){},beforeDestroy:function beforeDestroy(){}});
 
 /***/ }),
@@ -991,9 +991,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
 //
 //
 //
@@ -2904,9 +2901,9 @@ var runtime = (function (exports) {
   // This is a polyfill for %IteratorPrototype% for environments that
   // don't natively support it.
   var IteratorPrototype = {};
-  IteratorPrototype[iteratorSymbol] = function () {
+  define(IteratorPrototype, iteratorSymbol, function () {
     return this;
-  };
+  });
 
   var getProto = Object.getPrototypeOf;
   var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
@@ -2920,8 +2917,9 @@ var runtime = (function (exports) {
 
   var Gp = GeneratorFunctionPrototype.prototype =
     Generator.prototype = Object.create(IteratorPrototype);
-  GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
-  GeneratorFunctionPrototype.constructor = GeneratorFunction;
+  GeneratorFunction.prototype = GeneratorFunctionPrototype;
+  define(Gp, "constructor", GeneratorFunctionPrototype);
+  define(GeneratorFunctionPrototype, "constructor", GeneratorFunction);
   GeneratorFunction.displayName = define(
     GeneratorFunctionPrototype,
     toStringTagSymbol,
@@ -3035,9 +3033,9 @@ var runtime = (function (exports) {
   }
 
   defineIteratorMethods(AsyncIterator.prototype);
-  AsyncIterator.prototype[asyncIteratorSymbol] = function () {
+  define(AsyncIterator.prototype, asyncIteratorSymbol, function () {
     return this;
-  };
+  });
   exports.AsyncIterator = AsyncIterator;
 
   // Note that simple async functions are implemented on top of
@@ -3230,13 +3228,13 @@ var runtime = (function (exports) {
   // iterator prototype chain incorrectly implement this, causing the Generator
   // object to not be returned from this call. This ensures that doesn't happen.
   // See https://github.com/facebook/regenerator/issues/274 for more details.
-  Gp[iteratorSymbol] = function() {
+  define(Gp, iteratorSymbol, function() {
     return this;
-  };
+  });
 
-  Gp.toString = function() {
+  define(Gp, "toString", function() {
     return "[object Generator]";
-  };
+  });
 
   function pushTryEntry(locs) {
     var entry = { tryLoc: locs[0] };
@@ -3555,14 +3553,19 @@ try {
 } catch (accidentalStrictMode) {
   // This module should not be running in strict mode, so the above
   // assignment should always work unless something is misconfigured. Just
-  // in case runtime.js accidentally runs in strict mode, we can escape
+  // in case runtime.js accidentally runs in strict mode, in modern engines
+  // we can explicitly access globalThis. In older engines we can escape
   // strict mode using a global Function call. This could conceivably fail
   // if a Content Security Policy forbids using Function, but in that case
   // the proper solution is to fix the accidental strict mode problem. If
   // you've misconfigured your bundler to force strict mode and applied a
   // CSP to forbid Function, and you're not willing to fix either of those
   // problems, please detail your unique predicament in a GitHub issue.
-  Function("r", "regeneratorRuntime = r")(runtime);
+  if (typeof globalThis === "object") {
+    globalThis.regeneratorRuntime = runtime;
+  } else {
+    Function("r", "regeneratorRuntime = r")(runtime);
+  }
 }
 
 
@@ -12304,6 +12307,19 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
+/***/ "./node_modules/v-click-outside/dist/v-click-outside.umd.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/v-click-outside/dist/v-click-outside.umd.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+!function(e,n){ true?module.exports=n():undefined}(this,function(){var e="undefined"!=typeof window,n="undefined"!=typeof navigator,t=e&&("ontouchstart"in window||n&&navigator.msMaxTouchPoints>0)?["touchstart"]:["click"];function i(e){var n=e.event,t=e.handler;(0,e.middleware)(n)&&t(n)}function r(e,n){var r=function(e){var n="function"==typeof e;if(!n&&"object"!=typeof e)throw new Error("v-click-outside: Binding value must be a function or an object");return{handler:n?e:e.handler,middleware:e.middleware||function(e){return e},events:e.events||t,isActive:!(!1===e.isActive),detectIframe:!(!1===e.detectIframe)}}(n.value),d=r.handler,o=r.middleware,a=r.detectIframe;if(r.isActive){if(e["__v-click-outside"]=r.events.map(function(n){return{event:n,srcTarget:document.documentElement,handler:function(n){return function(e){var n=e.el,t=e.event,r=e.handler,d=e.middleware,o=t.path||t.composedPath&&t.composedPath();(o?o.indexOf(n)<0:!n.contains(t.target))&&i({event:t,handler:r,middleware:d})}({el:e,event:n,handler:d,middleware:o})}}}),a){var c={event:"blur",srcTarget:window,handler:function(n){return function(e){var n=e.el,t=e.event,r=e.handler,d=e.middleware;setTimeout(function(){var e=document.activeElement;e&&"IFRAME"===e.tagName&&!n.contains(e)&&i({event:t,handler:r,middleware:d})},0)}({el:e,event:n,handler:d,middleware:o})}};e["__v-click-outside"]=[].concat(e["__v-click-outside"],[c])}e["__v-click-outside"].forEach(function(n){var t=n.event,i=n.srcTarget,r=n.handler;return setTimeout(function(){e["__v-click-outside"]&&i.addEventListener(t,r,!1)},0)})}}function d(e){(e["__v-click-outside"]||[]).forEach(function(e){return e.srcTarget.removeEventListener(e.event,e.handler,!1)}),delete e["__v-click-outside"]}var o=e?{bind:r,update:function(e,n){var t=n.value,i=n.oldValue;JSON.stringify(t)!==JSON.stringify(i)&&(d(e),r(e,{value:t}))},unbind:d}:{};return{install:function(e){e.directive("click-outside",o)},directive:o}});
+//# sourceMappingURL=v-click-outside.umd.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-awesome-swiper/dist/vue-awesome-swiper.js":
 /*!********************************************************************!*\
   !*** ./node_modules/vue-awesome-swiper/dist/vue-awesome-swiper.js ***!
@@ -13348,46 +13364,60 @@ var render = function() {
       _vm._v(" "),
       _vm.isPopupOpened
         ? [
-            _c("div", { staticClass: "modal" }, [
-              _c(
-                "div",
-                {
-                  directives: [
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value: _vm.isPopupOpened,
-                      expression: "isPopupOpened"
-                    }
-                  ],
-                  staticClass: "modal__overlay",
-                  on: {
-                    click: function($event) {
-                      return _vm.closeAllPopups()
-                    }
+            _c(
+              "div",
+              {
+                directives: [
+                  {
+                    name: "click-outside",
+                    rawName: "v-click-outside",
+                    value: _vm.onClickOutside,
+                    expression: "onClickOutside"
                   }
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "modal__body" },
-                    [
-                      _c("youtube", {
-                        attrs: {
-                          "video-id": _vm.videoId,
-                          "player-width": _vm.width,
-                          "player-height": !_vm.$root.isMobile
-                            ? _vm.height
-                            : _vm.heightMobile,
-                          allowfullscreen: _vm.allowfullscreen
-                        }
-                      })
+                ],
+                staticClass: "modal"
+              },
+              [
+                _c(
+                  "div",
+                  {
+                    directives: [
+                      {
+                        name: "show",
+                        rawName: "v-show",
+                        value: _vm.isPopupOpened,
+                        expression: "isPopupOpened"
+                      }
                     ],
-                    1
-                  )
-                ]
-              )
-            ])
+                    staticClass: "modal__overlay",
+                    on: {
+                      click: function($event) {
+                        return _vm.closeAllPopups()
+                      }
+                    }
+                  },
+                  [
+                    _c(
+                      "div",
+                      { staticClass: "modal__body" },
+                      [
+                        _c("youtube", {
+                          attrs: {
+                            "video-id": _vm.videoId,
+                            "player-width": _vm.width,
+                            "player-height": !_vm.$root.isMobile
+                              ? _vm.height
+                              : _vm.heightMobile,
+                            allowfullscreen: _vm.allowfullscreen
+                          }
+                        })
+                      ],
+                      1
+                    )
+                  ]
+                )
+              ]
+            )
           ]
         : _vm._e()
     ],
@@ -13534,9 +13564,19 @@ var render = function() {
                   1
                 ),
                 _vm._v(" "),
-                _c("swiper-slide", [_c("Popularity")], 1),
+                _c(
+                  "swiper-slide",
+                  { staticClass: "popularity-slide" },
+                  [_c("Popularity")],
+                  1
+                ),
                 _vm._v(" "),
-                _c("swiper-slide", [_c("Persons")], 1),
+                _c(
+                  "swiper-slide",
+                  { staticClass: "persons-slide" },
+                  [_c("Persons")],
+                  1
+                ),
                 _vm._v(" "),
                 _c("swiper-slide", [_c("Statue")], 1)
               ],
@@ -14492,9 +14532,7 @@ var render = function() {
                   _vm._v(_vm._s(_vm.scene.text))
                 ])
               ])
-            ]),
-            _vm._v(" "),
-            _vm._m(0)
+            ])
           ]
         : [
             _c("div", { staticClass: "theater__inner" }, [
@@ -14541,16 +14579,7 @@ var render = function() {
     2
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "theater__bottom" })
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -16060,9 +16089,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Socials_vue__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/Socials.vue */ "./src/components/Socials.vue");
 /* harmony import */ var _components_Next_vue__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/Next.vue */ "./src/components/Next.vue");
 /* harmony import */ var _components_Statue_vue__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/Statue.vue */ "./src/components/Statue.vue");
-/* harmony import */ var vue_youtube_embed__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! vue-youtube-embed */ "./node_modules/vue-youtube-embed/lib/vue-youtube-embed.js");
-/* harmony import */ var _lib_Helpers_js__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../lib/Helpers.js */ "./src/lib/Helpers.js");
-function asyncGeneratorStep(gen,resolve,reject,_next,_throw,key,arg){try{var info=gen[key](arg);var value=info.value;}catch(error){reject(error);return;}if(info.done){resolve(value);}else{Promise.resolve(value).then(_next,_throw);}}function _asyncToGenerator(fn){return function(){var self=this,args=arguments;return new Promise(function(resolve,reject){var gen=fn.apply(self,args);function _next(value){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"next",value);}function _throw(err){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"throw",err);}_next(undefined);});};}vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(vue_the_mask__WEBPACK_IMPORTED_MODULE_2___default.a);vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(_lib_Helpers_js__WEBPACK_IMPORTED_MODULE_20__["default"]);vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('slide-up-down',vue_slide_up_down__WEBPACK_IMPORTED_MODULE_4__["default"]);vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(vue_youtube_embed__WEBPACK_IMPORTED_MODULE_19__["default"]);vue__WEBPACK_IMPORTED_MODULE_1___default.a.config.comments=true;vue__WEBPACK_IMPORTED_MODULE_1___default.a.config.ignoredElements=['noindex',/^ion-/];var app=new vue__WEBPACK_IMPORTED_MODULE_1___default.a({el:'#app',data:function data(){return{window_top:0,header_top:0,header_height:183,tabletBreakpoint:1025,// mobileBreakpoint: 767,
+/* harmony import */ var v_click_outside__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! v-click-outside */ "./node_modules/v-click-outside/dist/v-click-outside.umd.js");
+/* harmony import */ var v_click_outside__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(v_click_outside__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var vue_youtube_embed__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! vue-youtube-embed */ "./node_modules/vue-youtube-embed/lib/vue-youtube-embed.js");
+/* harmony import */ var _lib_Helpers_js__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../lib/Helpers.js */ "./src/lib/Helpers.js");
+function asyncGeneratorStep(gen,resolve,reject,_next,_throw,key,arg){try{var info=gen[key](arg);var value=info.value;}catch(error){reject(error);return;}if(info.done){resolve(value);}else{Promise.resolve(value).then(_next,_throw);}}function _asyncToGenerator(fn){return function(){var self=this,args=arguments;return new Promise(function(resolve,reject){var gen=fn.apply(self,args);function _next(value){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"next",value);}function _throw(err){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"throw",err);}_next(undefined);});};}vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(v_click_outside__WEBPACK_IMPORTED_MODULE_19___default.a);vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(vue_the_mask__WEBPACK_IMPORTED_MODULE_2___default.a);vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(_lib_Helpers_js__WEBPACK_IMPORTED_MODULE_21__["default"]);vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('slide-up-down',vue_slide_up_down__WEBPACK_IMPORTED_MODULE_4__["default"]);vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(vue_youtube_embed__WEBPACK_IMPORTED_MODULE_20__["default"]);vue__WEBPACK_IMPORTED_MODULE_1___default.a.config.comments=true;vue__WEBPACK_IMPORTED_MODULE_1___default.a.config.ignoredElements=['noindex',/^ion-/];var app=new vue__WEBPACK_IMPORTED_MODULE_1___default.a({el:'#app',data:function data(){return{window_top:0,header_top:0,header_height:183,tabletBreakpoint:1025,// mobileBreakpoint: 767,
 mobileBreakpoint:600,menuShown:false,width:null,height:null,bowser:null,ym_counter:null,recaptcha_key:null};},watch:{},created:function created(){var _this=this;return _asyncToGenerator(/*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(){return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:_this.width=window.innerWidth;_this.height=window.innerHeight;// this.bowser = Bowser.parse(window.navigator.userAgent);
 case 2:case"end":return _context.stop();}}},_callee);}))();},computed:{isTablet:function isTablet(){return this.width<=this.tabletBreakpoint;},isMobile:function isMobile(){return this.width<=this.mobileBreakpoint;}},mounted:function mounted(){this.addListeners();},methods:{addListeners:function addListeners(){window.addEventListener('scroll',this.onScroll);window.addEventListener('resize',this.onResize);window.onload=function(){};},onScroll:function onScroll(e){this.window_top=window.pageYOffset;},onResize:function onResize(){this.width=window.innerWidth;this.height=window.innerHeight;this.menuShown=false;},reachGoal:function reachGoal(goal){if(typeof ym!=='undefined'){ym(this.ym_counter,'reachGoal',goal);console.log(goal);}},getRecaptchaToken:function getRecaptchaToken(action){var _this2=this;return new Promise(function(resolve,reject){if(typeof grecaptcha==='undefined'){return resolve(false);}grecaptcha.ready(function(){grecaptcha.execute(_this2.recaptcha_key,{action:action}).then(function(token){return resolve(token);},function(error){console.log(error);return resolve(false);});});});}},components:{Sprite:_components_Sprite_vue__WEBPACK_IMPORTED_MODULE_5__["default"],HeaderMain:_components_HeaderMain_vue__WEBPACK_IMPORTED_MODULE_6__["default"],MainPage:_components_MainPage_vue__WEBPACK_IMPORTED_MODULE_7__["default"],History:_components_History_vue__WEBPACK_IMPORTED_MODULE_8__["default"],Epoque:_components_Epoque_vue__WEBPACK_IMPORTED_MODULE_9__["default"],Introduction:_components_Introduction_vue__WEBPACK_IMPORTED_MODULE_15__["default"],Theater:_components_Theater_vue__WEBPACK_IMPORTED_MODULE_13__["default"],Popularity:_components_Popularity_vue__WEBPACK_IMPORTED_MODULE_10__["default"],Neighbours:_components_Neighbours_vue__WEBPACK_IMPORTED_MODULE_12__["default"],FooterMain:_components_FooterMain_vue__WEBPACK_IMPORTED_MODULE_14__["default"],Skyscraper:_components_Skyscraper_vue__WEBPACK_IMPORTED_MODULE_11__["default"],Socials:_components_Socials_vue__WEBPACK_IMPORTED_MODULE_16__["default"],Next:_components_Next_vue__WEBPACK_IMPORTED_MODULE_17__["default"],Statue:_components_Statue_vue__WEBPACK_IMPORTED_MODULE_18__["default"]}});
 
@@ -16099,8 +16130,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\OpenServer\domains\nirnzeee\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! D:\OpenServer\domains\nirnzeee\src\sass\app.scss */"./src/sass/app.scss");
+__webpack_require__(/*! D:\OpenServer\domains\nirnzee\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! D:\OpenServer\domains\nirnzee\src\sass\app.scss */"./src/sass/app.scss");
 
 
 /***/ })
