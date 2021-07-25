@@ -217,10 +217,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({data:function data(){return{menuShown:false,label:{href:"#",city:"Москва",icon_width:"11",icon_height:"9"},logo:{logo_src:"img/Logo_Avito.png",logo_width:141,logo_height:40// logo_width_mob: 64,
 // logo_height_mob: 35,
-},menu:[{name:"Музеи",link:"#museums"},{name:"Подкасты",link:"#podcasts"},{name:"Статьи",link:"#articles"},{name:"О проекте",link:"#about"}]};},computed:{},mounted:function mounted(){window.addEventListener("resize",this.handleResize);this.toggleMobile();},beforeDestroy:function beforeDestroy(){window.removeEventListener("resize",this.handleResize);this.toggleMobile();},methods:{menuToggle:function menuToggle(){this.menuShown=!this.menuShown;document.body.classList.toggle("scroll-off");},menuClose:function menuClose(){if(this.menuShown){this.menuShown=false;document.body.classList.remove("scroll-off");}},toggleMobile:function toggleMobile(){if(window.innerWidth<=this.mobileBreakpoint){this.isMobile=true;}else{this.isMobile=false;}},// handleScroll() {
-//   this.menuClose()
-// },
-handleResize:function handleResize(){this.toggleMobile(),this.menuClose();}},created:function created(){var _this=this;document.addEventListener("keyup",function(evt){if(evt.keyCode===27){_this.menuClose(true);}});},components:{}});
+},menu:[{name:"Музеи",link:"#museums"},{name:"Подкасты",link:"#podcasts"},{name:"Статьи",link:"#articles"},{name:"О проекте",link:"#about"}]};},computed:{},mounted:function mounted(){},beforeDestroy:function beforeDestroy(){},methods:{menuToggle:function menuToggle(){this.menuShown=!this.menuShown;document.body.classList.toggle("scroll-off");},menuClose:function menuClose(){if(this.menuShown){this.menuShown=false;document.body.classList.remove("scroll-off");}}},created:function created(){var _this=this;document.addEventListener("keyup",function(evt){if(evt.keyCode===27){_this.menuClose(true);}});},components:{}});
 
 /***/ }),
 
@@ -478,9 +475,6 @@ var _name$components$data;function _defineProperty(obj,key,value){if(key in obj)
 //
 //
 //
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = (_name$components$data={name:"main-page",components:{Swiper:vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_10__["Swiper"],SwiperSlide:vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_10__["SwiperSlide"],History:_History_vue__WEBPACK_IMPORTED_MODULE_0__["default"],Epoque:_Epoque_vue__WEBPACK_IMPORTED_MODULE_1__["default"],Introduction:_Introduction__WEBPACK_IMPORTED_MODULE_2__["default"],Theater:_Theater_vue__WEBPACK_IMPORTED_MODULE_4__["default"],Neighbours:_Neighbours_vue__WEBPACK_IMPORTED_MODULE_5__["default"],Popularity:_Popularity__WEBPACK_IMPORTED_MODULE_3__["default"],Skyscraper:_Skyscraper_vue__WEBPACK_IMPORTED_MODULE_6__["default"],Next:_Next_vue__WEBPACK_IMPORTED_MODULE_8__["default"],Persons:_Persons_vue__WEBPACK_IMPORTED_MODULE_7__["default"],Statue:_Statue_vue__WEBPACK_IMPORTED_MODULE_9__["default"]},data:function data(){return{SliderOptions:{slidesPerView:1,spaceBetween:0,mousewheel:true,pagination:{el:".swiper-pagination",clickable:true}}};},computed:{},mounted:function mounted(){},methods:{}},_defineProperty(_name$components$data,"mounted",function mounted(){}),_defineProperty(_name$components$data,"beforeDestroy",function beforeDestroy(){}),_name$components$data);
 
 /***/ }),
@@ -536,7 +530,44 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({name:"Neighbours",components:{},data:function data(){return{search_text:"Искать на Авито",neighbour:{title:" «Я много раз бывал в этом доме раньше.",text:"Я проходил рядом с ним и даже заходил в кафе на первом этаже. Но он был для меня обычным московским домом. Но в один прекрасный момент я увидел эту квартиру и сразу же позвонил — объявление висело всего 3 часа, и квартира досталась первому позвонившему, то есть мне!»",additional_text:"Найдите квартиру в доме Нирнзее на Авито!",src:"img/neighbour.jpg",alt:"Я много раз бывал в этом доме раньше.",width:320,height:240},director:{src:"img/baliev.jpg",alt:"Никита Балиев",width:280,height:390},scene:{title:"Учебная сцена ГИТИСа",text:"«Пародийные представления, начинавшиеся после полуночи, с лихим озорством опрокидывали то, что днём было окружено благоговейностью и почтением, — здесь кувырком летели авторитеты, отданные на кощунственно-весёлое поругание», – Ирина Биккулова, «Феномен русской культуры Серебряного века».",src:"img/concert.jpg",alt:"Учебная сцена ГИТИСа",width:310,height:129}};},computed:{},mounted:function mounted(){},methods:{},beforeDestroy:function beforeDestroy(){}});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({name:"Neighbours",components:{},data:function data(){return{subtitle:"Жители дома",search_text:"Искать на Авито",closer_text_button:"Переехать поближе",about_neighbour:"Арсений, математик и житель дома Нирнзее",closer_text:"На Авито можно найти квартиру в доме Нирнзее или рядом с ним.",neighbour:{title:"«Я много раз бывал в этом доме раньше».",text:"Я проходил рядом с ним и даже заходил в кафе на первом этаже. Но он был для меня обычным московским домом. Но в один прекрасный момент я увидел эту квартиру и сразу же позвонил — объявление висело всего 3 часа, и квартира досталась первому позвонившему, то есть мне!»",additional_text:"Найдите квартиру в доме Нирнзее на Авито!",src:"img/neighbour.jpg",alt:"Я много раз бывал в этом доме раньше.",width:320,height:240},director:{src:"img/baliev.jpg",alt:"Никита Балиев",width:280,height:390},scene:{title:"Учебная сцена ГИТИСа",text:"«Пародийные представления, начинавшиеся после полуночи, с лихим озорством опрокидывали то, что днём было окружено благоговейностью и почтением, — здесь кувырком летели авторитеты, отданные на кощунственно-весёлое поругание», – Ирина Биккулова, «Феномен русской культуры Серебряного века».",src:"img/concert.jpg",alt:"Учебная сцена ГИТИСа",width:310,height:129}};},computed:{},mounted:function mounted(){},methods:{},beforeDestroy:function beforeDestroy(){}});
 
 /***/ }),
 
@@ -860,7 +891,37 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({name:"Skyscraper",components:{Socials:_Socials_vue__WEBPACK_IMPORTED_MODULE_0__["default"]},data:function data(){return{text:"Поделитесь открыткой в соцсетях — пригласите друзей на цифровую экскурсию!",skyscraper:{src:"img/Postcard.jpg",alt:"небоскреб",width:275,height:240}};},computed:{},mounted:function mounted(){},methods:{},beforeDestroy:function beforeDestroy(){}});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({name:"Skyscraper",components:{Socials:_Socials_vue__WEBPACK_IMPORTED_MODULE_0__["default"]},data:function data(){return{title:"Дом на Котельнической",subtitle:"Изучить поближе",next_slide:{src:"img/kotelnicheskaya_1920.png",alt:"Котельническая",width:340,height:619},skyscraper:{src:"img/Postcard.jpg",alt:"небоскреб",width:275,height:240}};},computed:{},mounted:function mounted(){},methods:{},beforeDestroy:function beforeDestroy(){}});
 
 /***/ }),
 
@@ -881,7 +942,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({name:"Socials",components:{},data:function data(){return{items:[{text:"Vk",href:"#"},{text:"Fb",href:"#"},{text:"Ok",href:"#"}]};},computed:{},mounted:function mounted(){},methods:{},beforeDestroy:function beforeDestroy(){}});
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({name:"Socials",components:{},data:function data(){return{share:"Зашарить",text:"Поделитесь открыткой в соцсетях — пригласите друзей на цифровую экскурсию!",items:[{text:"Vk",href:"#"},{text:"Fb",href:"#"},{text:"Ok",href:"#"}]};},computed:{},mounted:function mounted(){},methods:{},beforeDestroy:function beforeDestroy(){}});
 
 /***/ }),
 
@@ -894,6 +961,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -13578,7 +13659,21 @@ var render = function() {
                   1
                 ),
                 _vm._v(" "),
-                _c("swiper-slide", [_c("Statue")], 1)
+                _c(
+                  "swiper-slide",
+                  { staticClass: "statue-slide" },
+                  [_c("Statue")],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "swiper-slide",
+                  { staticClass: "neighbour-slide" },
+                  [_c("Neighbours")],
+                  1
+                ),
+                _vm._v(" "),
+                _c("swiper-slide", [_c("Skyscraper")], 1)
               ],
               1
             )
@@ -13633,7 +13728,75 @@ var render = function() {
   return _c("section", { staticClass: "neighbour" }, [
     !_vm.$root.isMobile
       ? _c("div", { staticClass: "neighbour__inner container" }, [
-          _c("div", { staticClass: "neighbour__main-info" })
+          _c("p", { staticClass: "neighbour__subtitle" }, [
+            _vm._v("\n      " + _vm._s(_vm.subtitle) + "\n    ")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "neighbour__content" }, [
+            _c("h3", [_vm._v(_vm._s(_vm.neighbour.title))]),
+            _vm._v(" "),
+            _c("div", { staticClass: "neighbour__main-info" }, [
+              _c("div", { staticClass: "neighbour__texts" }, [
+                _c("p", { staticClass: "neighbour__text" }, [
+                  _vm._v(
+                    "\n            " +
+                      _vm._s(_vm.neighbour.text) +
+                      "\n          "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "neighbour__closer" }, [
+                  _c("p", [_vm._v(_vm._s(_vm.closer_text))]),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass:
+                        "button button--round button--epoque button--closer",
+                      attrs: { href: "#" }
+                    },
+                    [
+                      _c(
+                        "svg",
+                        {
+                          staticClass: "icon",
+                          attrs: {
+                            width: "30",
+                            height: "30",
+                            "aria-hidden": "true"
+                          }
+                        },
+                        [_c("use", { attrs: { "xlink:href": "#arrow_big" } })]
+                      ),
+                      _vm._v(" "),
+                      _c("span", [
+                        _vm._v(
+                          "\n                " +
+                            _vm._s(_vm.closer_text_button) +
+                            "\n              "
+                        )
+                      ])
+                    ]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "neighbour__picture-wrapper" }, [
+                _c("span", [_vm._v(" " + _vm._s(_vm.about_neighbour) + " ")]),
+                _vm._v(" "),
+                _c("div", { staticClass: "neighbour__picture" }, [
+                  _c("img", {
+                    attrs: {
+                      src: _vm.neighbour.src,
+                      alt: _vm.neighbour.alt,
+                      width: _vm.neighbour.width,
+                      height: _vm.neighbour.height
+                    }
+                  })
+                ])
+              ])
+            ])
+          ])
         ])
       : _c("div", { staticClass: "neighbour__inner" }, [
           _c("div", { staticClass: "container" }, [
@@ -14228,10 +14391,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("section", { staticClass: "skyscraper" }, [
     !_vm.$root.isMobile
-      ? _c("div", { staticClass: "skyscraper__inner container" }, [
-          _vm._v("\n    sdf\n  ")
-        ])
-      : _c("div", { staticClass: "skyscraper__inner" }, [
+      ? _c("div", { staticClass: "skyscraper__inner" }, [
           _c("div", { staticClass: "container" }, [
             _c(
               "div",
@@ -14248,7 +14408,67 @@ var render = function() {
                   })
                 ]),
                 _vm._v(" "),
-                _c("p", [_vm._v(_vm._s(_vm.text))]),
+                _c("Socials")
+              ],
+              1
+            )
+          ])
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _c("section", { staticClass: "next" }, [
+      !_vm.$root.isMobile
+        ? _c("div", { staticClass: "next__inner" }, [
+            _c("div", { staticClass: "next__picture" }, [
+              _c("img", {
+                attrs: { src: _vm.next_slide.src, alt: _vm.next_slide.alt }
+              })
+            ]),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "button button--round button--next",
+                attrs: { href: "#" }
+              },
+              [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "icon",
+                    attrs: { width: "30", height: "30", "aria-hidden": "true" }
+                  },
+                  [_c("use", { attrs: { "xlink:href": "#arrow_big" } })]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "next__texts" }, [
+                  _c("h3", [_vm._v(_vm._s(_vm.title))]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v(" " + _vm._s(_vm.subtitle))])
+                ])
+              ]
+            )
+          ])
+        : _vm._e()
+    ]),
+    _vm._v(" "),
+    _vm.$root.isMobile
+      ? _c("div", { staticClass: "skyscraper__inner" }, [
+          _c("div", { staticClass: "container" }, [
+            _c(
+              "div",
+              { staticClass: "skyscraper__content" },
+              [
+                _c("div", { staticClass: "skyscraper__picture" }, [
+                  _c("img", {
+                    attrs: {
+                      src: _vm.skyscraper.src,
+                      alt: _vm.skyscraper.alt,
+                      width: _vm.skyscraper.width,
+                      height: _vm.skyscraper.height
+                    }
+                  })
+                ]),
                 _vm._v(" "),
                 _c("Socials")
               ],
@@ -14256,6 +14476,7 @@ var render = function() {
             )
           ])
         ])
+      : _vm._e()
   ])
 }
 var staticRenderFns = []
@@ -14280,16 +14501,24 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "ul",
-    { staticClass: "socials" },
-    _vm._l(_vm.items, function(item, index) {
-      return _c("li", { key: index, staticClass: "socials__item" }, [
-        _c("a", { attrs: { href: item.href } }, [_vm._v(_vm._s(item.text))])
-      ])
-    }),
-    0
-  )
+  return _c("div", { staticClass: "socials" }, [
+    _c("p", { staticClass: "socials__share" }, [_vm._v(_vm._s(_vm.text))]),
+    _vm._v(" "),
+    _c("div", { staticClass: "socials__inner" }, [
+      !_vm.$root.isMobile ? _c("p", [_vm._v(_vm._s(_vm.share))]) : _vm._e(),
+      _vm._v(" "),
+      _c(
+        "ul",
+        { staticClass: "socials__list" },
+        _vm._l(_vm.items, function(item, index) {
+          return _c("li", { key: index, staticClass: "socials__item" }, [
+            _c("a", { attrs: { href: item.href } }, [_vm._v(_vm._s(item.text))])
+          ])
+        }),
+        0
+      )
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -14342,6 +14571,29 @@ var render = function() {
                 "clip-rule": "evenodd",
                 d:
                   "M10.2238 18L18 9L10.2238 0L8.56448 1.33369L14.288 7.95797H0L0 10.0258H14.302L8.56448 16.6663L10.2238 18Z",
+                fill: "white"
+              }
+            })
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "symbol",
+          {
+            attrs: {
+              id: "arrow_big",
+              viewBox: "0 0 30 30",
+              fill: "none",
+              xmlns: "http://www.w3.org/2000/svg"
+            }
+          },
+          [
+            _c("path", {
+              attrs: {
+                "fill-rule": "evenodd",
+                "clip-rule": "evenodd",
+                d:
+                  "M17.0397 30L30 15L17.0397 0L14.2741 2.22281L23.8133 13.2633H0L0 16.7096H23.8367L14.2741 27.7772L17.0397 30Z",
                 fill: "white"
               }
             })
