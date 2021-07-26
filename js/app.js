@@ -13630,6 +13630,26 @@ var render = function() {
                 attrs: { options: _vm.SliderOptions }
               },
               [
+                _c("swiper-slide", [_c("Introduction")], 1),
+                _vm._v(" "),
+                _c("swiper-slide", [_c("History")], 1),
+                _vm._v(" "),
+                _c(
+                  "swiper-slide",
+                  { staticClass: "epoque-slide" },
+                  [_c("Epoque")],
+                  1
+                ),
+                _vm._v(" "),
+                _c("swiper-slide", { staticClass: "roof-slide" }),
+                _vm._v(" "),
+                _c(
+                  "swiper-slide",
+                  { staticClass: "theater-slide" },
+                  [_c("Theater")],
+                  1
+                ),
+                _vm._v(" "),
                 _c(
                   "swiper-slide",
                   { staticClass: "popularity-slide" },

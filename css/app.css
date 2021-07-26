@@ -5192,7 +5192,8 @@ table {
         -ms-transform: translateX(105px);
             transform: translateX(105px);
     width: 330px;
-    margin-top: 70px;
+    left: 0;
+    margin-top: -115px;
     z-index: 1;
   }
   .neighbour__closer p {
@@ -5219,7 +5220,7 @@ table {
     -webkit-transform: translateX(240px);
         -ms-transform: translateX(240px);
             transform: translateX(240px);
-    margin-top: 45px;
+    margin-top: -140px;
     z-index: 1;
   }
   .neighbour__closer p {
@@ -5239,7 +5240,7 @@ table {
     -webkit-transform: translateX(240px);
         -ms-transform: translateX(240px);
             transform: translateX(240px);
-    margin-top: 105px;
+    margin-top: -77px;
     z-index: 1;
   }
   .neighbour__closer p {
