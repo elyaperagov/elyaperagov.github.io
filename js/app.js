@@ -683,6 +683,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({name:"Persons",components:{},data:function data(){return{title:"Звездное место",title_desktop:"Важнейшее из искусств",search_text:"Искать на Авито",search_text_desktop:"Попасть в зазеркалье",main_text:"На крыше дома Нирнзее снимались эпизоды фильмов «Служебный роман», «Курьер» и «Сказки... Сказки… Сказки старого Арбата».",persons:[{name:"М. Булгаков",src:"img/bulgakov.jpg",alt:"Булгаков",width:"200",height:"280","class":"person--even",title:"Мастер и Маргарита",text:"В этом доме Михаил Булгаков встретился с будущей женой Еленой Шиловской, которая стала прототипом Маргариты."},{name:"В. Маяковский",src:"img/mayakovski.jpg",alt:"Маяковский",width:"200",height:"280","class":"person--odd person--last",title:"Послания к великим",title_desktop:"Осколки чувств",text:"В 90-х рабочие случайно разбили зеркало в парадной и нашли за ним записку от Софьи Шамардиной к Владимиру Маяковскому.",quote:"«Люблю зеркало. Хочу сегодня быть красивой. Я очень люблю тебя, Владимир Маяковский. Стихи твои  и тебя. Сонка»",text_additional:"В поисках особенных зеркал досоветского и раннесоветского периодов загляните на Авито.",type:"last"}]};},computed:{},mounted:function mounted(){},methods:{},beforeDestroy:function beforeDestroy(){}});
 
 /***/ }),
@@ -696,6 +699,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
 //
 //
 //
@@ -13625,26 +13630,6 @@ var render = function() {
                 attrs: { options: _vm.SliderOptions }
               },
               [
-                _c("swiper-slide", [_c("Introduction")], 1),
-                _vm._v(" "),
-                _c("swiper-slide", [_c("History")], 1),
-                _vm._v(" "),
-                _c(
-                  "swiper-slide",
-                  { staticClass: "epoque-slide" },
-                  [_c("Epoque")],
-                  1
-                ),
-                _vm._v(" "),
-                _c("swiper-slide", { staticClass: "roof-slide" }),
-                _vm._v(" "),
-                _c(
-                  "swiper-slide",
-                  { staticClass: "theater-slide" },
-                  [_c("Theater")],
-                  1
-                ),
-                _vm._v(" "),
                 _c(
                   "swiper-slide",
                   { staticClass: "popularity-slide" },
@@ -13944,12 +13929,12 @@ var render = function() {
             [
               person.type !== "last"
                 ? [
-                    _c("span", { staticClass: "person__name" }, [
-                      _vm._v(_vm._s(person.name))
-                    ]),
-                    _vm._v(" "),
                     _c("div", { staticClass: "person__content" }, [
                       _c("div", { staticClass: "person__pic-wrapper" }, [
+                        _c("span", { staticClass: "person__name" }, [
+                          _vm._v(_vm._s(person.name))
+                        ]),
+                        _vm._v(" "),
                         _c("div", { staticClass: "person__pic" }, [
                           _c("img", {
                             attrs: {
@@ -13988,59 +13973,61 @@ var render = function() {
                       ])
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "person__pic-wrapper" }, [
-                      _c("div", { staticClass: "person__pic" }, [
-                        _c("img", {
-                          attrs: {
-                            src: person.src,
-                            alt: person.alt,
-                            width: person.width,
-                            height: person.height
-                          }
-                        })
+                    _c("div", { staticClass: "person__body" }, [
+                      _c("div", { staticClass: "person__pic-wrapper" }, [
+                        _c("div", { staticClass: "person__pic" }, [
+                          _c("img", {
+                            attrs: {
+                              src: person.src,
+                              alt: person.alt,
+                              width: person.width,
+                              height: person.height
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "person__name" }, [
+                          _vm._v(_vm._s(person.name))
+                        ])
                       ]),
                       _vm._v(" "),
-                      _c("span", { staticClass: "person__name" }, [
-                        _vm._v(_vm._s(person.name))
+                      _c("p", { staticClass: "person__text-additional" }, [
+                        _vm._v(
+                          "\n              " +
+                            _vm._s(person.text_additional) +
+                            "\n              "
+                        ),
+                        _c(
+                          "a",
+                          {
+                            staticClass:
+                              "button button--round button--epoque button--person",
+                            attrs: { href: "#" }
+                          },
+                          [
+                            _c(
+                              "svg",
+                              {
+                                staticClass: "icon",
+                                attrs: {
+                                  width: "18",
+                                  height: "18",
+                                  "aria-hidden": "true"
+                                }
+                              },
+                              [_c("use", { attrs: { "xlink:href": "#arrow" } })]
+                            ),
+                            _vm._v(" "),
+                            _c("span", [
+                              _vm._v(
+                                "\n                  " +
+                                  _vm._s(_vm.search_text_desktop) +
+                                  "\n                "
+                              )
+                            ])
+                          ]
+                        )
                       ])
-                    ]),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "person__text-additional" }, [
-                      _vm._v(
-                        "\n            " +
-                          _vm._s(person.text_additional) +
-                          "\n            "
-                      ),
-                      _c(
-                        "a",
-                        {
-                          staticClass:
-                            "button button--round button--epoque button--person",
-                          attrs: { href: "#" }
-                        },
-                        [
-                          _c(
-                            "svg",
-                            {
-                              staticClass: "icon",
-                              attrs: {
-                                width: "18",
-                                height: "18",
-                                "aria-hidden": "true"
-                              }
-                            },
-                            [_c("use", { attrs: { "xlink:href": "#arrow" } })]
-                          ),
-                          _vm._v(" "),
-                          _c("span", [
-                            _vm._v(
-                              "\n                " +
-                                _vm._s(_vm.search_text_desktop) +
-                                "\n              "
-                            )
-                          ])
-                        ]
-                      )
                     ])
                   ]
             ],
@@ -14080,12 +14067,16 @@ var render = function() {
           _c("div", { staticClass: "container" }, [
             _c("div", { staticClass: "popularity__content" }, [
               _c("div", { staticClass: "popularity__texts" }, [
-                _c("h3", [_vm._v(_vm._s(_vm.title_desktop))]),
-                _vm._v(" "),
-                _c("p", { staticClass: "popularity__text" }, [
-                  _vm._v(
-                    "\n            " + _vm._s(_vm.main_text) + "\n          "
-                  )
+                _c("div", { staticClass: "popularity__texts-wrapper" }, [
+                  _c("h3", [_vm._v(_vm._s(_vm.title_desktop))]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "popularity__text" }, [
+                    _vm._v(
+                      "\n              " +
+                        _vm._s(_vm.main_text) +
+                        "\n            "
+                    )
+                  ])
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "popularity__posters" }, [
@@ -16345,8 +16336,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var v_click_outside__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(v_click_outside__WEBPACK_IMPORTED_MODULE_19__);
 /* harmony import */ var vue_youtube_embed__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! vue-youtube-embed */ "./node_modules/vue-youtube-embed/lib/vue-youtube-embed.js");
 /* harmony import */ var _lib_Helpers_js__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../lib/Helpers.js */ "./src/lib/Helpers.js");
-function asyncGeneratorStep(gen,resolve,reject,_next,_throw,key,arg){try{var info=gen[key](arg);var value=info.value;}catch(error){reject(error);return;}if(info.done){resolve(value);}else{Promise.resolve(value).then(_next,_throw);}}function _asyncToGenerator(fn){return function(){var self=this,args=arguments;return new Promise(function(resolve,reject){var gen=fn.apply(self,args);function _next(value){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"next",value);}function _throw(err){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"throw",err);}_next(undefined);});};}vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(v_click_outside__WEBPACK_IMPORTED_MODULE_19___default.a);vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(vue_the_mask__WEBPACK_IMPORTED_MODULE_2___default.a);vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(_lib_Helpers_js__WEBPACK_IMPORTED_MODULE_21__["default"]);vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('slide-up-down',vue_slide_up_down__WEBPACK_IMPORTED_MODULE_4__["default"]);vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(vue_youtube_embed__WEBPACK_IMPORTED_MODULE_20__["default"]);vue__WEBPACK_IMPORTED_MODULE_1___default.a.config.comments=true;vue__WEBPACK_IMPORTED_MODULE_1___default.a.config.ignoredElements=['noindex',/^ion-/];var app=new vue__WEBPACK_IMPORTED_MODULE_1___default.a({el:'#app',data:function data(){return{window_top:0,header_top:0,header_height:183,tabletBreakpoint:1025,// mobileBreakpoint: 767,
-mobileBreakpoint:600,menuShown:false,width:null,height:null,bowser:null,ym_counter:null,recaptcha_key:null};},watch:{},created:function created(){var _this=this;return _asyncToGenerator(/*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(){return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:_this.width=window.innerWidth;_this.height=window.innerHeight;// this.bowser = Bowser.parse(window.navigator.userAgent);
+function asyncGeneratorStep(gen,resolve,reject,_next,_throw,key,arg){try{var info=gen[key](arg);var value=info.value;}catch(error){reject(error);return;}if(info.done){resolve(value);}else{Promise.resolve(value).then(_next,_throw);}}function _asyncToGenerator(fn){return function(){var self=this,args=arguments;return new Promise(function(resolve,reject){var gen=fn.apply(self,args);function _next(value){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"next",value);}function _throw(err){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"throw",err);}_next(undefined);});};}vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(v_click_outside__WEBPACK_IMPORTED_MODULE_19___default.a);vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(vue_the_mask__WEBPACK_IMPORTED_MODULE_2___default.a);vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(_lib_Helpers_js__WEBPACK_IMPORTED_MODULE_21__["default"]);vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('slide-up-down',vue_slide_up_down__WEBPACK_IMPORTED_MODULE_4__["default"]);vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(vue_youtube_embed__WEBPACK_IMPORTED_MODULE_20__["default"]);vue__WEBPACK_IMPORTED_MODULE_1___default.a.config.comments=true;vue__WEBPACK_IMPORTED_MODULE_1___default.a.config.ignoredElements=['noindex',/^ion-/];var app=new vue__WEBPACK_IMPORTED_MODULE_1___default.a({el:'#app',data:function data(){return{window_top:0,header_top:0,header_height:183,tabletBreakpoint:1025,mobileBreakpoint:767,menuShown:false,width:null,height:null,bowser:null,ym_counter:null,recaptcha_key:null};},watch:{},created:function created(){var _this=this;return _asyncToGenerator(/*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(){return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:_this.width=window.innerWidth;_this.height=window.innerHeight;// this.bowser = Bowser.parse(window.navigator.userAgent);
 case 2:case"end":return _context.stop();}}},_callee);}))();},computed:{isTablet:function isTablet(){return this.width<=this.tabletBreakpoint;},isMobile:function isMobile(){return this.width<=this.mobileBreakpoint;}},mounted:function mounted(){this.addListeners();},methods:{addListeners:function addListeners(){window.addEventListener('scroll',this.onScroll);window.addEventListener('resize',this.onResize);window.onload=function(){};},onScroll:function onScroll(e){this.window_top=window.pageYOffset;},onResize:function onResize(){this.width=window.innerWidth;this.height=window.innerHeight;this.menuShown=false;},reachGoal:function reachGoal(goal){if(typeof ym!=='undefined'){ym(this.ym_counter,'reachGoal',goal);console.log(goal);}},getRecaptchaToken:function getRecaptchaToken(action){var _this2=this;return new Promise(function(resolve,reject){if(typeof grecaptcha==='undefined'){return resolve(false);}grecaptcha.ready(function(){grecaptcha.execute(_this2.recaptcha_key,{action:action}).then(function(token){return resolve(token);},function(error){console.log(error);return resolve(false);});});});}},components:{Sprite:_components_Sprite_vue__WEBPACK_IMPORTED_MODULE_5__["default"],HeaderMain:_components_HeaderMain_vue__WEBPACK_IMPORTED_MODULE_6__["default"],MainPage:_components_MainPage_vue__WEBPACK_IMPORTED_MODULE_7__["default"],History:_components_History_vue__WEBPACK_IMPORTED_MODULE_8__["default"],Epoque:_components_Epoque_vue__WEBPACK_IMPORTED_MODULE_9__["default"],Introduction:_components_Introduction_vue__WEBPACK_IMPORTED_MODULE_15__["default"],Theater:_components_Theater_vue__WEBPACK_IMPORTED_MODULE_13__["default"],Popularity:_components_Popularity_vue__WEBPACK_IMPORTED_MODULE_10__["default"],Neighbours:_components_Neighbours_vue__WEBPACK_IMPORTED_MODULE_12__["default"],FooterMain:_components_FooterMain_vue__WEBPACK_IMPORTED_MODULE_14__["default"],Skyscraper:_components_Skyscraper_vue__WEBPACK_IMPORTED_MODULE_11__["default"],Socials:_components_Socials_vue__WEBPACK_IMPORTED_MODULE_16__["default"],Next:_components_Next_vue__WEBPACK_IMPORTED_MODULE_17__["default"],Statue:_components_Statue_vue__WEBPACK_IMPORTED_MODULE_18__["default"]}});
 
 /***/ }),
