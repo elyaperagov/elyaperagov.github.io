@@ -20,8 +20,17 @@
       ]
     },
 
+    "message": {
+      "text": "Ваше сообщение успешно отправлено!"
+
+    },
+
     "banners": {
       "title": "Настройка и ведение контекстной <span>рекламы</span> <br><b>в <p>яндекс директе</p> и <p>гугл рекламе</p></b>",
+      "form": {
+        "name": "Форма",
+        "link": "#form"
+      },
       "advantages": [
         {
           "text": "Лидогенерация"
@@ -34,7 +43,7 @@
         }
       ],
       "order": "Заказать",
-      "picture": "img/graphics.png",
+      "picture": "img/banner.png",
       "alt": "ATresulting.ru"
     },
     "advantages": {
@@ -170,7 +179,7 @@
             }
           ],
 
-          "title": "1300 руб. стоимость заявки на нwrgwrgwrgум качества",
+          "title": "130000 руб. стоимость заявки на улучшение качества",
           "image": "img/production.jpg",
           "case_details": [
             {
