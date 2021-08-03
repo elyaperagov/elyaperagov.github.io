@@ -1,0 +1,448 @@
+{
+  "blocks": {
+    "header_main": {
+      "logoSrc": "/img/ATresulting.ru.svg",
+      "logoAlt": "логотип ATresulting.ru",
+      "menu": [
+        {
+          "name": "Услуги",
+          "link": "#services"
+        },
+
+        {
+          "name": "Кейсы",
+          "link": "#cases"
+        },
+        {
+          "name": "Контакты",
+          "link": "#contacts"
+        }
+      ]
+    },
+
+    "banners": {
+      "title": "Настройка и ведение контекстной <span>рекламы</span> <br><b>в <p>яндекс директе</p> и <p>гугл рекламе</p></b>",
+      "advantages": [
+        {
+          "text": "Лидогенерация"
+        },
+        {
+          "text": "Контекстная реклама"
+        },
+        {
+          "text": "Автоматизация online продаж"
+        }
+      ],
+      "order": "Заказать",
+      "picture": "img/graphics.png",
+      "alt": "ATresulting.ru"
+    },
+    "advantages": {
+      "advantages":[
+        {
+          "text": "Подробная аналитика",
+          "src": "img/analytics.svg"
+
+        },
+        {
+          "text": "Работа напрямую с ЦА",
+          "src": "img/talk.svg"
+        },
+        {
+          "text": "Отслеживаем каждый шаг",
+          "src": "img/monitor.svg"
+        },
+        {
+          "text": "Увеличение конверсии",
+          "src": "img/stats.svg"
+        }
+      ]
+    },
+    "footer": {
+      "footer_items":[
+        {
+          "text": "+7 (196) 123-45-67",
+          "link": "tel:+71961234567"
+        },
+        {
+          "text": "atresulting@gmail.com",
+          "link": "mailto:atresulting@gmail.com"
+        },
+        {
+          "text": "@atresulting",
+          "link": "tg://resolve?domain=<atresulting>"
+        }
+      ]
+    },
+    "form": {
+      "image": {
+        "src": "img/form-image.png",
+        "alt": "Заполните форму обратной связи"
+      },
+      "title": "Закажите настройку контекстной рекламы уже сейчас",
+      "subtitle": "И получите результаты в кратчайшие сроки",
+      "button_end": "Заказать"
+    },
+    "services": {
+      "title": "Наши услуги",
+      "services":[
+        {
+          "text": "Глубокий анализ конкурентов",
+          "src": "img/advertizing.svg"
+
+        },
+        {
+          "text": "Подготовка, запуск, ведение рекламных компаний",
+          "src": "img/launch.svg"
+        },
+        {
+          "text": "Внедрение колл-трекинга, сквозной аналитики",
+          "src": "img/call.svg"
+        },
+        {
+          "text": "Внедрение CRM",
+          "src": "img/crm.svg"
+        },
+        {
+          "text": "Разработка лендингов, сайтов, сервисов",
+          "src": "img/developing.svg"
+        },
+        {
+          "text": "Медиапланирование",
+          "src": "img/media.svg"
+        }
+      ]
+    },
+    "questions": {
+      "title": "Остались <span>вопросы?</span>",
+      "subtitle": "Напишите нам в любой удобный для вас месенжер",
+      "contacts":[
+        {
+          "text": "Telegram",
+          "icon_id": "#tg",
+          "icon_width": 20,
+          "icon_height": 20,
+          "link": "tg://resolve?domain=<atresulting>"
+        },
+        {
+          "text": "Whatsapp",
+          "icon_id": "#whatsapp",
+          "icon_width": 20,
+          "icon_height": 20,
+          "link": "https://wa.me/<+71961234567>"
+        },
+        {
+          "text": "Почта",
+          "icon_id": "#email",
+          "icon_width": 27,
+          "icon_height": 20,
+          "link": "mailto:atresulting@gmail.com"
+        }
+
+      ]
+    },
+    "cases": {
+      "title": "Наши кейсы",
+
+      "slides": [
+        {
+          "view": false,
+          "pictures": [
+            {
+              "src": "img/case.jpg",
+              "alt": "Кейс"
+            },
+            {
+              "src": "img/case.jpg",
+              "alt": "Кейс"
+            }
+          ],
+
+          "title": "1300 руб. стоимость заявки на нwrgwrgwrgум качества",
+          "image": "img/production.jpg",
+          "case_details": [
+            {
+              "detail_name": "Ниша",
+              "detail": "Колористика"
+
+            },
+            {
+              "detail_name": "Регион",
+              "detail": "Москва"
+            },
+            {
+              "detail_name": "Срок реализации",
+              "detail": "2 недели"
+            }
+          ],
+
+          "additional": {
+            "title": "Что сделано",
+            "result": "Результат",
+            "done_list": [
+              {
+                "text": "2 лендинг пейдж под каждый тип аудитории + страница сбора дополнительных контактных данных"
+              },
+              {
+                "text": "Добавлена возможность регистрации через viber, whatsаpp, vk"
+              },
+              {
+                "text": "Настроена таргетированная реклама в Facebook"
+              }
+            ],
+            "results_list": [
+              {
+                "text": "1 041 регистрация за 3 дня"
+              },
+              {
+                "text": "CPL = 8,80 руб./регистрация"
+              },
+              {
+                "text": "Конверсия в регистрацию 28,41%"
+              }
+            ],
+            "showOptions": false
+          },
+
+          "then": "Было",
+          "now": "Стало",
+          "data_blocks": [
+            {
+              "title": "CPL",
+              "then": "1 200 000",
+              "now": "1 800 000"
+            },
+            {
+              "title": "Конверсия",
+              "then": "1 200 000",
+              "now": "1 800 000"
+            },
+            {
+              "title": "ROI",
+              "then": "1 200 000",
+              "now": "1 800 000"
+            }
+          ]
+        },
+
+
+        {
+          "view": false,
+          "pictures": [
+            {
+              "src": "img/case.jpg",
+              "alt": "Кейс"
+            },
+            {
+              "src": "img/case.jpg",
+              "alt": "Кейс"
+            }
+          ],
+          "title": "1300 руб. стоимость заявки на натяжные потолки премиум качества",
+          "image": "img/production.jpg",
+          "case_details": [
+            {
+              "detail_name": "Ниша",
+              "detail": "Колористика"
+
+            },
+            {
+              "detail_name": "Регион",
+              "detail": "Москва"
+            },
+            {
+              "detail_name": "Срок реализации",
+              "detail": "2 недели"
+            }
+          ],
+          "then": "Было",
+          "now": "Стало",
+          "additional": {
+            "title": "Что сделано",
+            "showOptions": false
+          },
+          "data_blocks": [
+            {
+              "title": "CPL",
+              "then": "1 200 000",
+              "now": "1 800 000"
+            },
+            {
+              "title": "Конверсия",
+              "then": "1 200 000",
+              "now": "1 800 000"
+            },
+            {
+              "title": "ROI",
+              "then": "1 200 000",
+              "now": "1 800 000"
+            }
+          ]
+        },
+        {
+          "view": false,
+          "pictures": [
+            {
+              "src": "img/case.jpg",
+              "alt": "Кейс"
+            },
+            {
+              "src": "img/case.jpg",
+              "alt": "Кейс"
+            }
+          ],
+          "title": "1300 руб. стоимость заявки на натяжные потолки премиум качества",
+          "image": "img/production.jpg",
+          "case_details": [
+            {
+              "detail_name": "Ниша",
+              "detail": "Колористика"
+
+            },
+            {
+              "detail_name": "Регион",
+              "detail": "Москва"
+            },
+            {
+              "detail_name": "Срок реализации",
+              "detail": "2 недели"
+            }
+          ],
+          "then": "Было",
+          "now": "Стало",
+          "additional": {
+            "title": "Что сделано",
+            "showOptions": false
+          },
+          "data_blocks": [
+            {
+              "title": "CPL",
+              "then": "1 200 000",
+              "now": "1 800 000"
+            },
+            {
+              "title": "Конверсия",
+              "then": "1 200 000",
+              "now": "1 800 000"
+            },
+            {
+              "title": "ROI",
+              "then": "1 200 000",
+              "now": "1 800 000"
+            }
+          ]
+        },
+        {
+          "view": false,
+          "pictures": [
+            {
+              "src": "img/case.jpg",
+              "alt": "Кейс"
+            },
+            {
+              "src": "img/case.jpg",
+              "alt": "Кейс"
+            }
+          ],
+          "title": "1300 руб. стоимость заявки на натяжные потолки премиум качества",
+          "image": "img/production.jpg",
+          "case_details": [
+            {
+              "detail_name": "Ниша",
+              "detail": "Колористика"
+
+            },
+            {
+              "detail_name": "Регион",
+              "detail": "Москва"
+            },
+            {
+              "detail_name": "Срок реализации",
+              "detail": "2 недели"
+            }
+          ],
+          "then": "Было",
+          "now": "Стало",
+          "additional": {
+            "title": "Что сделано",
+            "showOptions": false
+          },
+          "data_blocks": [
+            {
+              "title": "CPL",
+              "then": "1 200 000",
+              "now": "1 800 000"
+            },
+            {
+              "title": "Конверсия",
+              "then": "1 200 000",
+              "now": "1 800 000"
+            },
+            {
+              "title": "ROI",
+              "then": "1 200 000",
+              "now": "1 800 000"
+            }
+          ]
+        },
+        {
+          "view": false,
+          "pictures": [
+            {
+              "src": "img/case.jpg",
+              "alt": "Кейс"
+            },
+            {
+              "src": "img/case.jpg",
+              "alt": "Кейс"
+            }
+          ],
+          "title": "1300 руб. стоимость заявки на натяжные потолки премиум качества",
+          "image": "img/production.jpg",
+          "case_details": [
+            {
+              "detail_name": "Ниша",
+              "detail": "Колористика"
+
+            },
+            {
+              "detail_name": "Регион",
+              "detail": "Москва"
+            },
+            {
+              "detail_name": "Срок реализации",
+              "detail": "2 недели"
+            }
+          ],
+          "then": "Было",
+          "now": "Стало",
+          "additional": {
+            "title": "Что сделано",
+            "showOptions": false
+          },
+          "data_blocks": [
+            {
+              "title": "CPL",
+              "then": "1 200 000",
+              "now": "1 800 000"
+            },
+            {
+              "title": "Конверсия",
+              "then": "1 200 000",
+              "now": "1 800 000"
+            },
+            {
+              "title": "ROI",
+              "then": "1 200 000",
+              "now": "1 800 000"
+            }
+          ]
+        }
+
+
+
+      ]
+
+    }
+  }
+}
