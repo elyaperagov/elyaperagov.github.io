@@ -2121,7 +2121,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({name:"cases",components:{Swiper:vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_1__["Swiper"],SwiperSlide:vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_1__["SwiperSlide"],FastView:_FastView_vue__WEBPACK_IMPORTED_MODULE_0__["default"]},data:function data(){return{showOptions:false,SliderOptions:{slidesPerView:"auto",navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination",clickable:true}},ImageSliderOptions:{slidesPerView:"auto",navigation:{nextEl:".swiper-picture-next",prevEl:".swiper-picture-prev"},pagination:{el:".swiper-pagination",clickable:true}}};},mounted:function mounted(){},beforeDestroy:function beforeDestroy(){},methods:{toggleBlock:function toggleBlock(i){this.data.slides[i].additional.showOptions=!this.data.slides[i].additional.showOptions;this.data.slides.forEach(function(element,key){if(key!==i){element.additional.showOptions=false;}});},FastViewOpen:function FastViewOpen(p){this.data.slides[p].view=true;this.data.slides.forEach(function(item,key){if(key!==p){item.view=false;}});}},computed:{data:function data(){return this.$store.state.blocks.cases;},isFastViewModalVisible:function isFastViewModalVisible(){return this.$store.getters.FastViewModalState;},viewProduct:function viewProduct(){var view=[];this.data.slides.forEach(function(item){if(item.view){view.push(item);}});return view;}}});
+/* harmony default export */ __webpack_exports__["default"] = ({name:"cases",components:{Swiper:vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_1__["Swiper"],SwiperSlide:vue_awesome_swiper__WEBPACK_IMPORTED_MODULE_1__["SwiperSlide"],FastView:_FastView_vue__WEBPACK_IMPORTED_MODULE_0__["default"]},data:function data(){return{showOptions:false,SliderOptions:{slidesPerView:"auto",navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination",clickable:true}},ImageSliderOptions:{slidesPerView:"auto",navigation:{nextEl:".swiper-picture-next",prevEl:".swiper-picture-prev"},pagination:{el:".swiper-picture-pagination",clickable:true}}};},mounted:function mounted(){},beforeDestroy:function beforeDestroy(){},methods:{toggleBlock:function toggleBlock(i){this.data.slides[i].additional.showOptions=!this.data.slides[i].additional.showOptions;this.data.slides.forEach(function(element,key){if(key!==i){element.additional.showOptions=false;}});},FastViewOpen:function FastViewOpen(p){this.data.slides[p].view=true;this.data.slides.forEach(function(item,key){if(key!==p){item.view=false;}});}},computed:{data:function data(){return this.$store.state.blocks.cases;},isFastViewModalVisible:function isFastViewModalVisible(){return this.$store.getters.FastViewModalState;},viewProduct:function viewProduct(){var view=[];this.data.slides.forEach(function(item){if(item.view){view.push(item);}});return view;}}});
 
 /***/ }),
 
@@ -19197,7 +19197,7 @@ var render = function() {
                               ),
                               _vm._v(" "),
                               _c("div", {
-                                staticClass: "swiper-pagination",
+                                staticClass: "swiper-picture-pagination",
                                 attrs: { slot: "pagination" },
                                 slot: "pagination"
                               })
