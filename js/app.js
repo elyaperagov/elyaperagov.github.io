@@ -1949,6 +1949,7 @@ var _name$components$data;function _defineProperty(obj,key,value){if(key in obj)
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _OrderPopup_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./OrderPopup.vue */ "./src/components/OrderPopup.vue");
 var _name$components$data;function _defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}function asyncGeneratorStep(gen,resolve,reject,_next,_throw,key,arg){try{var info=gen[key](arg);var value=info.value;}catch(error){reject(error);return;}if(info.done){resolve(value);}else{Promise.resolve(value).then(_next,_throw);}}function _asyncToGenerator(fn){return function(){var self=this,args=arguments;return new Promise(function(resolve,reject){var gen=fn.apply(self,args);function _next(value){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"next",value);}function _throw(err){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"throw",err);}_next(undefined);});};}//
 //
 //
@@ -1977,7 +1978,10 @@ var _name$components$data;function _defineProperty(obj,key,value){if(key in obj)
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = (_name$components$data={name:"Banners",components:{},data:function data(){return{};},computed:{data:function data(){return this.$store.state.blocks.banners;},menu:function menu(){return this.$store.state.blocks.header_main;}},mounted:function mounted(){},methods:{goTo:function goTo(link){var _this=this;return _asyncToGenerator(/*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(){return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:if(!_this.$scrollTo(link)){setTimeout(function(){_this.$scrollTo(link);},500);}case 1:case"end":return _context.stop();}}},_callee);}))();}}},_defineProperty(_name$components$data,"mounted",function mounted(){}),_defineProperty(_name$components$data,"beforeDestroy",function beforeDestroy(){}),_name$components$data);
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = (_name$components$data={name:"Banners",components:{OrderPopup:_OrderPopup_vue__WEBPACK_IMPORTED_MODULE_2__["default"]},data:function data(){return{};},computed:{data:function data(){return this.$store.state.blocks.banners;},menu:function menu(){return this.$store.state.blocks.header_main;},isOrderModalVisible:function isOrderModalVisible(){return this.$store.getters.OrderModalState;}},mounted:function mounted(){},methods:{goTo:function goTo(link){var _this=this;return _asyncToGenerator(/*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(){return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:if(!_this.$scrollTo(link)){setTimeout(function(){_this.$scrollTo(link);},500);}case 1:case"end":return _context.stop();}}},_callee);}))();}}},_defineProperty(_name$components$data,"mounted",function mounted(){}),_defineProperty(_name$components$data,"beforeDestroy",function beforeDestroy(){}),_name$components$data);
 
 /***/ }),
 
@@ -2272,7 +2276,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({name:"FastView",data:function data(){return{};},props:{viewProduct:Object},computed:{isFastViewModalVisible:function isFastViewModalVisible(){return this.$store.getters.FastViewModalState;}},created:function created(){var that=this;document.addEventListener("keyup",function(evt){if(evt.keyCode===27){that.closeModal();}});},methods:{closeModal:function closeModal(){if(this.$store.state.isFastViewModalVisible===true){this.$store.state.isFastViewModalVisible=false;}this.$store.commit("ModalClose",state);}},watch:{},destroyed:function destroyed(){},components:{},mounted:function mounted(){window.addEventListener("resize",this.closeModal);},beforeDestroy:function beforeDestroy(){window.removeEventListener("resize",this.closeModal);}});
+/* harmony default export */ __webpack_exports__["default"] = ({name:"FastView",data:function data(){return{};},props:{viewProduct:Object},computed:{isFastViewModalVisible:function isFastViewModalVisible(){return this.$store.getters.FastViewModalState;}},created:function created(){var that=this;document.addEventListener("keyup",function(evt){if(evt.keyCode===27){that.closeModal();}});},methods:{closeModal:function closeModal(){if(this.$store.state.isFastViewModalVisible===true){this.$store.state.isFastViewModalVisible=false;}this.$store.commit("ModalClose");}},watch:{},destroyed:function destroyed(){},components:{},mounted:function mounted(){window.addEventListener("resize",this.closeModal);},beforeDestroy:function beforeDestroy(){window.removeEventListener("resize",this.closeModal);}});
 
 /***/ }),
 
@@ -2410,7 +2414,7 @@ function asyncGeneratorStep(gen,resolve,reject,_next,_throw,key,arg){try{var inf
 // const response = await axios.post("/api/", data).catch(error => {
 //   console.log(error);
 // });
-_this.$store.state.showMessage=true;setTimeout(function(){_this.$store.state.showMessage=false;},5000);case 4:case"end":return _context.stop();}}},_callee);}))();}}});
+_this.$store.state.showMessage=true;setTimeout(function(){_this.$store.state.showMessage=false;},3000);case 4:case"end":return _context.stop();}}},_callee);}))();}}});
 
 /***/ }),
 
@@ -2508,6 +2512,117 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({name:"Message",data:function data(){return{messages:[]};},props:{},methods:{},created:function created(){},computed:{data:function data(){return this.$store.state.blocks.message;},messageShow:function messageShow(){return this.$store.state.showMessage;}}});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/components/OrderPopup.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/OrderPopup.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+function asyncGeneratorStep(gen,resolve,reject,_next,_throw,key,arg){try{var info=gen[key](arg);var value=info.value;}catch(error){reject(error);return;}if(info.done){resolve(value);}else{Promise.resolve(value).then(_next,_throw);}}function _asyncToGenerator(fn){return function(){var self=this,args=arguments;return new Promise(function(resolve,reject){var gen=fn.apply(self,args);function _next(value){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"next",value);}function _throw(err){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"throw",err);}_next(undefined);});};}//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({name:"Form",components:{},data:function data(){return{form:{name:{value:"",label:"Имя",type:"text",placeholder:"Введите Ваше имя",id:"order-name",error:""},phone:{value:"",label:"Номер телефона*",type:"tel",placeholder:"+7 (XXX) XXX-XX-XX",id:"order-phone",error:""}}};},props:{},computed:{data:function data(){return this.$store.state.blocks.order_popup;},isOrderModalVisible:function isOrderModalVisible(){return this.$store.getters.OrderModalState;}},mounted:function mounted(){},methods:{closeModal:function closeModal(){debugger;if(this.$store.state.isOrderModalVisible===true){this.$store.state.isOrderModalVisible=false;}this.$store.commit("ModalClose");},sendFrom:function sendFrom(){var _this=this;return _asyncToGenerator(/*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(){return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:if(_this.$validate(_this.form)){_context.next=2;break;}return _context.abrupt("return");case 2:// const data = new FormData();
+// for (let key in this.form) {
+//   if (typeof this.form[key].value !== "undefined") {
+//     data.append(key, this.form[key].value);
+//   }
+// }
+// const token = await this.$root.getRecaptchaToken("discount");
+// data.append("recaptcha_response", token);
+// data.append("method", "request");
+// const response = await axios.post("/api/", data).catch(error => {
+//   console.log(error);
+// });
+_this.$store.state.showMessage=true;setTimeout(function(){_this.$store.state.showMessage=false;},3000);case 4:case"end":return _context.stop();}}},_callee);}))();}},created:function created(){var that=this;document.addEventListener("keyup",function(evt){if(evt.keyCode===27){that.closeModal();}});}});
 
 /***/ }),
 
@@ -19193,8 +19308,7 @@ var render = function() {
                 domProps: { innerHTML: _vm._s(_vm.data.order) },
                 on: {
                   click: function($event) {
-                    $event.preventDefault()
-                    return _vm.goTo(_vm.data.form.link)
+                    return _vm.$store.commit("OrderModalOpen")
                   }
                 }
               })
@@ -19204,7 +19318,9 @@ var render = function() {
               _c("img", { attrs: { src: _vm.data.picture, alt: _vm.data.alt } })
             ])
           ])
-        ])
+        ]),
+        _vm._v(" "),
+        _c("div", [_vm.isOrderModalVisible ? _c("OrderPopup") : _vm._e()], 1)
       ])
     : _vm._e()
 }
@@ -19249,375 +19365,401 @@ var render = function() {
                     staticClass: "swiper case__swiper",
                     attrs: { options: _vm.SliderOptions }
                   },
-                  _vm._l(_vm.data.slides, function(slide, b) {
-                    return _c(
-                      "swiper-slide",
-                      { key: b, staticClass: "case__slide" },
-                      [
-                        _c(
-                          "swiper",
-                          {
-                            staticClass: "swiper case__image-swiper",
-                            attrs: { options: _vm.ImageSliderOptions }
-                          },
-                          [
-                            _vm._l(slide.pictures, function(picture, j) {
-                              return _c(
-                                "swiper-slide",
-                                { key: j, staticClass: "case__picture" },
-                                [
-                                  _c("img", {
-                                    attrs: {
-                                      src: picture.src,
-                                      alt: picture.alt
-                                    }
-                                  })
-                                ]
-                              )
-                            }),
-                            _vm._v(" "),
-                            _c(
-                              "button",
-                              {
-                                staticClass: "button swiper-picture-prev",
-                                attrs: { slot: "button-prev" },
-                                slot: "button-prev"
-                              },
-                              [
-                                _c(
-                                  "svg",
-                                  {
-                                    staticClass: "icon",
-                                    attrs: {
-                                      width: "17",
-                                      height: "28",
-                                      "aria-hidden": "true"
-                                    }
-                                  },
+                  [
+                    _vm._l(_vm.data.slides, function(slide, b) {
+                      return _c(
+                        "swiper-slide",
+                        { key: b, staticClass: "case__slide" },
+                        [
+                          _c(
+                            "swiper",
+                            {
+                              staticClass: "swiper case__image-swiper",
+                              attrs: { options: _vm.ImageSliderOptions }
+                            },
+                            [
+                              _vm._l(slide.pictures, function(picture, j) {
+                                return _c(
+                                  "swiper-slide",
+                                  { key: j, staticClass: "case__picture" },
                                   [
-                                    _c("use", {
+                                    _c("img", {
                                       attrs: {
-                                        "xlink:href": "#arrow-picture-swiper"
+                                        src: picture.src,
+                                        alt: picture.alt
                                       }
                                     })
                                   ]
                                 )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "button",
-                              {
-                                staticClass: "button swiper-picture-next",
-                                attrs: { slot: "button-next" },
-                                slot: "button-next"
-                              },
-                              [
-                                _c(
-                                  "svg",
-                                  {
-                                    staticClass: "icon",
-                                    attrs: {
-                                      width: "17",
-                                      height: "28",
-                                      "aria-hidden": "true"
-                                    }
-                                  },
-                                  [
-                                    _c("use", {
-                                      attrs: {
-                                        "xlink:href": "#arrow-picture-swiper"
-                                      }
-                                    })
-                                  ]
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c("div", {
-                              staticClass: "swiper-picture-pagination",
-                              attrs: { slot: "pagination" },
-                              slot: "pagination"
-                            })
-                          ],
-                          2
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "case__body" }, [
-                          _c("h4", {
-                            domProps: { innerHTML: _vm._s(slide.title) }
-                          }),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "case__details" },
-                            _vm._l(slide.case_details, function(
-                              case_detail,
-                              index
-                            ) {
-                              return _c(
-                                "div",
-                                { key: index, staticClass: "case__detail" },
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "button",
+                                {
+                                  staticClass: "button swiper-picture-prev",
+                                  attrs: { slot: "button-prev" },
+                                  slot: "button-prev"
+                                },
                                 [
-                                  _c("p", {
-                                    domProps: {
-                                      innerHTML: _vm._s(case_detail.detail_name)
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("span", {
-                                    domProps: {
-                                      innerHTML: _vm._s(case_detail.detail)
-                                    }
-                                  })
-                                ]
-                              )
-                            }),
-                            0
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "case__data" },
-                            _vm._l(slide.data_blocks, function(
-                              data_block,
-                              index
-                            ) {
-                              return _c(
-                                "div",
-                                { key: index, staticClass: "case__data-block" },
-                                [
-                                  _c("p", {
-                                    domProps: {
-                                      innerHTML: _vm._s(data_block.title)
-                                    }
-                                  }),
-                                  _vm._v(" "),
                                   _c(
-                                    "div",
-                                    { staticClass: "case__data-item" },
+                                    "svg",
+                                    {
+                                      staticClass: "icon",
+                                      attrs: {
+                                        width: "17",
+                                        height: "28",
+                                        "aria-hidden": "true"
+                                      }
+                                    },
                                     [
-                                      _c(
-                                        "div",
-                                        { staticClass: "case__data-numbers" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass: "case__data-number"
-                                            },
-                                            [
-                                              _c("b", {
-                                                staticClass: "case__then",
-                                                domProps: {
-                                                  innerHTML: _vm._s(
-                                                    data_block.then
-                                                  )
-                                                }
-                                              }),
-                                              _vm._v(" "),
-                                              _c("span", {
-                                                domProps: {
-                                                  innerHTML: _vm._s(slide.then)
-                                                }
-                                              })
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass: "case__data-number"
-                                            },
-                                            [
-                                              _c("b", {
-                                                staticClass: "case__now",
-                                                domProps: {
-                                                  innerHTML: _vm._s(
-                                                    data_block.now
-                                                  )
-                                                }
-                                              }),
-                                              _vm._v(" "),
-                                              _c("span", {
-                                                domProps: {
-                                                  innerHTML: _vm._s(slide.now)
-                                                }
-                                              })
-                                            ]
-                                          )
-                                        ]
-                                      )
+                                      _c("use", {
+                                        attrs: {
+                                          "xlink:href": "#arrow-picture-swiper"
+                                        }
+                                      })
                                     ]
                                   )
                                 ]
-                              )
-                            }),
-                            0
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "button",
+                                {
+                                  staticClass: "button swiper-picture-next",
+                                  attrs: { slot: "button-next" },
+                                  slot: "button-next"
+                                },
+                                [
+                                  _c(
+                                    "svg",
+                                    {
+                                      staticClass: "icon",
+                                      attrs: {
+                                        width: "17",
+                                        height: "28",
+                                        "aria-hidden": "true"
+                                      }
+                                    },
+                                    [
+                                      _c("use", {
+                                        attrs: {
+                                          "xlink:href": "#arrow-picture-swiper"
+                                        }
+                                      })
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c("div", {
+                                staticClass: "swiper-picture-pagination",
+                                attrs: { slot: "pagination" },
+                                slot: "pagination"
+                              })
+                            ],
+                            2
                           ),
                           _vm._v(" "),
-                          _c("div", { staticClass: "case__additional" }, [
+                          _c("div", { staticClass: "case__body" }, [
+                            _c("h4", {
+                              domProps: { innerHTML: _vm._s(slide.title) }
+                            }),
+                            _vm._v(" "),
                             _c(
                               "div",
-                              {
-                                staticClass: "case__additional-item",
-                                class: {
-                                  "case__additional-item--active":
-                                    slide.additional.showOptions
-                                }
-                              },
-                              [
-                                _c(
-                                  "slide-up-down",
+                              { staticClass: "case__details" },
+                              _vm._l(slide.case_details, function(
+                                case_detail,
+                                index
+                              ) {
+                                return _c(
+                                  "div",
+                                  { key: index, staticClass: "case__detail" },
+                                  [
+                                    _c("p", {
+                                      domProps: {
+                                        innerHTML: _vm._s(
+                                          case_detail.detail_name
+                                        )
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("span", {
+                                      domProps: {
+                                        innerHTML: _vm._s(case_detail.detail)
+                                      }
+                                    })
+                                  ]
+                                )
+                              }),
+                              0
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "case__data" },
+                              _vm._l(slide.data_blocks, function(
+                                data_block,
+                                index
+                              ) {
+                                return _c(
+                                  "div",
                                   {
-                                    attrs: {
-                                      active: slide.additional.showOptions
-                                    }
+                                    key: index,
+                                    staticClass: "case__data-block"
                                   },
                                   [
+                                    _c("p", {
+                                      domProps: {
+                                        innerHTML: _vm._s(data_block.title)
+                                      }
+                                    }),
+                                    _vm._v(" "),
                                     _c(
                                       "div",
-                                      { staticClass: "case__additional-texts" },
+                                      { staticClass: "case__data-item" },
                                       [
-                                        _c("p", [
-                                          _vm._v(_vm._s(slide.additional.title))
-                                        ]),
-                                        _vm._v(" "),
                                         _c(
-                                          "ul",
-                                          {
-                                            staticClass: "case__additional-text"
-                                          },
-                                          _vm._l(
-                                            slide.additional.done_list,
-                                            function(item, index) {
-                                              return _c("li", { key: index }, [
-                                                _c(
-                                                  "svg",
-                                                  {
-                                                    staticClass: "icon",
-                                                    attrs: {
-                                                      width: "8",
-                                                      height: "8",
-                                                      "aria-hidden": "true"
-                                                    }
-                                                  },
-                                                  [
-                                                    _c("use", {
-                                                      attrs: {
-                                                        "xlink:href":
-                                                          "#rectangle"
-                                                      }
-                                                    })
-                                                  ]
-                                                ),
+                                          "div",
+                                          { staticClass: "case__data-numbers" },
+                                          [
+                                            _c(
+                                              "div",
+                                              {
+                                                staticClass: "case__data-number"
+                                              },
+                                              [
+                                                _c("b", {
+                                                  staticClass: "case__then",
+                                                  domProps: {
+                                                    innerHTML: _vm._s(
+                                                      data_block.then
+                                                    )
+                                                  }
+                                                }),
                                                 _vm._v(" "),
                                                 _c("span", {
                                                   domProps: {
-                                                    innerHTML: _vm._s(item.text)
+                                                    innerHTML: _vm._s(
+                                                      slide.then
+                                                    )
                                                   }
                                                 })
-                                              ])
-                                            }
-                                          ),
-                                          0
-                                        ),
-                                        _vm._v(" "),
-                                        _c("p", [
-                                          _vm._v(
-                                            _vm._s(slide.additional.result)
-                                          )
-                                        ]),
-                                        _vm._v(" "),
-                                        _c(
-                                          "ul",
-                                          {
-                                            staticClass: "case__additional-text"
-                                          },
-                                          _vm._l(
-                                            slide.additional.results_list,
-                                            function(item, index) {
-                                              return _c("li", { key: index }, [
-                                                _c(
-                                                  "svg",
-                                                  {
-                                                    staticClass: "icon",
-                                                    attrs: {
-                                                      width: "8",
-                                                      height: "8",
-                                                      "aria-hidden": "true"
-                                                    }
-                                                  },
-                                                  [
-                                                    _c("use", {
-                                                      attrs: {
-                                                        "xlink:href":
-                                                          "#rectangle"
-                                                      }
-                                                    })
-                                                  ]
-                                                ),
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              {
+                                                staticClass: "case__data-number"
+                                              },
+                                              [
+                                                _c("b", {
+                                                  staticClass: "case__now",
+                                                  domProps: {
+                                                    innerHTML: _vm._s(
+                                                      data_block.now
+                                                    )
+                                                  }
+                                                }),
                                                 _vm._v(" "),
                                                 _c("span", {
                                                   domProps: {
-                                                    innerHTML: _vm._s(item.text)
+                                                    innerHTML: _vm._s(slide.now)
                                                   }
                                                 })
-                                              ])
-                                            }
-                                          ),
-                                          0
+                                              ]
+                                            )
+                                          ]
                                         )
                                       ]
                                     )
                                   ]
-                                ),
-                                _vm._v(" "),
-                                _vm.$root.isMobile
-                                  ? _c("button", {
-                                      staticClass: "button button--more",
-                                      class: {
-                                        "button--active":
-                                          slide.additional.showOptions
-                                      },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.toggleBlock(b)
-                                        }
+                                )
+                              }),
+                              0
+                            ),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "case__additional" }, [
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "case__additional-item",
+                                  class: {
+                                    "case__additional-item--active":
+                                      slide.additional.showOptions
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "slide-up-down",
+                                    {
+                                      attrs: {
+                                        active: slide.additional.showOptions
                                       }
-                                    })
-                                  : _c("button", {
-                                      staticClass: "button button--more",
-                                      class: {
-                                        "button--active":
-                                          slide.additional.showOptions
-                                      },
-                                      on: {
-                                        click: function($event) {
-                                          _vm.$store.commit(
-                                            "FastViewModalOpen"
+                                    },
+                                    [
+                                      _c(
+                                        "div",
+                                        {
+                                          staticClass: "case__additional-texts"
+                                        },
+                                        [
+                                          _c("p", [
+                                            _vm._v(
+                                              _vm._s(slide.additional.title)
+                                            )
+                                          ]),
+                                          _vm._v(" "),
+                                          _c(
+                                            "ul",
+                                            {
+                                              staticClass:
+                                                "case__additional-text"
+                                            },
+                                            _vm._l(
+                                              slide.additional.done_list,
+                                              function(item, index) {
+                                                return _c(
+                                                  "li",
+                                                  { key: index },
+                                                  [
+                                                    _c(
+                                                      "svg",
+                                                      {
+                                                        staticClass: "icon",
+                                                        attrs: {
+                                                          width: "8",
+                                                          height: "8",
+                                                          "aria-hidden": "true"
+                                                        }
+                                                      },
+                                                      [
+                                                        _c("use", {
+                                                          attrs: {
+                                                            "xlink:href":
+                                                              "#rectangle"
+                                                          }
+                                                        })
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c("span", {
+                                                      domProps: {
+                                                        innerHTML: _vm._s(
+                                                          item.text
+                                                        )
+                                                      }
+                                                    })
+                                                  ]
+                                                )
+                                              }
+                                            ),
+                                            0
                                           ),
-                                            _vm.FastViewOpen(b)
+                                          _vm._v(" "),
+                                          _c("p", [
+                                            _vm._v(
+                                              _vm._s(slide.additional.result)
+                                            )
+                                          ]),
+                                          _vm._v(" "),
+                                          _c(
+                                            "ul",
+                                            {
+                                              staticClass:
+                                                "case__additional-text"
+                                            },
+                                            _vm._l(
+                                              slide.additional.results_list,
+                                              function(item, index) {
+                                                return _c(
+                                                  "li",
+                                                  { key: index },
+                                                  [
+                                                    _c(
+                                                      "svg",
+                                                      {
+                                                        staticClass: "icon",
+                                                        attrs: {
+                                                          width: "8",
+                                                          height: "8",
+                                                          "aria-hidden": "true"
+                                                        }
+                                                      },
+                                                      [
+                                                        _c("use", {
+                                                          attrs: {
+                                                            "xlink:href":
+                                                              "#rectangle"
+                                                          }
+                                                        })
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c("span", {
+                                                      domProps: {
+                                                        innerHTML: _vm._s(
+                                                          item.text
+                                                        )
+                                                      }
+                                                    })
+                                                  ]
+                                                )
+                                              }
+                                            ),
+                                            0
+                                          )
+                                        ]
+                                      )
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _vm.$root.isMobile
+                                    ? _c("button", {
+                                        staticClass: "button button--more",
+                                        class: {
+                                          "button--active":
+                                            slide.additional.showOptions
+                                        },
+                                        on: {
+                                          click: function($event) {
+                                            return _vm.toggleBlock(b)
+                                          }
                                         }
-                                      }
-                                    })
-                              ],
-                              1
-                            )
+                                      })
+                                    : _c("button", {
+                                        staticClass: "button button--more",
+                                        class: {
+                                          "button--active":
+                                            slide.additional.showOptions
+                                        },
+                                        on: {
+                                          click: function($event) {
+                                            _vm.$store.commit(
+                                              "FastViewModalOpen"
+                                            ),
+                                              _vm.FastViewOpen(b)
+                                          }
+                                        }
+                                      })
+                                ],
+                                1
+                              )
+                            ])
                           ])
-                        ])
-                      ],
-                      1
-                    )
-                  }),
-                  1
+                        ],
+                        1
+                      )
+                    }),
+                    _c("div", {
+                      staticClass: "swiper-pagination",
+                      attrs: { slot: "pagination" },
+                      slot: "pagination"
+                    })
+                  ],
+                  2
                 ),
-                _vm._v(" "),
-                _c("div", {
-                  staticClass: "swiper-pagination",
-                  attrs: { slot: "pagination" },
-                  slot: "pagination"
-                }),
                 _vm._v(" "),
                 _c(
                   "button",
@@ -19721,230 +19863,253 @@ var render = function() {
                 }
               },
               [
-                _c("div", { staticClass: "modal__body" }, [
-                  _c("section", { staticClass: "case case--fastview" }, [
-                    _c("div", { staticClass: "case__inner" }, [
-                      _c("div", { staticClass: "case__fastview-wrapper" }, [
-                        _c("div", { staticClass: "case__picture" }, [
-                          _c("img", {
-                            attrs: {
-                              src: _vm.viewProduct.pictures[0].src,
-                              alt: _vm.viewProduct.pictures[0].alt
-                            }
-                          })
+                _c(
+                  "div",
+                  {
+                    staticClass: "modal__body",
+                    attrs: { "data-aos": "zoom-in" }
+                  },
+                  [
+                    _c("section", { staticClass: "case case--fastview" }, [
+                      _c("div", { staticClass: "case__inner" }, [
+                        _c("div", { staticClass: "case__fastview-wrapper" }, [
+                          _c("div", { staticClass: "case__picture" }, [
+                            _c("img", {
+                              attrs: {
+                                src: _vm.viewProduct.pictures[0].src,
+                                alt: _vm.viewProduct.pictures[0].alt
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "case__titles" }, [
+                            _c("h4", {
+                              domProps: {
+                                innerHTML: _vm._s(_vm.viewProduct.title)
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "case__details" },
+                              _vm._l(_vm.viewProduct.case_details, function(
+                                case_detail,
+                                index
+                              ) {
+                                return _c(
+                                  "div",
+                                  { key: index, staticClass: "case__detail" },
+                                  [
+                                    _c("p", {
+                                      domProps: {
+                                        innerHTML: _vm._s(
+                                          case_detail.detail_name
+                                        )
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("span", {
+                                      domProps: {
+                                        innerHTML: _vm._s(case_detail.detail)
+                                      }
+                                    })
+                                  ]
+                                )
+                              }),
+                              0
+                            )
+                          ])
                         ]),
                         _vm._v(" "),
-                        _c("div", { staticClass: "case__titles" }, [
-                          _c("h4", {
-                            domProps: {
-                              innerHTML: _vm._s(_vm.viewProduct.title)
-                            }
-                          }),
-                          _vm._v(" "),
+                        _c("div", { staticClass: "case__body" }, [
                           _c(
                             "div",
-                            { staticClass: "case__details" },
-                            _vm._l(_vm.viewProduct.case_details, function(
-                              case_detail,
+                            { staticClass: "case__data" },
+                            _vm._l(_vm.viewProduct.data_blocks, function(
+                              data_block,
                               index
                             ) {
                               return _c(
                                 "div",
-                                { key: index, staticClass: "case__detail" },
+                                { key: index, staticClass: "case__data-block" },
                                 [
                                   _c("p", {
                                     domProps: {
-                                      innerHTML: _vm._s(case_detail.detail_name)
+                                      innerHTML: _vm._s(data_block.title)
                                     }
                                   }),
                                   _vm._v(" "),
-                                  _c("span", {
-                                    domProps: {
-                                      innerHTML: _vm._s(case_detail.detail)
-                                    }
-                                  })
-                                ]
-                              )
-                            }),
-                            0
-                          )
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "case__body" }, [
-                        _c(
-                          "div",
-                          { staticClass: "case__data" },
-                          _vm._l(_vm.viewProduct.data_blocks, function(
-                            data_block,
-                            index
-                          ) {
-                            return _c(
-                              "div",
-                              { key: index, staticClass: "case__data-block" },
-                              [
-                                _c("p", {
-                                  domProps: {
-                                    innerHTML: _vm._s(data_block.title)
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "case__data-item" }, [
                                   _c(
                                     "div",
-                                    { staticClass: "case__data-numbers" },
+                                    { staticClass: "case__data-item" },
                                     [
                                       _c(
                                         "div",
-                                        { staticClass: "case__data-number" },
+                                        { staticClass: "case__data-numbers" },
                                         [
-                                          _c("b", {
-                                            staticClass: "case__then",
-                                            domProps: {
-                                              innerHTML: _vm._s(data_block.then)
-                                            }
-                                          }),
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass: "case__data-number"
+                                            },
+                                            [
+                                              _c("b", {
+                                                staticClass: "case__then",
+                                                domProps: {
+                                                  innerHTML: _vm._s(
+                                                    data_block.then
+                                                  )
+                                                }
+                                              }),
+                                              _vm._v(" "),
+                                              _c("span", {
+                                                domProps: {
+                                                  innerHTML: _vm._s(
+                                                    _vm.viewProduct.then
+                                                  )
+                                                }
+                                              })
+                                            ]
+                                          ),
                                           _vm._v(" "),
-                                          _c("span", {
-                                            domProps: {
-                                              innerHTML: _vm._s(
-                                                _vm.viewProduct.then
-                                              )
-                                            }
-                                          })
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "case__data-number" },
-                                        [
-                                          _c("b", {
-                                            staticClass: "case__now",
-                                            domProps: {
-                                              innerHTML: _vm._s(data_block.now)
-                                            }
-                                          }),
-                                          _vm._v(" "),
-                                          _c("span", {
-                                            domProps: {
-                                              innerHTML: _vm._s(
-                                                _vm.viewProduct.now
-                                              )
-                                            }
-                                          })
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass: "case__data-number"
+                                            },
+                                            [
+                                              _c("b", {
+                                                staticClass: "case__now",
+                                                domProps: {
+                                                  innerHTML: _vm._s(
+                                                    data_block.now
+                                                  )
+                                                }
+                                              }),
+                                              _vm._v(" "),
+                                              _c("span", {
+                                                domProps: {
+                                                  innerHTML: _vm._s(
+                                                    _vm.viewProduct.now
+                                                  )
+                                                }
+                                              })
+                                            ]
+                                          )
                                         ]
                                       )
                                     ]
                                   )
-                                ])
-                              ]
-                            )
-                          }),
-                          0
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "case__additional-texts" }, [
-                          _c(
-                            "div",
-                            { staticClass: "case__additional-wrapper" },
-                            [
-                              _c("p", [
-                                _vm._v(_vm._s(_vm.viewProduct.additional.title))
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "ul",
-                                { staticClass: "case__additional-text" },
-                                _vm._l(
-                                  _vm.viewProduct.additional.done_list,
-                                  function(item, index) {
-                                    return _c("li", { key: index }, [
-                                      _c(
-                                        "svg",
-                                        {
-                                          staticClass: "icon",
-                                          attrs: {
-                                            width: "8",
-                                            height: "8",
-                                            "aria-hidden": "true"
-                                          }
-                                        },
-                                        [
-                                          _c("use", {
-                                            attrs: {
-                                              "xlink:href": "#rectangle"
-                                            }
-                                          })
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("span", {
-                                        domProps: {
-                                          innerHTML: _vm._s(item.text)
-                                        }
-                                      })
-                                    ])
-                                  }
-                                ),
-                                0
+                                ]
                               )
-                            ]
+                            }),
+                            0
                           ),
                           _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "case__additional-wrapper" },
-                            [
-                              _c("p", [
-                                _vm._v(
-                                  _vm._s(_vm.viewProduct.additional.result)
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "ul",
-                                { staticClass: "case__additional-text" },
-                                _vm._l(
-                                  _vm.viewProduct.additional.results_list,
-                                  function(item, index) {
-                                    return _c("li", { key: index }, [
-                                      _c(
-                                        "svg",
-                                        {
-                                          staticClass: "icon",
-                                          attrs: {
-                                            width: "8",
-                                            height: "8",
-                                            "aria-hidden": "true"
-                                          }
-                                        },
-                                        [
-                                          _c("use", {
+                          _c("div", { staticClass: "case__additional-texts" }, [
+                            _c(
+                              "div",
+                              { staticClass: "case__additional-wrapper" },
+                              [
+                                _c("p", [
+                                  _vm._v(
+                                    _vm._s(_vm.viewProduct.additional.title)
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "ul",
+                                  { staticClass: "case__additional-text" },
+                                  _vm._l(
+                                    _vm.viewProduct.additional.done_list,
+                                    function(item, index) {
+                                      return _c("li", { key: index }, [
+                                        _c(
+                                          "svg",
+                                          {
+                                            staticClass: "icon",
                                             attrs: {
-                                              "xlink:href": "#rectangle"
+                                              width: "8",
+                                              height: "8",
+                                              "aria-hidden": "true"
                                             }
-                                          })
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("span", {
-                                        domProps: {
-                                          innerHTML: _vm._s(item.text)
-                                        }
-                                      })
-                                    ])
-                                  }
-                                ),
-                                0
-                              )
-                            ]
-                          )
+                                          },
+                                          [
+                                            _c("use", {
+                                              attrs: {
+                                                "xlink:href": "#rectangle"
+                                              }
+                                            })
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c("span", {
+                                          domProps: {
+                                            innerHTML: _vm._s(item.text)
+                                          }
+                                        })
+                                      ])
+                                    }
+                                  ),
+                                  0
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "case__additional-wrapper" },
+                              [
+                                _c("p", [
+                                  _vm._v(
+                                    _vm._s(_vm.viewProduct.additional.result)
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "ul",
+                                  { staticClass: "case__additional-text" },
+                                  _vm._l(
+                                    _vm.viewProduct.additional.results_list,
+                                    function(item, index) {
+                                      return _c("li", { key: index }, [
+                                        _c(
+                                          "svg",
+                                          {
+                                            staticClass: "icon",
+                                            attrs: {
+                                              width: "8",
+                                              height: "8",
+                                              "aria-hidden": "true"
+                                            }
+                                          },
+                                          [
+                                            _c("use", {
+                                              attrs: {
+                                                "xlink:href": "#rectangle"
+                                              }
+                                            })
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c("span", {
+                                          domProps: {
+                                            innerHTML: _vm._s(item.text)
+                                          }
+                                        })
+                                      ])
+                                    }
+                                  ),
+                                  0
+                                )
+                              ]
+                            )
+                          ])
                         ])
                       ])
                     ])
-                  ])
-                ])
+                  ]
+                )
               ]
             )
           : _vm._e()
@@ -20636,6 +20801,466 @@ var render = function() {
             domProps: { innerHTML: _vm._s(_vm.data.text) }
           })
         ])
+      ])
+    : _vm._e()
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/OrderPopup.vue?vue&type=template&id=948b75a4&":
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/OrderPopup.vue?vue&type=template&id=948b75a4& ***!
+  \****************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm.isOrderModalVisible
+    ? _c("div", { staticClass: "modal" }, [
+        _c(
+          "div",
+          {
+            staticClass: "modal__overlay",
+            on: {
+              click: function($event) {
+                if ($event.target !== $event.currentTarget) {
+                  return null
+                }
+                return _vm.closeModal()
+              }
+            }
+          },
+          [
+            _c(
+              "div",
+              {
+                staticClass: "modal__body modal__body--order",
+                attrs: { "data-aos": "zoom-in" }
+              },
+              [
+                _c(
+                  "form",
+                  { staticClass: "order-popup", attrs: { action: "get" } },
+                  [
+                    _c("div", { staticClass: "order-popup__fields" }, [
+                      _c("h3", {
+                        staticClass: "order-popup__title",
+                        domProps: { innerHTML: _vm._s(_vm.data.title) }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "order-popup__field" },
+                        [
+                          _c(
+                            "div",
+                            { staticClass: "order-popup__field-wrapper" },
+                            [
+                              _c("label", {
+                                staticClass: "order-popup__label",
+                                attrs: { for: _vm.form.name.id },
+                                domProps: {
+                                  innerHTML: _vm._s(_vm.form.name.label)
+                                }
+                              }),
+                              _vm._v(" "),
+                              _vm.form.name.type === "checkbox"
+                                ? _c("input", {
+                                    directives: [
+                                      {
+                                        name: "model",
+                                        rawName: "v-model",
+                                        value: _vm.form.name.value,
+                                        expression: "form.name.value"
+                                      }
+                                    ],
+                                    staticClass: "order-popup__input",
+                                    class: {
+                                      "order-popup__input--error":
+                                        _vm.form.name.error,
+                                      "order-popup__input--filled":
+                                        _vm.form.name.value.length > 0
+                                    },
+                                    attrs: {
+                                      name: _vm.form.name.id,
+                                      id: _vm.form.name.id,
+                                      required: "required",
+                                      placeholder: _vm.form.name.placeholder,
+                                      type: "checkbox"
+                                    },
+                                    domProps: {
+                                      checked: Array.isArray(
+                                        _vm.form.name.value
+                                      )
+                                        ? _vm._i(_vm.form.name.value, null) > -1
+                                        : _vm.form.name.value
+                                    },
+                                    on: {
+                                      change: function($event) {
+                                        var $$a = _vm.form.name.value,
+                                          $$el = $event.target,
+                                          $$c = $$el.checked ? true : false
+                                        if (Array.isArray($$a)) {
+                                          var $$v = null,
+                                            $$i = _vm._i($$a, $$v)
+                                          if ($$el.checked) {
+                                            $$i < 0 &&
+                                              _vm.$set(
+                                                _vm.form.name,
+                                                "value",
+                                                $$a.concat([$$v])
+                                              )
+                                          } else {
+                                            $$i > -1 &&
+                                              _vm.$set(
+                                                _vm.form.name,
+                                                "value",
+                                                $$a
+                                                  .slice(0, $$i)
+                                                  .concat($$a.slice($$i + 1))
+                                              )
+                                          }
+                                        } else {
+                                          _vm.$set(_vm.form.name, "value", $$c)
+                                        }
+                                      }
+                                    }
+                                  })
+                                : _vm.form.name.type === "radio"
+                                ? _c("input", {
+                                    directives: [
+                                      {
+                                        name: "model",
+                                        rawName: "v-model",
+                                        value: _vm.form.name.value,
+                                        expression: "form.name.value"
+                                      }
+                                    ],
+                                    staticClass: "order-popup__input",
+                                    class: {
+                                      "order-popup__input--error":
+                                        _vm.form.name.error,
+                                      "order-popup__input--filled":
+                                        _vm.form.name.value.length > 0
+                                    },
+                                    attrs: {
+                                      name: _vm.form.name.id,
+                                      id: _vm.form.name.id,
+                                      required: "required",
+                                      placeholder: _vm.form.name.placeholder,
+                                      type: "radio"
+                                    },
+                                    domProps: {
+                                      checked: _vm._q(_vm.form.name.value, null)
+                                    },
+                                    on: {
+                                      change: function($event) {
+                                        return _vm.$set(
+                                          _vm.form.name,
+                                          "value",
+                                          null
+                                        )
+                                      }
+                                    }
+                                  })
+                                : _c("input", {
+                                    directives: [
+                                      {
+                                        name: "model",
+                                        rawName: "v-model",
+                                        value: _vm.form.name.value,
+                                        expression: "form.name.value"
+                                      }
+                                    ],
+                                    staticClass: "order-popup__input",
+                                    class: {
+                                      "order-popup__input--error":
+                                        _vm.form.name.error,
+                                      "order-popup__input--filled":
+                                        _vm.form.name.value.length > 0
+                                    },
+                                    attrs: {
+                                      name: _vm.form.name.id,
+                                      id: _vm.form.name.id,
+                                      required: "required",
+                                      placeholder: _vm.form.name.placeholder,
+                                      type: _vm.form.name.type
+                                    },
+                                    domProps: { value: _vm.form.name.value },
+                                    on: {
+                                      input: function($event) {
+                                        if ($event.target.composing) {
+                                          return
+                                        }
+                                        _vm.$set(
+                                          _vm.form.name,
+                                          "value",
+                                          $event.target.value
+                                        )
+                                      }
+                                    }
+                                  })
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _vm.form.name.error
+                            ? [
+                                _c("span", {
+                                  staticClass: "order-popup__error",
+                                  domProps: {
+                                    innerHTML: _vm._s(_vm.form.name.error)
+                                  }
+                                })
+                              ]
+                            : _vm._e()
+                        ],
+                        2
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "order-popup__field" },
+                        [
+                          _c(
+                            "div",
+                            { staticClass: "order-popup__field-wrapper" },
+                            [
+                              _c("label", {
+                                staticClass: "order-popup__label",
+                                attrs: { for: _vm.form.phone.id },
+                                domProps: {
+                                  innerHTML: _vm._s(_vm.form.phone.label)
+                                }
+                              }),
+                              _vm._v(" "),
+                              _vm.form.phone.type === "checkbox"
+                                ? _c("input", {
+                                    directives: [
+                                      {
+                                        name: "model",
+                                        rawName: "v-model",
+                                        value: _vm.form.phone.value,
+                                        expression: "form.phone.value"
+                                      },
+                                      {
+                                        name: "mask",
+                                        rawName: "v-mask",
+                                        value: "+7 (###) ###-##-##",
+                                        expression: "'+7 (###) ###-##-##'"
+                                      }
+                                    ],
+                                    staticClass: "order-popup__input",
+                                    class: {
+                                      "order-popup__input--error":
+                                        _vm.form.phone.error,
+                                      "order-popup__input--filled":
+                                        _vm.form.phone.value.length > 0
+                                    },
+                                    attrs: {
+                                      name: _vm.form.phone.id,
+                                      id: _vm.form.phone.id,
+                                      required: "required",
+                                      placeholder: _vm.form.phone.placeholder,
+                                      type: "checkbox"
+                                    },
+                                    domProps: {
+                                      checked: Array.isArray(
+                                        _vm.form.phone.value
+                                      )
+                                        ? _vm._i(_vm.form.phone.value, null) >
+                                          -1
+                                        : _vm.form.phone.value
+                                    },
+                                    on: {
+                                      change: function($event) {
+                                        var $$a = _vm.form.phone.value,
+                                          $$el = $event.target,
+                                          $$c = $$el.checked ? true : false
+                                        if (Array.isArray($$a)) {
+                                          var $$v = null,
+                                            $$i = _vm._i($$a, $$v)
+                                          if ($$el.checked) {
+                                            $$i < 0 &&
+                                              _vm.$set(
+                                                _vm.form.phone,
+                                                "value",
+                                                $$a.concat([$$v])
+                                              )
+                                          } else {
+                                            $$i > -1 &&
+                                              _vm.$set(
+                                                _vm.form.phone,
+                                                "value",
+                                                $$a
+                                                  .slice(0, $$i)
+                                                  .concat($$a.slice($$i + 1))
+                                              )
+                                          }
+                                        } else {
+                                          _vm.$set(_vm.form.phone, "value", $$c)
+                                        }
+                                      }
+                                    }
+                                  })
+                                : _vm.form.phone.type === "radio"
+                                ? _c("input", {
+                                    directives: [
+                                      {
+                                        name: "model",
+                                        rawName: "v-model",
+                                        value: _vm.form.phone.value,
+                                        expression: "form.phone.value"
+                                      },
+                                      {
+                                        name: "mask",
+                                        rawName: "v-mask",
+                                        value: "+7 (###) ###-##-##",
+                                        expression: "'+7 (###) ###-##-##'"
+                                      }
+                                    ],
+                                    staticClass: "order-popup__input",
+                                    class: {
+                                      "order-popup__input--error":
+                                        _vm.form.phone.error,
+                                      "order-popup__input--filled":
+                                        _vm.form.phone.value.length > 0
+                                    },
+                                    attrs: {
+                                      name: _vm.form.phone.id,
+                                      id: _vm.form.phone.id,
+                                      required: "required",
+                                      placeholder: _vm.form.phone.placeholder,
+                                      type: "radio"
+                                    },
+                                    domProps: {
+                                      checked: _vm._q(
+                                        _vm.form.phone.value,
+                                        null
+                                      )
+                                    },
+                                    on: {
+                                      change: function($event) {
+                                        return _vm.$set(
+                                          _vm.form.phone,
+                                          "value",
+                                          null
+                                        )
+                                      }
+                                    }
+                                  })
+                                : _c("input", {
+                                    directives: [
+                                      {
+                                        name: "model",
+                                        rawName: "v-model",
+                                        value: _vm.form.phone.value,
+                                        expression: "form.phone.value"
+                                      },
+                                      {
+                                        name: "mask",
+                                        rawName: "v-mask",
+                                        value: "+7 (###) ###-##-##",
+                                        expression: "'+7 (###) ###-##-##'"
+                                      }
+                                    ],
+                                    staticClass: "order-popup__input",
+                                    class: {
+                                      "order-popup__input--error":
+                                        _vm.form.phone.error,
+                                      "order-popup__input--filled":
+                                        _vm.form.phone.value.length > 0
+                                    },
+                                    attrs: {
+                                      name: _vm.form.phone.id,
+                                      id: _vm.form.phone.id,
+                                      required: "required",
+                                      placeholder: _vm.form.phone.placeholder,
+                                      type: _vm.form.phone.type
+                                    },
+                                    domProps: { value: _vm.form.phone.value },
+                                    on: {
+                                      input: function($event) {
+                                        if ($event.target.composing) {
+                                          return
+                                        }
+                                        _vm.$set(
+                                          _vm.form.phone,
+                                          "value",
+                                          $event.target.value
+                                        )
+                                      }
+                                    }
+                                  })
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _vm.form.phone.error
+                            ? [
+                                _c("span", {
+                                  staticClass: "order-popup__error",
+                                  domProps: {
+                                    innerHTML: _vm._s(_vm.form.phone.error)
+                                  }
+                                })
+                              ]
+                            : _vm._e()
+                        ],
+                        2
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass: "button button--yellow button--submit",
+                          attrs: { type: "submit", name: "submit" },
+                          on: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              return _vm.sendFrom()
+                            }
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n            " +
+                              _vm._s(_vm.data.button_end) +
+                              "\n            "
+                          ),
+                          _c(
+                            "svg",
+                            {
+                              attrs: {
+                                width: "21",
+                                height: "16",
+                                "aria-hidden": "true"
+                              }
+                            },
+                            [
+                              _c("use", {
+                                attrs: { "xlink:href": "#arrow-right" }
+                              })
+                            ]
+                          )
+                        ]
+                      )
+                    ])
+                  ]
+                )
+              ]
+            )
+          ]
+        )
       ])
     : _vm._e()
 }
@@ -23431,6 +24056,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/components/OrderPopup.vue":
+/*!***************************************!*\
+  !*** ./src/components/OrderPopup.vue ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _OrderPopup_vue_vue_type_template_id_948b75a4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./OrderPopup.vue?vue&type=template&id=948b75a4& */ "./src/components/OrderPopup.vue?vue&type=template&id=948b75a4&");
+/* harmony import */ var _OrderPopup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./OrderPopup.vue?vue&type=script&lang=js& */ "./src/components/OrderPopup.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _OrderPopup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _OrderPopup_vue_vue_type_template_id_948b75a4___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _OrderPopup_vue_vue_type_template_id_948b75a4___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/components/OrderPopup.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/components/OrderPopup.vue?vue&type=script&lang=js&":
+/*!****************************************************************!*\
+  !*** ./src/components/OrderPopup.vue?vue&type=script&lang=js& ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_OrderPopup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--4-0!../../node_modules/vue-loader/lib??vue-loader-options!./OrderPopup.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/components/OrderPopup.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_OrderPopup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/components/OrderPopup.vue?vue&type=template&id=948b75a4&":
+/*!**********************************************************************!*\
+  !*** ./src/components/OrderPopup.vue?vue&type=template&id=948b75a4& ***!
+  \**********************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_OrderPopup_vue_vue_type_template_id_948b75a4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./OrderPopup.vue?vue&type=template&id=948b75a4& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/OrderPopup.vue?vue&type=template&id=948b75a4&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_OrderPopup_vue_vue_type_template_id_948b75a4___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_OrderPopup_vue_vue_type_template_id_948b75a4___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/components/Questions.vue":
 /*!**************************************!*\
   !*** ./src/components/Questions.vue ***!
@@ -23738,7 +24432,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie.js");
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_3__);
-var _mutations;function _defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_2__["default"]);var store=new vuex__WEBPACK_IMPORTED_MODULE_2__["default"].Store({state:{menuShown:false,modalVisible:false,isFastViewModalVisible:false,modalImage:'',blocks:{},paths:{},cities:{},showMessage:false,showOrderSuccess:false,showSearchSuccess:false,showSearch:false},mutations:(_mutations={setMenuState:function setMenuState(state,shown){state.menuShown=shown;},setMenuClosed:function setMenuClosed(state,shown){state.menuShown=!shown;},setModalState:function setModalState(state,payload){state.modalVisible=payload.modal;if(state.modalVisible){document.querySelector("body").classList.add("modal__open");}else{document.querySelector("body").classList.remove("modal__open");}},ModalClose:function ModalClose(state){debugger;state.isFastViewModalVisible=false;},FastViewModalOpen:function FastViewModalOpen(state){state.isFastViewModalVisible=true;},setData:function setData(state,payload){for(var key in payload){vue__WEBPACK_IMPORTED_MODULE_1___default.a.set(state,key,payload[key]);}}},_defineProperty(_mutations,"ModalClose",function ModalClose(state){state.showOrderSuccess=false;state.showSearchSuccess=false;state.showSearch=false;}),_defineProperty(_mutations,"OrderSuccessOpen",function OrderSuccessOpen(state){state.showOrderSuccess=true;}),_defineProperty(_mutations,"SearchOpen",function SearchOpen(state){state.showSearch=true;}),_mutations),actions:{},getters:{FastViewModalState:function FastViewModalState(state){return state.isFastViewModalVisible;}}});/* harmony default export */ __webpack_exports__["default"] = (store);
+vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_2__["default"]);var store=new vuex__WEBPACK_IMPORTED_MODULE_2__["default"].Store({state:{menuShown:false,modalVisible:false,isFastViewModalVisible:false,isOrderModalVisible:false,modalImage:'',blocks:{},paths:{},cities:{},showMessage:false,showOrderSuccess:false,showSearchSuccess:false,showSearch:false},mutations:{setMenuState:function setMenuState(state,shown){state.menuShown=shown;},setMenuClosed:function setMenuClosed(state,shown){state.menuShown=!shown;},setModalState:function setModalState(state,payload){state.modalVisible=payload.modal;if(state.modalVisible){document.querySelector("body").classList.add("modal__open");}else{document.querySelector("body").classList.remove("modal__open");}},ModalClose:function ModalClose(state){state.isFastViewModalVisible=false;state.isOrderModalVisible=false;},FastViewModalOpen:function FastViewModalOpen(state){state.isFastViewModalVisible=true;},OrderModalOpen:function OrderModalOpen(state){state.isOrderModalVisible=true;},setData:function setData(state,payload){for(var key in payload){vue__WEBPACK_IMPORTED_MODULE_1___default.a.set(state,key,payload[key]);}}},actions:{},getters:{FastViewModalState:function FastViewModalState(state){return state.isFastViewModalVisible;},OrderModalState:function OrderModalState(state){return state.isOrderModalVisible;}}});/* harmony default export */ __webpack_exports__["default"] = (store);
 
 /***/ }),
 
