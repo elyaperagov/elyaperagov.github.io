@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/seo_page", {data:[{}],fetch:{},mutations:[]});
