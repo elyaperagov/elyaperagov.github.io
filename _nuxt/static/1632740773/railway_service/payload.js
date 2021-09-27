@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/railway_service", {data:[{}],fetch:{},mutations:[]});
